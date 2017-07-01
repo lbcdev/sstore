@@ -1,1 +1,5 @@
 2017-07-01 09:43:05 INFO  MetaRpcImpl:27 - RPC server ready
+2017-07-01 10:01:46 ERROR ClientRpcImpl:24 - Client exception: java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused
+2017-07-01 10:02:01 INFO  MetaRpcImpl:27 - RPC server ready
+2017-07-01 10:02:06 INFO  ClientRpcImpl:19 - read from rpc

@@ -7,5 +7,8 @@ import java.util.List;
 import org.sstore.structure.Block;
 
 public interface MetaRpc extends Remote {
+	
+	public String readTest() throws RemoteException;
+	
 	public byte[] readFile(List<Block> blks, int start, int end) throws RemoteException;
 }

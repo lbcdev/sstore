@@ -36,5 +36,7 @@ public class MetaRpcImpl implements MetaRpc {
 		String test = "read from rpc";
 		return test.getBytes();
 	}
-
+	public String readTest(){
+		return "read from rpc";
+	}
 }
