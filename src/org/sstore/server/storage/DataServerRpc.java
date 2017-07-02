@@ -9,5 +9,7 @@ public interface DataServerRpc extends Remote{
 	
 	public void sendHeartBeat() throws RemoteException;
 	
+	public void put(String fname, byte[] data) throws RemoteException;
+	
 	public String readTest() throws RemoteException;
 }

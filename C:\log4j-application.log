@@ -381,3 +381,164 @@
 2017-07-02 14:56:14 INFO  DataServer:56 - build block message: 1499021764764,1,1-2-3
 2017-07-02 14:56:14 INFO  MetaRpcImpl:62 - receive block info: 1499021764764
 2017-07-02 14:56:14 INFO  DataServerRpc:42 - ack
+2017-07-02 18:16:51 INFO  MetaRpcImpl:36 - RPC server ready
+2017-07-02 18:17:08 INFO  DataServerRpc:25 - Dataserver RPC ready
+2017-07-02 18:17:09 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:17:09 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:17:09 INFO  DataServerRpc:46 - ack
+2017-07-02 18:17:16 ERROR ClientRpcImpl:45 - Client exception: java.lang.NullPointerException
+2017-07-02 18:17:19 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:17:19 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:17:19 INFO  DataServerRpc:46 - ack
+2017-07-02 18:17:29 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:17:29 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:17:29 INFO  DataServerRpc:46 - ack
+2017-07-02 18:17:39 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:17:39 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:17:39 INFO  DataServerRpc:46 - ack
+2017-07-02 18:17:49 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:17:49 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:17:49 INFO  DataServerRpc:46 - ack
+2017-07-02 18:17:59 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:17:59 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:17:59 INFO  DataServerRpc:46 - ack
+2017-07-02 18:18:09 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:18:09 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:18:09 INFO  DataServerRpc:46 - ack
+2017-07-02 18:18:19 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:18:19 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:18:19 INFO  DataServerRpc:46 - ack
+2017-07-02 18:18:29 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:18:29 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:18:29 INFO  DataServerRpc:46 - ack
+2017-07-02 18:18:39 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:18:39 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:18:39 INFO  DataServerRpc:46 - ack
+2017-07-02 18:18:49 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:18:49 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:18:49 INFO  DataServerRpc:46 - ack
+2017-07-02 18:18:59 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:18:59 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:18:59 INFO  DataServerRpc:46 - ack
+2017-07-02 18:19:09 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:19:09 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:19:09 INFO  DataServerRpc:46 - ack
+2017-07-02 18:19:19 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:19:19 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:19:19 INFO  DataServerRpc:46 - ack
+2017-07-02 18:19:29 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:19:29 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:19:29 INFO  DataServerRpc:46 - ack
+2017-07-02 18:19:39 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:19:39 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:19:39 INFO  DataServerRpc:46 - ack
+2017-07-02 18:19:49 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:19:49 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:19:49 INFO  DataServerRpc:46 - ack
+2017-07-02 18:19:59 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:19:59 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:19:59 INFO  DataServerRpc:46 - ack
+2017-07-02 18:20:09 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:20:09 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:20:09 INFO  DataServerRpc:46 - ack
+2017-07-02 18:20:19 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:20:19 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:20:19 INFO  DataServerRpc:46 - ack
+2017-07-02 18:20:29 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:20:29 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:20:29 INFO  DataServerRpc:46 - ack
+2017-07-02 18:20:39 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:20:39 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:20:39 INFO  DataServerRpc:46 - ack
+2017-07-02 18:20:49 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:20:49 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:20:49 INFO  DataServerRpc:46 - ack
+2017-07-02 18:20:59 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:20:59 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:20:59 INFO  DataServerRpc:46 - ack
+2017-07-02 18:21:09 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:21:09 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:21:09 INFO  DataServerRpc:46 - ack
+2017-07-02 18:21:19 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:21:19 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:21:19 INFO  DataServerRpc:46 - ack
+2017-07-02 18:21:29 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:21:29 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:21:29 INFO  DataServerRpc:46 - ack
+2017-07-02 18:21:39 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:21:39 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:21:39 INFO  DataServerRpc:46 - ack
+2017-07-02 18:21:49 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:21:49 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:21:49 INFO  DataServerRpc:46 - ack
+2017-07-02 18:21:59 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:21:59 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:21:59 INFO  DataServerRpc:46 - ack
+2017-07-02 18:22:09 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:22:09 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:22:09 INFO  DataServerRpc:46 - ack
+2017-07-02 18:22:19 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:22:19 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:22:19 INFO  DataServerRpc:46 - ack
+2017-07-02 18:22:29 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:22:29 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:22:29 INFO  DataServerRpc:46 - ack
+2017-07-02 18:22:39 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:22:39 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:22:39 INFO  DataServerRpc:46 - ack
+2017-07-02 18:22:49 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:22:49 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:22:49 INFO  DataServerRpc:46 - ack
+2017-07-02 18:22:59 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:22:59 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:22:59 INFO  DataServerRpc:46 - ack
+2017-07-02 18:23:09 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:23:09 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:23:09 INFO  DataServerRpc:46 - ack
+2017-07-02 18:23:19 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:23:19 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:23:19 INFO  DataServerRpc:46 - ack
+2017-07-02 18:23:29 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:23:29 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:23:29 INFO  DataServerRpc:46 - ack
+2017-07-02 18:23:39 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:23:39 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:23:39 INFO  DataServerRpc:46 - ack
+2017-07-02 18:23:49 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:23:49 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:23:49 INFO  DataServerRpc:46 - ack
+2017-07-02 18:23:59 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:23:59 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:23:59 INFO  DataServerRpc:46 - ack
+2017-07-02 18:24:09 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:24:09 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:24:09 INFO  DataServerRpc:46 - ack
+2017-07-02 18:24:19 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:24:19 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:24:19 INFO  DataServerRpc:46 - ack
+2017-07-02 18:24:29 INFO  DataServer:56 - build block message: 1499033829097,1,1-2-3
+2017-07-02 18:24:29 INFO  MetaRpcImpl:62 - receive block info: 1499033829097
+2017-07-02 18:24:29 INFO  DataServerRpc:46 - ack
+2017-07-02 18:24:45 INFO  MetaRpcImpl:36 - RPC server ready
+2017-07-02 18:24:48 INFO  DataServerRpc:25 - Dataserver RPC ready
+2017-07-02 18:24:48 INFO  DataServer:56 - build block message: 1499034288600,1,1-2-3
+2017-07-02 18:24:48 INFO  MetaRpcImpl:62 - receive block info: 1499034288600
+2017-07-02 18:24:48 INFO  DataServerRpc:46 - ack
+2017-07-02 18:24:58 INFO  DataServer:56 - build block message: 1499034288600,1,1-2-3
+2017-07-02 18:24:58 INFO  MetaRpcImpl:62 - receive block info: 1499034288600
+2017-07-02 18:24:58 INFO  DataServerRpc:46 - ack
+2017-07-02 18:25:08 INFO  DataServer:56 - build block message: 1499034288600,1,1-2-3
+2017-07-02 18:25:08 INFO  MetaRpcImpl:62 - receive block info: 1499034288600
+2017-07-02 18:25:08 INFO  DataServerRpc:46 - ack
+2017-07-02 18:25:18 INFO  DataServer:56 - build block message: 1499034288600,1,1-2-3
+2017-07-02 18:25:18 INFO  MetaRpcImpl:62 - receive block info: 1499034288600
+2017-07-02 18:25:18 INFO  DataServerRpc:46 - ack
+2017-07-02 18:25:28 INFO  DataServer:56 - build block message: 1499034288600,1,1-2-3
+2017-07-02 18:25:28 INFO  MetaRpcImpl:62 - receive block info: 1499034288600
+2017-07-02 18:25:28 INFO  DataServerRpc:46 - ack
+2017-07-02 18:25:38 INFO  DataServer:56 - build block message: 1499034288600,1,1-2-3
+2017-07-02 18:25:38 INFO  MetaRpcImpl:62 - receive block info: 1499034288600
+2017-07-02 18:25:38 INFO  DataServerRpc:46 - ack
+2017-07-02 18:25:48 INFO  DataServer:56 - build block message: 1499034288600,1,1-2-3
+2017-07-02 18:25:48 INFO  MetaRpcImpl:62 - receive block info: 1499034288600
+2017-07-02 18:25:48 INFO  DataServerRpc:46 - ack

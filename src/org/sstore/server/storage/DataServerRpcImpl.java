@@ -8,12 +8,12 @@ import java.rmi.server.UnicastRemoteObject;
 
 import org.apache.log4j.Logger;
 import org.sstore.server.meta.MetaRpc;
-import org.sstore.server.meta.MetaRpcImpl;
 
 public class DataServerRpcImpl implements DataServerRpc, Runnable {
 
 	private final static Logger log = Logger.getLogger(DataServerRpc.class.getName());
-
+	private static DataServerFileIO dsfileio = new DataServerFileIO();
+		
 	private final static int port = 1100;
 	
 	public void startRpcServer() {
@@ -28,6 +28,10 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 			log.error("Dataserver RPC err: " + e.getMessage());
 			e.printStackTrace();
 		}
+	}
+	
+	public void put(String fname, byte[] data){
+		dsfileio.put(fname, data);
 	}
 	
 	public void sendHeartBeat() {
