@@ -3,3 +3,381 @@
 	java.net.ConnectException: Connection refused
 2017-07-01 10:02:01 INFO  MetaRpcImpl:27 - RPC server ready
 2017-07-01 10:02:06 INFO  ClientRpcImpl:19 - read from rpc
+2017-07-01 16:16:54 ERROR ClientRpcImpl:24 - Client exception: java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused
+2017-07-01 16:17:10 INFO  MetaRpcImpl:32 - RPC server ready
+2017-07-01 16:17:23 INFO  ClientRpcImpl:19 - read from rpc
+2017-07-01 16:18:40 ERROR DataServerRpc:29 - Client exception: java.rmi.MarshalException: error marshalling arguments; nested exception is: 
+	java.io.NotSerializableException: org.sstore.protocol.BlockMessage
+2017-07-01 16:18:48 ERROR DataServerRpc:29 - Client exception: java.rmi.MarshalException: error marshalling arguments; nested exception is: 
+	java.io.NotSerializableException: org.sstore.protocol.BlockMessage
+2017-07-01 16:19:55 ERROR DataServerRpc:29 - Client exception: java.rmi.MarshalException: error marshalling arguments; nested exception is: 
+	java.io.NotSerializableException: org.sstore.protocol.BlockMessage
+2017-07-01 16:21:21 ERROR DataServerRpc:29 - Client exception: java.rmi.ServerException: RemoteException occurred in server thread; nested exception is: 
+	java.rmi.UnmarshalException: error unmarshalling arguments; nested exception is: 
+	java.io.InvalidClassException: org.sstore.protocol.BlockMessage; class invalid for deserialization
+2017-07-01 16:25:58 INFO  MetaRpcImpl:32 - RPC server ready
+2017-07-01 16:26:06 INFO  MetaRpcImpl:45 - receive block info: 1
+2017-07-01 16:26:06 INFO  DataServerRpc:24 - ack
+2017-07-01 18:47:05 INFO  MetaRpcImpl:32 - RPC server ready
+2017-07-01 18:47:15 INFO  DataServer:35 - build block message: 1498949235411,1,1-2-3
+2017-07-01 18:47:15 INFO  MetaRpcImpl:45 - receive block info: 1498949235411
+2017-07-01 18:47:15 INFO  DataServerRpc:23 - ack
+2017-07-01 19:27:26 INFO  MetaRpcImpl:32 - RPC server ready
+2017-07-01 19:28:35 INFO  DataServer:51 - build block message: 1498951715232,1,1-2-3
+2017-07-01 19:28:35 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:28:37 INFO  DataServer:51 - build block message: 1498951717420,1,1-2-3
+2017-07-01 19:28:37 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:28:45 INFO  DataServer:51 - build block message: 1498951715232,1,1-2-3
+2017-07-01 19:28:45 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:28:47 INFO  DataServer:51 - build block message: 1498951717420,1,1-2-3
+2017-07-01 19:28:47 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:28:55 INFO  DataServer:51 - build block message: 1498951715232,1,1-2-3
+2017-07-01 19:28:55 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:28:57 INFO  DataServer:51 - build block message: 1498951717420,1,1-2-3
+2017-07-01 19:28:57 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:29:05 INFO  DataServer:51 - build block message: 1498951715232,1,1-2-3
+2017-07-01 19:29:05 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:29:07 INFO  DataServer:51 - build block message: 1498951717420,1,1-2-3
+2017-07-01 19:29:07 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:29:15 INFO  DataServer:51 - build block message: 1498951715232,1,1-2-3
+2017-07-01 19:29:15 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:29:17 INFO  DataServer:51 - build block message: 1498951717420,1,1-2-3
+2017-07-01 19:29:17 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:29:25 INFO  DataServer:51 - build block message: 1498951715232,1,1-2-3
+2017-07-01 19:29:25 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:29:27 INFO  DataServer:51 - build block message: 1498951717420,1,1-2-3
+2017-07-01 19:29:27 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:29:35 INFO  DataServer:51 - build block message: 1498951715232,1,1-2-3
+2017-07-01 19:29:35 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:29:37 INFO  DataServer:51 - build block message: 1498951717420,1,1-2-3
+2017-07-01 19:29:37 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:29:45 INFO  DataServer:51 - build block message: 1498951715232,1,1-2-3
+2017-07-01 19:29:45 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:29:47 INFO  DataServer:51 - build block message: 1498951717420,1,1-2-3
+2017-07-01 19:29:47 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:29:55 INFO  DataServer:51 - build block message: 1498951715232,1,1-2-3
+2017-07-01 19:29:55 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:29:57 INFO  DataServer:51 - build block message: 1498951717420,1,1-2-3
+2017-07-01 19:29:57 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:30:05 INFO  DataServer:51 - build block message: 1498951715232,1,1-2-3
+2017-07-01 19:30:05 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:30:07 INFO  DataServer:51 - build block message: 1498951717420,1,1-2-3
+2017-07-01 19:30:07 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:30:15 INFO  DataServer:51 - build block message: 1498951715232,1,1-2-3
+2017-07-01 19:30:15 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:30:17 INFO  DataServer:51 - build block message: 1498951717420,1,1-2-3
+2017-07-01 19:30:17 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:30:25 INFO  DataServer:51 - build block message: 1498951715232,1,1-2-3
+2017-07-01 19:30:25 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:30:27 INFO  DataServer:51 - build block message: 1498951717420,1,1-2-3
+2017-07-01 19:30:27 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:30:35 INFO  DataServer:51 - build block message: 1498951715232,1,1-2-3
+2017-07-01 19:30:35 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:30:37 INFO  DataServer:51 - build block message: 1498951717420,1,1-2-3
+2017-07-01 19:30:37 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:30:45 INFO  DataServer:51 - build block message: 1498951715232,1,1-2-3
+2017-07-01 19:30:45 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:30:47 INFO  DataServer:51 - build block message: 1498951717420,1,1-2-3
+2017-07-01 19:30:47 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:30:57 INFO  DataServer:51 - build block message: 1498951717420,1,1-2-3
+2017-07-01 19:30:57 ERROR DataServerRpc:29 - Client exception: java.lang.NullPointerException
+2017-07-01 19:32:36 INFO  DataServer:49 - build block message: 1498951956970,1,1-2-3
+2017-07-01 19:32:36 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 19:34:10 INFO  DataServer:49 - build block message: 1498952050802,1,1-2-3
+2017-07-01 19:34:10 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 19:34:20 INFO  DataServer:49 - build block message: 1498952050802,1,1-2-3
+2017-07-01 19:34:20 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 19:34:30 INFO  DataServer:49 - build block message: 1498952050802,1,1-2-3
+2017-07-01 19:34:30 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 19:34:40 INFO  DataServer:49 - build block message: 1498952050802,1,1-2-3
+2017-07-01 19:34:40 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 19:34:50 INFO  DataServer:49 - build block message: 1498952050802,1,1-2-3
+2017-07-01 19:34:50 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 19:35:00 INFO  DataServer:49 - build block message: 1498952050802,1,1-2-3
+2017-07-01 19:35:00 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 19:35:10 INFO  DataServer:49 - build block message: 1498952050802,1,1-2-3
+2017-07-01 19:35:10 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 19:35:51 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 19:36:01 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 19:36:11 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 19:36:21 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 19:37:05 INFO  MetaRpcImpl:32 - RPC server ready
+2017-07-01 19:37:42 ERROR DataServerRpc:28 - Client exception: java.rmi.UnmarshalException: Error unmarshaling return header; nested exception is: 
+	java.io.EOFException
+2017-07-01 19:38:15 INFO  MetaRpcImpl:32 - RPC server ready
+2017-07-01 19:38:17 ERROR MetaRpcImpl:35 - RPC server err: Port already in use: 1099; nested exception is: 
+	java.net.BindException: Address already in use
+2017-07-01 19:38:54 INFO  MetaRpcImpl:32 - RPC server ready
+2017-07-01 19:39:03 INFO  DataServer:49 - build block message: 1498952343916,1,1-2-3
+2017-07-01 19:46:46 ERROR DataServerRpc:28 - Client exception: java.rmi.UnmarshalException: Error unmarshaling return header; nested exception is: 
+	java.io.EOFException
+2017-07-01 19:46:56 ERROR DataServerRpc:28 - Client exception: java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused
+2017-07-01 19:47:06 ERROR DataServerRpc:28 - Client exception: java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused
+2017-07-01 19:47:16 ERROR DataServerRpc:28 - Client exception: java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused
+2017-07-01 19:47:26 ERROR DataServerRpc:28 - Client exception: java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused
+2017-07-01 19:47:36 ERROR DataServerRpc:28 - Client exception: java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused
+2017-07-01 19:47:46 ERROR DataServerRpc:28 - Client exception: java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused
+2017-07-01 19:47:56 ERROR DataServerRpc:28 - Client exception: java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused
+2017-07-01 19:48:06 ERROR DataServerRpc:28 - Client exception: java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused
+2017-07-01 19:48:22 INFO  MetaRpcImpl:31 - RPC server ready
+2017-07-01 19:48:24 ERROR MetaRpcImpl:34 - RPC server err: Port already in use: 1099; nested exception is: 
+	java.net.BindException: Address already in use
+2017-07-01 19:48:33 INFO  DataServer:49 - build block message: 1498952913231,1,1-2-3
+2017-07-01 19:48:33 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 19:48:43 INFO  DataServer:49 - build block message: 1498952913231,1,1-2-3
+2017-07-01 19:48:43 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 19:51:28 INFO  MetaRpcImpl:31 - RPC server ready
+2017-07-01 19:51:31 INFO  DataServer:49 - build block message: 1498953091103,1,1-2-3
+2017-07-01 19:51:31 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 19:51:41 INFO  DataServer:49 - build block message: 1498953091103,1,1-2-3
+2017-07-01 19:51:41 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 19:53:10 INFO  MetaRpcImpl:31 - RPC server ready
+2017-07-01 19:53:13 ERROR MetaRpcImpl:34 - RPC server err: Port already in use: 1099; nested exception is: 
+	java.net.BindException: Address already in use
+2017-07-01 19:53:20 INFO  DataServer:49 - build block message: 1498953200632,1,1-2-3
+2017-07-01 19:53:28 ERROR DataServerRpc:28 - Client exception: java.rmi.UnmarshalException: Error unmarshaling return header; nested exception is: 
+	java.io.EOFException
+2017-07-01 19:53:41 INFO  MetaRpcImpl:31 - RPC server ready
+2017-07-01 19:53:44 ERROR MetaRpcImpl:34 - RPC server err: Port already in use: 1099; nested exception is: 
+	java.net.BindException: Address already in use
+2017-07-01 19:53:51 INFO  DataServer:49 - build block message: 1498953231016,1,1-2-3
+2017-07-01 19:53:51 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 19:54:01 INFO  DataServer:49 - build block message: 1498953231016,1,1-2-3
+2017-07-01 19:54:01 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 19:54:35 INFO  MetaRpcImpl:31 - RPC server ready
+2017-07-01 19:54:39 INFO  DataServer:49 - build block message: 1498953279229,1,1-2-3
+2017-07-01 19:55:32 ERROR DataServerRpc:28 - Client exception: java.rmi.UnmarshalException: Error unmarshaling return header; nested exception is: 
+	java.io.EOFException
+2017-07-01 19:56:29 INFO  MetaRpcImpl:31 - RPC server ready
+2017-07-01 19:56:32 INFO  DataServer:49 - build block message: 1498953392837,1,1-2-3
+2017-07-01 19:57:23 INFO  MetaRpcImpl:31 - RPC server ready
+2017-07-01 19:57:26 INFO  DataServer:49 - build block message: 1498953446559,1,1-2-3
+2017-07-01 19:57:26 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 19:57:36 INFO  DataServer:49 - build block message: 1498953446559,1,1-2-3
+2017-07-01 19:57:36 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 19:57:50 INFO  MetaRpcImpl:31 - RPC server ready
+2017-07-01 19:57:53 ERROR MetaRpcImpl:34 - RPC server err: Port already in use: 1099; nested exception is: 
+	java.net.BindException: Address already in use
+2017-07-01 19:58:00 INFO  DataServer:49 - build block message: 1498953480300,1,1-2-3
+2017-07-01 19:58:00 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 19:59:29 INFO  MetaRpcImpl:31 - RPC server ready
+2017-07-01 19:59:33 INFO  DataServer:49 - build block message: 1498953573553,1,1-2-3
+2017-07-01 19:59:33 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 20:02:04 INFO  MetaRpcImpl:35 - RPC server ready
+2017-07-01 20:02:07 INFO  DataServer:49 - build block message: 1498953727673,1,1-2-3
+2017-07-01 20:02:07 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 20:02:42 INFO  MetaRpcImpl:35 - RPC server ready
+2017-07-01 20:03:43 ERROR MetaRpcImpl:38 - RPC server err: Port already in use: 1099; nested exception is: 
+	java.net.BindException: Address already in use
+2017-07-01 20:03:54 INFO  MetaRpcImpl:35 - RPC server ready
+2017-07-01 20:03:58 INFO  DataServer:49 - build block message: 1498953838943,1,1-2-3
+2017-07-01 20:03:58 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 20:04:32 INFO  MetaRpcImpl:35 - RPC server ready
+2017-07-01 20:04:37 INFO  DataServer:49 - build block message: 1498953877002,1,1-2-3
+2017-07-01 20:04:37 INFO  MetaRpcImpl:52 - receive block info: 1498953877002
+2017-07-01 20:04:37 INFO  DataServerRpc:22 - ack
+2017-07-01 20:04:47 INFO  DataServer:49 - build block message: 1498953877002,1,1-2-3
+2017-07-01 20:04:47 INFO  MetaRpcImpl:52 - receive block info: 1498953877002
+2017-07-01 20:04:47 INFO  DataServerRpc:22 - ack
+2017-07-01 20:04:57 INFO  DataServer:49 - build block message: 1498953877002,1,1-2-3
+2017-07-01 20:04:57 INFO  MetaRpcImpl:52 - receive block info: 1498953877002
+2017-07-01 20:04:57 INFO  DataServerRpc:22 - ack
+2017-07-01 20:05:07 INFO  DataServer:49 - build block message: 1498953877002,1,1-2-3
+2017-07-01 20:05:07 INFO  MetaRpcImpl:52 - receive block info: 1498953877002
+2017-07-01 20:05:07 INFO  DataServerRpc:22 - ack
+2017-07-01 20:05:17 INFO  DataServer:49 - build block message: 1498953877002,1,1-2-3
+2017-07-01 20:05:17 INFO  MetaRpcImpl:52 - receive block info: 1498953877002
+2017-07-01 20:05:17 INFO  DataServerRpc:22 - ack
+2017-07-01 20:05:27 INFO  DataServer:49 - build block message: 1498953877002,1,1-2-3
+2017-07-01 20:05:27 INFO  MetaRpcImpl:52 - receive block info: 1498953877002
+2017-07-01 20:05:27 INFO  DataServerRpc:22 - ack
+2017-07-01 20:05:45 INFO  MetaRpcImpl:36 - RPC server ready
+2017-07-01 20:05:49 ERROR MetaRpcImpl:39 - RPC server err: Port already in use: 1099; nested exception is: 
+	java.net.BindException: Address already in use
+2017-07-01 20:05:56 INFO  DataServer:49 - build block message: 1498953956263,1,1-2-3
+2017-07-01 20:05:56 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 20:06:06 INFO  DataServer:49 - build block message: 1498953956263,1,1-2-3
+2017-07-01 20:06:06 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 20:06:16 INFO  DataServer:49 - build block message: 1498953956263,1,1-2-3
+2017-07-01 20:06:16 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 20:06:48 INFO  MetaRpcImpl:36 - RPC server ready
+2017-07-01 20:06:51 INFO  DataServer:49 - build block message: 1498954011190,1,1-2-3
+2017-07-01 20:06:51 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 20:07:01 INFO  DataServer:49 - build block message: 1498954011190,1,1-2-3
+2017-07-01 20:07:01 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 20:07:11 INFO  DataServer:49 - build block message: 1498954011190,1,1-2-3
+2017-07-01 20:07:11 ERROR DataServerRpc:28 - Client exception: java.lang.NullPointerException
+2017-07-01 20:08:36 INFO  MetaRpcImpl:36 - RPC server ready
+2017-07-01 20:08:42 INFO  DataServer:49 - build block message: 1498954122166,1,1-2-3
+2017-07-01 20:14:10 INFO  MetaRpcImpl:36 - RPC server ready
+2017-07-01 20:14:13 INFO  DataServer:49 - build block message: 1498954453419,1,1-2-3
+2017-07-01 20:14:13 INFO  MetaRpcImpl:58 - receive block info: 1498954453419
+2017-07-01 20:14:13 INFO  DataServerRpc:24 - ack
+2017-07-01 20:14:23 INFO  DataServer:49 - build block message: 1498954453419,1,1-2-3
+2017-07-01 20:14:23 INFO  MetaRpcImpl:58 - receive block info: 1498954453419
+2017-07-01 20:14:23 INFO  DataServerRpc:24 - ack
+2017-07-01 20:14:33 INFO  DataServer:49 - build block message: 1498954453419,1,1-2-3
+2017-07-01 20:14:33 INFO  MetaRpcImpl:58 - receive block info: 1498954453419
+2017-07-01 20:14:33 INFO  DataServerRpc:24 - ack
+2017-07-01 20:14:43 INFO  DataServer:49 - build block message: 1498954453419,1,1-2-3
+2017-07-01 20:14:43 INFO  MetaRpcImpl:58 - receive block info: 1498954453419
+2017-07-01 20:14:43 INFO  DataServerRpc:24 - ack
+2017-07-01 20:14:53 INFO  DataServer:49 - build block message: 1498954453419,1,1-2-3
+2017-07-01 20:14:53 INFO  MetaRpcImpl:58 - receive block info: 1498954453419
+2017-07-01 20:14:53 INFO  DataServerRpc:24 - ack
+2017-07-01 20:15:03 INFO  DataServer:49 - build block message: 1498954453419,1,1-2-3
+2017-07-01 20:15:03 INFO  MetaRpcImpl:58 - receive block info: 1498954453419
+2017-07-01 20:15:03 INFO  DataServerRpc:24 - ack
+2017-07-01 20:15:13 INFO  DataServer:49 - build block message: 1498954453419,1,1-2-3
+2017-07-01 20:15:13 INFO  MetaRpcImpl:58 - receive block info: 1498954453419
+2017-07-01 20:15:13 INFO  DataServerRpc:24 - ack
+2017-07-01 20:15:23 INFO  DataServer:49 - build block message: 1498954453419,1,1-2-3
+2017-07-01 20:15:23 INFO  MetaRpcImpl:58 - receive block info: 1498954453419
+2017-07-01 20:15:23 INFO  DataServerRpc:24 - ack
+2017-07-01 20:15:33 INFO  DataServer:49 - build block message: 1498954453419,1,1-2-3
+2017-07-01 20:15:33 INFO  MetaRpcImpl:58 - receive block info: 1498954453419
+2017-07-01 20:15:33 INFO  DataServerRpc:24 - ack
+2017-07-01 20:17:00 INFO  MetaRpcImpl:36 - RPC server ready
+2017-07-01 20:17:03 INFO  DataServer:49 - build block message: 1498954623567,1,1-2-3
+2017-07-01 20:17:03 INFO  MetaRpcImpl:59 - receive block info: 1498954623567
+2017-07-01 20:17:03 INFO  DataServerRpc:24 - ack
+2017-07-01 20:17:13 INFO  DataServer:49 - build block message: 1498954623567,1,1-2-3
+2017-07-01 20:17:13 INFO  MetaRpcImpl:59 - receive block info: 1498954623567
+2017-07-01 20:17:13 INFO  DataServerRpc:24 - ack
+2017-07-01 20:18:16 INFO  MetaRpcImpl:36 - RPC server ready
+2017-07-01 20:18:19 INFO  DataServer:49 - build block message: 1498954699598,1,1-2-3
+2017-07-01 20:19:05 INFO  MetaRpcImpl:36 - RPC server ready
+2017-07-01 20:19:09 INFO  DataServer:49 - build block message: 1498954749351,1,1-2-3
+2017-07-01 20:19:09 INFO  MetaRpcImpl:59 - receive block info: read from rpc
+2017-07-01 20:19:09 INFO  DataServerRpc:24 - ack
+2017-07-01 20:20:13 INFO  MetaRpcImpl:36 - RPC server ready
+2017-07-01 20:20:16 INFO  DataServer:49 - build block message: 1498954816657,1,1-2-3
+2017-07-01 20:20:59 INFO  MetaRpcImpl:36 - RPC server ready
+2017-07-01 20:21:02 INFO  DataServer:49 - build block message: 1498954862135,1,1-2-3
+2017-07-01 20:21:02 INFO  MetaRpcImpl:59 - receive block info: read from rpc
+2017-07-01 20:21:02 INFO  DataServerRpc:24 - ack
+2017-07-01 20:21:12 INFO  DataServer:49 - build block message: 1498954862135,1,1-2-3
+2017-07-01 20:21:12 INFO  MetaRpcImpl:59 - receive block info: read from rpc
+2017-07-01 20:21:12 INFO  DataServerRpc:24 - ack
+2017-07-01 20:21:22 INFO  DataServer:49 - build block message: 1498954862135,1,1-2-3
+2017-07-01 20:21:22 INFO  MetaRpcImpl:59 - receive block info: read from rpc
+2017-07-01 20:21:22 INFO  DataServerRpc:24 - ack
+2017-07-01 20:21:32 INFO  DataServer:49 - build block message: 1498954862135,1,1-2-3
+2017-07-01 20:21:32 INFO  MetaRpcImpl:59 - receive block info: read from rpc
+2017-07-01 20:21:32 INFO  DataServerRpc:24 - ack
+2017-07-01 21:17:50 ERROR DataServerRpc:30 - Client exception: java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused
+2017-07-01 21:17:59 INFO  MetaRpcImpl:36 - RPC server ready
+2017-07-01 21:18:03 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:18:03 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:18:03 INFO  DataServerRpc:24 - ack
+2017-07-01 21:18:13 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:18:13 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:18:13 INFO  DataServerRpc:24 - ack
+2017-07-01 21:18:23 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:18:23 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:18:23 INFO  DataServerRpc:24 - ack
+2017-07-01 21:18:33 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:18:33 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:18:33 INFO  DataServerRpc:24 - ack
+2017-07-01 21:18:43 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:18:43 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:18:43 INFO  DataServerRpc:24 - ack
+2017-07-01 21:18:53 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:18:53 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:18:53 INFO  DataServerRpc:24 - ack
+2017-07-01 21:19:03 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:19:03 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:19:03 INFO  DataServerRpc:24 - ack
+2017-07-01 21:19:13 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:19:13 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:19:13 INFO  DataServerRpc:24 - ack
+2017-07-01 21:19:23 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:19:23 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:19:23 INFO  DataServerRpc:24 - ack
+2017-07-01 21:19:33 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:19:33 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:19:33 INFO  DataServerRpc:24 - ack
+2017-07-01 21:19:43 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:19:43 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:19:43 INFO  DataServerRpc:24 - ack
+2017-07-01 21:19:53 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:19:53 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:19:53 INFO  DataServerRpc:24 - ack
+2017-07-01 21:20:03 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:20:03 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:20:03 INFO  DataServerRpc:24 - ack
+2017-07-01 21:20:13 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:20:13 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:20:13 INFO  DataServerRpc:24 - ack
+2017-07-01 21:20:23 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:20:23 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:20:23 INFO  DataServerRpc:24 - ack
+2017-07-01 21:20:33 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:20:33 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:20:33 INFO  DataServerRpc:24 - ack
+2017-07-01 21:20:43 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:20:43 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:20:43 INFO  DataServerRpc:24 - ack
+2017-07-01 21:20:53 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:20:53 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:20:53 INFO  DataServerRpc:24 - ack
+2017-07-01 21:21:03 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:21:03 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:21:03 INFO  DataServerRpc:24 - ack
+2017-07-01 21:21:13 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:21:13 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:21:13 INFO  DataServerRpc:24 - ack
+2017-07-01 21:21:23 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:21:23 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:21:23 INFO  DataServerRpc:24 - ack
+2017-07-01 21:21:33 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:21:33 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:21:33 INFO  DataServerRpc:24 - ack
+2017-07-01 21:21:43 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:21:43 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:21:43 INFO  DataServerRpc:24 - ack
+2017-07-01 21:21:53 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:21:53 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:21:53 INFO  DataServerRpc:24 - ack
+2017-07-01 21:22:03 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:22:03 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:22:03 INFO  DataServerRpc:24 - ack
+2017-07-01 21:22:13 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:22:13 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:22:13 INFO  DataServerRpc:24 - ack
+2017-07-01 21:22:23 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:22:23 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:22:23 INFO  DataServerRpc:24 - ack
+2017-07-01 21:22:33 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:22:33 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:22:33 INFO  DataServerRpc:24 - ack
+2017-07-01 21:22:43 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:22:43 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:22:43 INFO  DataServerRpc:24 - ack
+2017-07-01 21:22:53 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:22:53 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:22:53 INFO  DataServerRpc:24 - ack
+2017-07-01 21:23:03 INFO  DataServer:49 - build block message: 1498958283026,1,1-2-3
+2017-07-01 21:23:03 INFO  MetaRpcImpl:55 - receive block info: 1498958283026
+2017-07-01 21:23:03 INFO  DataServerRpc:24 - ack
+2017-07-02 14:54:27 ERROR DataServerRpc:48 - Client exception: java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused
+2017-07-02 14:55:57 INFO  MetaRpcImpl:36 - RPC server ready
+2017-07-02 14:56:04 INFO  DataServerRpc:25 - Dataserver RPC ready
+2017-07-02 14:56:04 INFO  DataServer:56 - build block message: 1499021764764,1,1-2-3
+2017-07-02 14:56:04 INFO  MetaRpcImpl:62 - receive block info: 1499021764764
+2017-07-02 14:56:04 INFO  DataServerRpc:42 - ack
+2017-07-02 14:56:13 INFO  ClientRpcImpl:20 - read from dataserver rpc
+2017-07-02 14:56:14 INFO  DataServer:56 - build block message: 1499021764764,1,1-2-3
+2017-07-02 14:56:14 INFO  MetaRpcImpl:62 - receive block info: 1499021764764
+2017-07-02 14:56:14 INFO  DataServerRpc:42 - ack

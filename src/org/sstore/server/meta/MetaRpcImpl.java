@@ -4,20 +4,29 @@ import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
 import org.apache.log4j.Logger;
-import org.apache.log4j.spi.LoggerFactory;
-import org.sstore.structure.Block;
+import org.sstore.protocol.Block;
+import org.sstore.protocol.Message;
+import org.sstore.utils.Constants;
+
 /**
- * This class handles all rpc calls.
- * It is created, started, and stopped by {@link MetaServer}.
+ * This class handles all rpc calls. It is created, started, and stopped by
+ * {@link MetaServer}.
+ * 
  * @author lbchen
  *
  */
 public class MetaRpcImpl implements MetaRpc {
-	
+
 	private final static Logger log = Logger.getLogger(MetaRpcImpl.class.getName());
-	
+
+	private static Map<Integer, Set<Long>> dstable;
+
 	public void startRpcServer() {
 		try {
 			MetaRpcImpl obj = new MetaRpcImpl();
@@ -32,11 +41,48 @@ public class MetaRpcImpl implements MetaRpc {
 		}
 	}
 
+	public String assignDataServer(String filepath) {
+		String host = "localhost";
+		int port = 1100;
+		String dsaddr = host + ":" + port;
+		return dsaddr;
+	}
+
+	/** Receive heart beat block info from dataserver. */
+	public String heartBeat(String msg) {
+		String sid = msg.split(",")[0];
+		String[] blockstrs = msg.split(",")[2].split("-");
+		HashSet<Long> blockset = new HashSet<Long>();
+		for (String str : blockstrs) {
+			blockset.add(Long.parseLong(str));
+		}
+
+		MetaServer.updateDSTable(Long.parseLong(sid), blockset);
+		readTest();
+		log.info("receive block info: " + sid);
+		return "ack";
+	}
+
+	/** Receive heart beat message from dataserver. */
+	public void heartBeat(Message msg) {
+
+		switch (msg.getType()) {
+
+		case Constants.BLOCKMSG:
+			break;
+
+		default:
+			break;
+		}
+	}
+
 	public byte[] readFile(List<Block> blks, int start, int end) throws RemoteException {
 		String test = "read from rpc";
 		return test.getBytes();
 	}
-	public String readTest(){
+
+	public String readTest() {
 		return "read from rpc";
 	}
+
 }
