@@ -13,9 +13,9 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 
 	private final static Logger log = Logger.getLogger(DataServerRpc.class.getName());
 	private static DataServerFileIO dsfileio = new DataServerFileIO();
-		
+
 	private final static int port = 1100;
-	
+
 	public void startRpcServer() {
 		try {
 			DataServerRpcImpl obj = new DataServerRpcImpl();
@@ -29,11 +29,15 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 			e.printStackTrace();
 		}
 	}
-	
-	public void put(String fname, byte[] data){
+
+	public byte[] get(String remote) {
+		return dsfileio.get(remote);
+	}
+
+	public void put(String fname, byte[] data) {
 		dsfileio.put(fname, data);
 	}
-	
+
 	public void sendHeartBeat() {
 		try {
 			// System.setSecurityManager(new RMISecurityManager());
@@ -41,7 +45,7 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 			MetaRpc stub = (MetaRpc) registry.lookup("metarpc");
 
 			DataServer dataserver = new DataServer();
-//			String bmsg = "1,1,{1,2,3,4}";
+			// String bmsg = "1,1,{1,2,3,4}";
 			String response = stub.heartBeat(dataserver.buildBlockMessage());
 			log.info(response);
 			// HelloRMI obj = (HelloRMI)
@@ -64,8 +68,8 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 			}
 		}
 	}
-	
+
 	public String readTest() {
 		return "read from dataserver rpc";
-	} 
+	}
 }

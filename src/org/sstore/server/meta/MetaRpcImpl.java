@@ -40,8 +40,16 @@ public class MetaRpcImpl implements MetaRpc {
 			e.printStackTrace();
 		}
 	}
+	
+	/** find a replica server that holds the remote file 
+	 * and return the address to the client.*/
+	public String findDataServer(String remote){
+		String hostaddr = "localhost:1100";
+		
+		return hostaddr;
+	}
 
-	public String assignDataServer(String filepath) {
+	public String assignDataServer(String clientpath) {
 		String host = "localhost";
 		int port = 1100;
 		String dsaddr = host + ":" + port;
