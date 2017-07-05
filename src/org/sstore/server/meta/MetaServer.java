@@ -1,11 +1,14 @@
 package org.sstore.server.meta;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
 import org.apache.log4j.Logger;
+import org.sstore.utils.Constants;
 
 /**
  * Metaserver serves as the manager of the system and stores only metadata of
@@ -42,18 +45,38 @@ public class MetaServer {
 	 * lookup file-dataserver table by file name and return dataserver address
 	 * if find.
 	 */
-	static String lookupF2DSTable(String filename) {
+	String lookupF2DSTable(String filename) {
 		return f2dsTable.get(filename);
 	}
 
 	/** update file-dataserver table */
-	static void updateF2DSTable(String filename, String sid) {
+	void updateF2DSTable(String filename, String sid) {
 		f2dsTable.put(filename, sid);
+		flushF2DSTable();
 		printTable(f2dsTable);
 	}
 
+	void flushF2DSTable() {
+		Iterator<String> iter = f2dsTable.keySet().iterator();
+		try {
+			// BufferedOutputStream out = new BufferedOutputStream(new
+			// Out(Constants.METAROOTDIR));
+			FileWriter out = new FileWriter(Constants.METAROOTDIR + "f2dsTable");
+			while (iter.hasNext()) {
+				String key = iter.next();
+				String value = f2dsTable.get(key);
+				String rows = key + "-" + value;
+				out.write(rows + "\n");
+			}
+			out.flush();
+			out.close();
+		} catch (IOException e) {
+			log.error(e.getMessage());
+		}
+	}
+
 	/** synchronized update on the block-server table. */
-	static synchronized void updateDSTable(long serverId, Set<Long> blkIds) {
+	synchronized void updateDSTable(long serverId, Set<Long> blkIds) {
 		if (b2dsTable != null)
 			b2dsTable.put(serverId, blkIds);
 	}

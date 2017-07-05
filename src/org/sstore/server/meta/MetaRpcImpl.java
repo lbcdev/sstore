@@ -26,9 +26,12 @@ public class MetaRpcImpl implements MetaRpc {
 	private final static Logger log = Logger.getLogger(MetaServer.class.getName());
 
 	private static Map<Integer, Set<Long>> dstable;
-
+	
+	private static MetaServer metaserver;
+	
 	public void startRpcServer() {
 		try {
+			metaserver = new MetaServer();
 			MetaRpcImpl obj = new MetaRpcImpl();
 			MetaRpc stub = (MetaRpc) UnicastRemoteObject.exportObject(obj, 0);
 			Registry registry = LocateRegistry.createRegistry(Registry.REGISTRY_PORT);
@@ -47,7 +50,7 @@ public class MetaRpcImpl implements MetaRpc {
 	 */
 	public String findDataServer(String remote) {
 		// String hostaddr = "localhost:1100";
-		String hostaddr = MetaServer.lookupF2DSTable(remote);
+		String hostaddr = metaserver.lookupF2DSTable(remote);
 		if (hostaddr != null)
 			return hostaddr;
 		return "file not found";
@@ -57,7 +60,7 @@ public class MetaRpcImpl implements MetaRpc {
 		String host = "localhost";
 		int port = 1100;
 		String dsaddr = host + ":" + port;
-		MetaServer.updateF2DSTable(remote, dsaddr);
+		metaserver.updateF2DSTable(remote, dsaddr);
 		log.info("update file-dataserver table");
 		return dsaddr;
 	}
@@ -70,7 +73,7 @@ public class MetaRpcImpl implements MetaRpc {
 		for (String str : blockstrs) {
 			blockset.add(Long.parseLong(str));
 		}
-		MetaServer.updateDSTable(Long.parseLong(sid), blockset);
+		metaserver.updateDSTable(Long.parseLong(sid), blockset);
 		readTest();
 		log.info("receive block info: " + sid);
 		return "ack";

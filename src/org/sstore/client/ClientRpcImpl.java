@@ -29,11 +29,11 @@ public class ClientRpcImpl implements ClientRpc {
 
 	public static void main(String[] args) {
 		ClientRpcImpl clientrpc = new ClientRpcImpl();
-		String local = "resources/in1.jpg";
-		String remote = "in704.jpg";
+		String local = "resources/in2.jpg";
+		String remote = "in705.jpg";
 		String hostaddr = "localhost:1100";
 		clientrpc.putReq(local, remote);
-		local = "/Users/lbchen/out704.jpg";
+		local = "/Users/lbchen/out705.jpg";
 		clientrpc.getReq(remote, local);
 	}
 

@@ -2155,3 +2155,242 @@
 2017-07-04 21:05:25 INFO  DataServer:56 - build block message: 1499216345344,1,1-2-3
 2017-07-04 21:05:25 INFO  MetaServer:75 - receive block info: 1499216345344
 2017-07-04 21:05:25 INFO  DataServerRpc:50 - ack
+2017-07-04 21:05:35 INFO  DataServer:56 - build block message: 1499216345344,1,1-2-3
+2017-07-04 21:05:35 INFO  MetaServer:75 - receive block info: 1499216345344
+2017-07-04 21:05:35 INFO  DataServerRpc:50 - ack
+2017-07-04 21:05:45 INFO  DataServer:56 - build block message: 1499216345344,1,1-2-3
+2017-07-04 21:05:45 INFO  MetaServer:75 - receive block info: 1499216345344
+2017-07-04 21:05:45 INFO  DataServerRpc:50 - ack
+2017-07-04 21:05:55 INFO  DataServer:56 - build block message: 1499216345344,1,1-2-3
+2017-07-04 21:05:55 INFO  MetaServer:75 - receive block info: 1499216345344
+2017-07-04 21:05:55 INFO  DataServerRpc:50 - ack
+2017-07-04 21:06:05 INFO  DataServer:56 - build block message: 1499216345344,1,1-2-3
+2017-07-04 21:06:05 INFO  MetaServer:75 - receive block info: 1499216345344
+2017-07-04 21:06:05 INFO  DataServerRpc:50 - ack
+2017-07-04 21:06:15 INFO  DataServer:56 - build block message: 1499216345344,1,1-2-3
+2017-07-04 21:06:15 INFO  MetaServer:75 - receive block info: 1499216345344
+2017-07-04 21:06:15 INFO  DataServerRpc:50 - ack
+2017-07-04 21:06:25 INFO  DataServer:56 - build block message: 1499216345344,1,1-2-3
+2017-07-04 21:06:25 INFO  MetaServer:75 - receive block info: 1499216345344
+2017-07-04 21:06:25 INFO  DataServerRpc:50 - ack
+2017-07-04 21:06:35 ERROR DataServerRpc:56 - Client exception: java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused
+2017-07-05 15:33:58 INFO  MetaServer:39 - RPC server ready
+2017-07-05 15:34:03 INFO  DataServerRpc:25 - Dataserver RPC ready
+2017-07-05 15:34:03 INFO  DataServer:56 - build block message: 1499283243118,1,1-2-3
+2017-07-05 15:34:03 INFO  MetaServer:78 - receive block info: 1499283243118
+2017-07-05 15:34:03 INFO  DataServerRpc:50 - ack
+2017-07-05 15:34:07 ERROR MetaServer:74 - /Users/lbchen/meta (Is a directory)
+2017-07-05 15:34:07 INFO  MetaServer:93 - in704.jpg:localhost:1100
+2017-07-05 15:34:07 INFO  MetaServer:64 - update file-dataserver table
+2017-07-05 15:34:07 INFO  ClientRpcImpl:73 - localhost:1100
+2017-07-05 15:34:07 INFO  ClientRpcImpl:45 - localhost:1100
+2017-07-05 15:34:07 INFO  DataServerFileIO:27 - get file: /Users/lbchen/data/in704.jpg
+2017-07-05 15:34:07 INFO  DataServerFileIO:29 - get data length: 287258
+2017-07-05 15:34:13 INFO  DataServer:56 - build block message: 1499283243118,1,1-2-3
+2017-07-05 15:34:13 INFO  MetaServer:78 - receive block info: 1499283243118
+2017-07-05 15:34:13 INFO  DataServerRpc:50 - ack
+2017-07-05 15:34:23 INFO  DataServer:56 - build block message: 1499283243118,1,1-2-3
+2017-07-05 15:34:23 INFO  MetaServer:78 - receive block info: 1499283243118
+2017-07-05 15:34:23 INFO  DataServerRpc:50 - ack
+2017-07-05 15:34:33 INFO  DataServer:56 - build block message: 1499283243118,1,1-2-3
+2017-07-05 15:34:33 INFO  MetaServer:78 - receive block info: 1499283243118
+2017-07-05 15:34:33 INFO  DataServerRpc:50 - ack
+2017-07-05 15:34:43 INFO  DataServer:56 - build block message: 1499283243118,1,1-2-3
+2017-07-05 15:34:43 INFO  MetaServer:78 - receive block info: 1499283243118
+2017-07-05 15:34:43 INFO  DataServerRpc:50 - ack
+2017-07-05 15:34:53 INFO  DataServer:56 - build block message: 1499283243118,1,1-2-3
+2017-07-05 15:34:53 INFO  MetaServer:78 - receive block info: 1499283243118
+2017-07-05 15:34:53 INFO  DataServerRpc:50 - ack
+2017-07-05 15:35:03 INFO  DataServer:56 - build block message: 1499283243118,1,1-2-3
+2017-07-05 15:35:03 INFO  MetaServer:78 - receive block info: 1499283243118
+2017-07-05 15:35:03 INFO  DataServerRpc:50 - ack
+2017-07-05 15:35:13 INFO  DataServer:56 - build block message: 1499283243118,1,1-2-3
+2017-07-05 15:35:13 INFO  MetaServer:78 - receive block info: 1499283243118
+2017-07-05 15:35:13 INFO  DataServerRpc:50 - ack
+2017-07-05 15:36:09 INFO  MetaServer:39 - RPC server ready
+2017-07-05 15:36:13 INFO  DataServerRpc:25 - Dataserver RPC ready
+2017-07-05 15:36:13 INFO  DataServer:56 - build block message: 1499283373525,1,1-2-3
+2017-07-05 15:36:13 INFO  MetaServer:78 - receive block info: 1499283373525
+2017-07-05 15:36:13 INFO  DataServerRpc:50 - ack
+2017-07-05 15:36:20 INFO  MetaServer:93 - in704.jpg:localhost:1100
+2017-07-05 15:36:20 INFO  MetaServer:64 - update file-dataserver table
+2017-07-05 15:36:20 INFO  ClientRpcImpl:73 - localhost:1100
+2017-07-05 15:36:20 INFO  ClientRpcImpl:45 - localhost:1100
+2017-07-05 15:36:20 INFO  DataServerFileIO:27 - get file: /Users/lbchen/data/in704.jpg
+2017-07-05 15:36:20 INFO  DataServerFileIO:29 - get data length: 287258
+2017-07-05 15:36:23 INFO  DataServer:56 - build block message: 1499283373525,1,1-2-3
+2017-07-05 15:36:23 INFO  MetaServer:78 - receive block info: 1499283373525
+2017-07-05 15:36:23 INFO  DataServerRpc:50 - ack
+2017-07-05 15:36:33 INFO  DataServer:56 - build block message: 1499283373525,1,1-2-3
+2017-07-05 15:36:33 INFO  MetaServer:78 - receive block info: 1499283373525
+2017-07-05 15:36:33 INFO  DataServerRpc:50 - ack
+2017-07-05 15:36:43 INFO  DataServer:56 - build block message: 1499283373525,1,1-2-3
+2017-07-05 15:36:43 INFO  MetaServer:78 - receive block info: 1499283373525
+2017-07-05 15:36:43 INFO  DataServerRpc:50 - ack
+2017-07-05 15:36:53 INFO  DataServer:56 - build block message: 1499283373525,1,1-2-3
+2017-07-05 15:36:53 INFO  MetaServer:78 - receive block info: 1499283373525
+2017-07-05 15:36:53 INFO  DataServerRpc:50 - ack
+2017-07-05 15:37:13 INFO  MetaServer:39 - RPC server ready
+2017-07-05 15:37:16 INFO  DataServerRpc:25 - Dataserver RPC ready
+2017-07-05 15:37:16 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:37:16 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:37:16 INFO  DataServerRpc:50 - ack
+2017-07-05 15:37:19 INFO  MetaServer:93 - in704.jpg:localhost:1100
+2017-07-05 15:37:19 INFO  MetaServer:64 - update file-dataserver table
+2017-07-05 15:37:19 INFO  ClientRpcImpl:73 - localhost:1100
+2017-07-05 15:37:19 INFO  ClientRpcImpl:45 - localhost:1100
+2017-07-05 15:37:19 INFO  DataServerFileIO:27 - get file: /Users/lbchen/data/in704.jpg
+2017-07-05 15:37:19 INFO  DataServerFileIO:29 - get data length: 287258
+2017-07-05 15:37:26 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:37:26 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:37:26 INFO  DataServerRpc:50 - ack
+2017-07-05 15:37:36 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:37:36 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:37:36 INFO  DataServerRpc:50 - ack
+2017-07-05 15:37:46 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:37:46 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:37:46 INFO  DataServerRpc:50 - ack
+2017-07-05 15:37:56 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:37:56 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:37:56 INFO  DataServerRpc:50 - ack
+2017-07-05 15:38:06 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:38:06 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:38:06 INFO  DataServerRpc:50 - ack
+2017-07-05 15:38:16 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:38:16 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:38:16 INFO  DataServerRpc:50 - ack
+2017-07-05 15:38:26 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:38:26 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:38:26 INFO  DataServerRpc:50 - ack
+2017-07-05 15:38:36 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:38:36 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:38:36 INFO  DataServerRpc:50 - ack
+2017-07-05 15:38:46 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:38:46 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:38:46 INFO  DataServerRpc:50 - ack
+2017-07-05 15:38:56 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:38:56 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:38:56 INFO  DataServerRpc:50 - ack
+2017-07-05 15:39:06 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:39:06 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:39:06 INFO  DataServerRpc:50 - ack
+2017-07-05 15:39:16 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:39:16 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:39:16 INFO  DataServerRpc:50 - ack
+2017-07-05 15:39:26 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:39:26 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:39:26 INFO  DataServerRpc:50 - ack
+2017-07-05 15:39:36 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:39:36 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:39:36 INFO  DataServerRpc:50 - ack
+2017-07-05 15:39:46 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:39:46 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:39:46 INFO  DataServerRpc:50 - ack
+2017-07-05 15:39:49 INFO  MetaServer:93 - in705.jpg:localhost:1100
+2017-07-05 15:39:49 INFO  MetaServer:93 - in704.jpg:localhost:1100
+2017-07-05 15:39:49 INFO  MetaServer:64 - update file-dataserver table
+2017-07-05 15:39:49 INFO  ClientRpcImpl:73 - localhost:1100
+2017-07-05 15:39:49 INFO  ClientRpcImpl:45 - localhost:1100
+2017-07-05 15:39:49 INFO  DataServerFileIO:27 - get file: /Users/lbchen/data/in705.jpg
+2017-07-05 15:39:49 INFO  DataServerFileIO:29 - get data length: 0
+2017-07-05 15:39:56 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:39:56 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:39:56 INFO  DataServerRpc:50 - ack
+2017-07-05 15:40:06 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:40:06 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:40:06 INFO  DataServerRpc:50 - ack
+2017-07-05 15:40:16 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:40:16 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:40:16 INFO  DataServerRpc:50 - ack
+2017-07-05 15:40:26 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:40:26 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:40:26 INFO  DataServerRpc:50 - ack
+2017-07-05 15:40:36 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:40:36 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:40:36 INFO  DataServerRpc:50 - ack
+2017-07-05 15:40:46 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:40:46 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:40:46 INFO  DataServerRpc:50 - ack
+2017-07-05 15:40:50 INFO  MetaServer:93 - in705.jpg:localhost:1100
+2017-07-05 15:40:50 INFO  MetaServer:93 - in704.jpg:localhost:1100
+2017-07-05 15:40:50 INFO  MetaServer:64 - update file-dataserver table
+2017-07-05 15:40:50 INFO  ClientRpcImpl:73 - localhost:1100
+2017-07-05 15:40:50 INFO  ClientRpcImpl:45 - localhost:1100
+2017-07-05 15:40:50 INFO  DataServerFileIO:27 - get file: /Users/lbchen/data/in705.jpg
+2017-07-05 15:40:50 INFO  DataServerFileIO:29 - get data length: 118171
+2017-07-05 15:40:56 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:40:56 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:40:56 INFO  DataServerRpc:50 - ack
+2017-07-05 15:41:06 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:41:06 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:41:06 INFO  DataServerRpc:50 - ack
+2017-07-05 15:41:16 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:41:16 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:41:16 INFO  DataServerRpc:50 - ack
+2017-07-05 15:41:26 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:41:26 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:41:26 INFO  DataServerRpc:50 - ack
+2017-07-05 15:41:36 INFO  DataServer:56 - build block message: 1499283436639,1,1-2-3
+2017-07-05 15:41:36 INFO  MetaServer:78 - receive block info: 1499283436639
+2017-07-05 15:41:36 INFO  DataServerRpc:50 - ack
+2017-07-05 15:41:56 INFO  MetaServer:39 - RPC server ready
+2017-07-05 15:42:02 INFO  DataServerRpc:25 - Dataserver RPC ready
+2017-07-05 15:42:02 INFO  DataServer:56 - build block message: 1499283722278,1,1-2-3
+2017-07-05 15:42:02 INFO  MetaServer:78 - receive block info: 1499283722278
+2017-07-05 15:42:02 INFO  DataServerRpc:50 - ack
+2017-07-05 15:42:11 INFO  MetaServer:93 - in705.jpg:localhost:1100
+2017-07-05 15:42:11 INFO  MetaServer:64 - update file-dataserver table
+2017-07-05 15:42:11 INFO  ClientRpcImpl:73 - localhost:1100
+2017-07-05 15:42:11 INFO  ClientRpcImpl:45 - localhost:1100
+2017-07-05 15:42:11 INFO  DataServerFileIO:27 - get file: /Users/lbchen/data/in705.jpg
+2017-07-05 15:42:11 INFO  DataServerFileIO:29 - get data length: 118171
+2017-07-05 15:42:12 INFO  DataServer:56 - build block message: 1499283722278,1,1-2-3
+2017-07-05 15:42:12 INFO  MetaServer:78 - receive block info: 1499283722278
+2017-07-05 15:42:12 INFO  DataServerRpc:50 - ack
+2017-07-05 15:42:22 INFO  DataServer:56 - build block message: 1499283722278,1,1-2-3
+2017-07-05 15:42:22 INFO  MetaServer:78 - receive block info: 1499283722278
+2017-07-05 15:42:22 INFO  DataServerRpc:50 - ack
+2017-07-05 15:42:26 INFO  MetaServer:93 - in705.jpg:localhost:1100
+2017-07-05 15:42:26 INFO  MetaServer:93 - in704.jpg:localhost:1100
+2017-07-05 15:42:26 INFO  MetaServer:64 - update file-dataserver table
+2017-07-05 15:42:26 INFO  ClientRpcImpl:73 - localhost:1100
+2017-07-05 15:42:26 INFO  ClientRpcImpl:45 - localhost:1100
+2017-07-05 15:42:26 INFO  DataServerFileIO:27 - get file: /Users/lbchen/data/in704.jpg
+2017-07-05 15:42:26 INFO  DataServerFileIO:29 - get data length: 287258
+2017-07-05 15:42:32 INFO  DataServer:56 - build block message: 1499283722278,1,1-2-3
+2017-07-05 15:42:32 INFO  MetaServer:78 - receive block info: 1499283722278
+2017-07-05 15:42:32 INFO  DataServerRpc:50 - ack
+2017-07-05 15:42:42 INFO  DataServer:56 - build block message: 1499283722278,1,1-2-3
+2017-07-05 15:42:42 INFO  MetaServer:78 - receive block info: 1499283722278
+2017-07-05 15:42:42 INFO  DataServerRpc:50 - ack
+2017-07-05 15:42:55 INFO  MetaServer:39 - RPC server ready
+2017-07-05 15:42:58 INFO  DataServerRpc:25 - Dataserver RPC ready
+2017-07-05 15:42:58 INFO  DataServer:56 - build block message: 1499283778465,1,1-2-3
+2017-07-05 15:42:58 INFO  MetaServer:78 - receive block info: 1499283778465
+2017-07-05 15:42:58 INFO  DataServerRpc:50 - ack
+2017-07-05 15:43:04 INFO  MetaServer:93 - in704.jpg:localhost:1100
+2017-07-05 15:43:04 INFO  MetaServer:64 - update file-dataserver table
+2017-07-05 15:43:04 INFO  ClientRpcImpl:73 - localhost:1100
+2017-07-05 15:43:04 INFO  ClientRpcImpl:45 - localhost:1100
+2017-07-05 15:43:04 INFO  DataServerFileIO:27 - get file: /Users/lbchen/data/in704.jpg
+2017-07-05 15:43:04 INFO  DataServerFileIO:29 - get data length: 287258
+2017-07-05 15:43:08 INFO  DataServer:56 - build block message: 1499283778465,1,1-2-3
+2017-07-05 15:43:08 INFO  MetaServer:78 - receive block info: 1499283778465
+2017-07-05 15:43:08 INFO  DataServerRpc:50 - ack
+2017-07-05 15:43:15 INFO  MetaServer:93 - in705.jpg:localhost:1100
+2017-07-05 15:43:15 INFO  MetaServer:93 - in704.jpg:localhost:1100
+2017-07-05 15:43:15 INFO  MetaServer:64 - update file-dataserver table
+2017-07-05 15:43:15 INFO  ClientRpcImpl:73 - localhost:1100
+2017-07-05 15:43:15 INFO  ClientRpcImpl:45 - localhost:1100
+2017-07-05 15:43:15 INFO  DataServerFileIO:27 - get file: /Users/lbchen/data/in705.jpg
+2017-07-05 15:43:15 INFO  DataServerFileIO:29 - get data length: 118171
+2017-07-05 15:43:18 INFO  DataServer:56 - build block message: 1499283778465,1,1-2-3
+2017-07-05 15:43:18 INFO  MetaServer:78 - receive block info: 1499283778465
+2017-07-05 15:43:18 INFO  DataServerRpc:50 - ack
+2017-07-05 15:43:28 INFO  DataServer:56 - build block message: 1499283778465,1,1-2-3
+2017-07-05 15:43:28 INFO  MetaServer:78 - receive block info: 1499283778465
+2017-07-05 15:43:28 INFO  DataServerRpc:50 - ack
+2017-07-05 15:43:38 INFO  DataServer:56 - build block message: 1499283778465,1,1-2-3
+2017-07-05 15:43:38 INFO  MetaServer:78 - receive block info: 1499283778465
+2017-07-05 15:43:38 INFO  DataServerRpc:50 - ack
