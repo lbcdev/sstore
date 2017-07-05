@@ -29,10 +29,11 @@ public class ClientRpcImpl implements ClientRpc {
 
 	public static void main(String[] args) {
 		ClientRpcImpl clientrpc = new ClientRpcImpl();
-		String local = "/Users/lbchen/in3.jpg";
-		String remote = "in1.jpg";
+		String local = "resources/in1.jpg";
+		String remote = "in704.jpg";
 		String hostaddr = "localhost:1100";
-//		clientrpc.putFile(local, remote, hostaddr);
+		clientrpc.putReq(local, remote);
+		local = "/Users/lbchen/out704.jpg";
 		clientrpc.getReq(remote, local);
 	}
 
@@ -41,7 +42,9 @@ public class ClientRpcImpl implements ClientRpc {
 		try {
 			MetaRpc stub = (MetaRpc) registry.lookup("metarpc");
 			String hostaddr = stub.findDataServer(remote);
+			log.info(hostaddr);
 			getFile(remote, local, hostaddr);
+			
 		} catch (NotBoundException | RemoteException e) {
 			log.error(e.getMessage());
 		}
@@ -66,7 +69,7 @@ public class ClientRpcImpl implements ClientRpc {
 		try {
 			final Registry registry = LocateRegistry.getRegistry("localhost");
 			MetaRpc stub = (MetaRpc) registry.lookup("metarpc");
-			String hostaddr = stub.assignDataServer(local);
+			String hostaddr = stub.assignDataServer(remote);
 			log.info(hostaddr);
 			putFile(local, remote, hostaddr);
 		} catch (RemoteException | NotBoundException e) {

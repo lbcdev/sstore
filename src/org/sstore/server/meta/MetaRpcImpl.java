@@ -23,7 +23,7 @@ import org.sstore.utils.Constants;
  */
 public class MetaRpcImpl implements MetaRpc {
 
-	private final static Logger log = Logger.getLogger(MetaRpcImpl.class.getName());
+	private final static Logger log = Logger.getLogger(MetaServer.class.getName());
 
 	private static Map<Integer, Set<Long>> dstable;
 
@@ -40,19 +40,25 @@ public class MetaRpcImpl implements MetaRpc {
 			e.printStackTrace();
 		}
 	}
-	
-	/** find a replica server that holds the remote file 
-	 * and return the address to the client.*/
-	public String findDataServer(String remote){
-		String hostaddr = "localhost:1100";
-		
-		return hostaddr;
+
+	/**
+	 * find a replica server that holds the remote file and return the address
+	 * to the client.
+	 */
+	public String findDataServer(String remote) {
+		// String hostaddr = "localhost:1100";
+		String hostaddr = MetaServer.lookupF2DSTable(remote);
+		if (hostaddr != null)
+			return hostaddr;
+		return "file not found";
 	}
 
-	public String assignDataServer(String clientpath) {
+	public String assignDataServer(String remote) {
 		String host = "localhost";
 		int port = 1100;
 		String dsaddr = host + ":" + port;
+		MetaServer.updateF2DSTable(remote, dsaddr);
+		log.info("update file-dataserver table");
 		return dsaddr;
 	}
 
@@ -64,7 +70,6 @@ public class MetaRpcImpl implements MetaRpc {
 		for (String str : blockstrs) {
 			blockset.add(Long.parseLong(str));
 		}
-
 		MetaServer.updateDSTable(Long.parseLong(sid), blockset);
 		readTest();
 		log.info("receive block info: " + sid);
