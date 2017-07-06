@@ -57,10 +57,9 @@ public class MetaRpcImpl implements MetaRpc {
 	}
 
 	public String assignDataServer(String remote) {
-		String host = "localhost";
-		int port = 1100;
-		String dsaddr = host + ":" + port;
-		metaserver.updateF2DSTable(remote, dsaddr);
+		
+		String replicas = metaserver.assignReplica(remote);
+		metaserver.updateF2DSTable(remote, replicas);
 		log.info("update file-dataserver table");
 		return dsaddr;
 	}
@@ -73,9 +72,10 @@ public class MetaRpcImpl implements MetaRpc {
 		for (String str : blockstrs) {
 			blockset.add(Long.parseLong(str));
 		}
-		metaserver.updateDSTable(Long.parseLong(sid), blockset);
-		readTest();
-		log.info("receive block info: " + sid);
+//		metaserver.updateDSTable(Long.parseLong(sid), blockset);
+		
+		metaserver.updateDSStatus(sid);
+		log.info("receive heartbeat from " + sid);
 		return "ack";
 	}
 

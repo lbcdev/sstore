@@ -8,4 +8,9 @@ public class Constants {
 	
 	/** default dir */
 	public final static String METAROOTDIR = "/Users/lbchen/meta/";
+	
+	/** replication policy */
+	public final static String TRIPLE_REPLIC = "triple-r";
+	public final static String ERASURE_CODING = "erasure";
+	public final static int REPLIC_FACTOR = 3;
 }
