@@ -6,7 +6,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 import org.apache.log4j.Logger;
-import org.sstore.client.ClientRpcImpl;
 
 /**
  * DataServerFileIO handles all input/output operations like put, get, and
@@ -20,6 +19,14 @@ public class DataServerFileIO {
 	private static String datadir = "/Users/lbchen/data/";
 	private final static Logger log = Logger.getLogger(DataServerFileIO.class.getName());
 
+	// default constructor. 
+	public DataServerFileIO(){
+		super();
+	}
+	// constructor with specific root dir.
+	public DataServerFileIO(String rootpath){
+		datadir = datadir + rootpath;
+	}
 	/** return bytes of the requested file by name */
 	public byte[] get(String remote) {
 		String fname = datadir + remote;

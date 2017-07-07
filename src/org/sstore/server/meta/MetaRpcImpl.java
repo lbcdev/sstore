@@ -48,10 +48,9 @@ public class MetaRpcImpl implements MetaRpc {
 		// get all replicas.
 		String replicas = metaserver.lookupF2DSTable(remote);
 		// return primary only.
-		String primary = replicas.split(",")[0];
-		log.info(primary);
-		if (primary != null)
-			return primary;
+		log.info(replicas);
+		if (replicas != null)
+			return replicas;
 		return "file not found";
 	}
 
@@ -61,8 +60,7 @@ public class MetaRpcImpl implements MetaRpc {
 		String replicas = metaserver.assignReplica(remote);
 		metaserver.updateF2DSTable(remote, replicas);
 		log.info("assign replicas" + replicas);
-		String primary = replicas.split(",")[0];
-		return primary;
+		return replicas;
 	}
 
 	/** Receive heart beat block info from dataserver. */

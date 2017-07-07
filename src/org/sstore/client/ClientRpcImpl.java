@@ -12,10 +12,11 @@ import java.rmi.registry.Registry;
 import org.apache.log4j.Logger;
 import org.sstore.server.meta.MetaRpc;
 import org.sstore.server.storage.DataServerRpc;
+import org.sstore.utils.Constants;
 
 /**
- * rpc client handles rpc calls to metaserver and dataserver.
- * The calls include: put, get, and delete.
+ * rpc client handles rpc calls to metaserver and dataserver. The calls include:
+ * put, get, and delete.
  * 
  * @author lbchen
  *
@@ -49,19 +50,20 @@ public class ClientRpcImpl implements ClientRpc {
 		byte[] data = null;
 		try {
 			MetaRpc stub = (MetaRpc) registry.lookup("metarpc");
-			String hostaddr = stub.findDataServer(remote);
-			log.info(hostaddr);
-			getFile(remote, local, hostaddr);
-			
+			String replicas = stub.findDataServer(remote);
+			String primary = replicas.split(",")[0];
+			log.info(replicas);
+			getFile(remote, local, primary);
+
 		} catch (NotBoundException | RemoteException e) {
 			log.error(e.getMessage());
 		}
 		return data;
 	}
 
-	void getFile(String remote, String local, String hostaddr) {
-		int port = Integer.parseInt(hostaddr.split(":")[1]);
-		String rpcname = "dsrpc";
+	void getFile(String remote, String local, String primary) {
+		int port = Integer.parseInt(primary.split(":")[1]);
+		String rpcname = Constants.DATARPC_NAME;
 		try {
 			final Registry registry = LocateRegistry.getRegistry("localhost", port);
 			DataServerRpc stub = (DataServerRpc) registry.lookup(rpcname);
@@ -77,24 +79,27 @@ public class ClientRpcImpl implements ClientRpc {
 		try {
 			final Registry registry = LocateRegistry.getRegistry("localhost");
 			MetaRpc stub = (MetaRpc) registry.lookup("metarpc");
-			String hostaddr = stub.assignDataServer(remote);
-			log.info(hostaddr);
-			putFile(local, remote, hostaddr);
+			String replicas = stub.assignDataServer(remote);
+			log.info(replicas);
+			putFile(local, remote, replicas);
 		} catch (RemoteException | NotBoundException e) {
 			log.error("Client exception: " + e.toString());
 
 		}
 	}
 
-	/** put file to dataserver */
-	public void putFile(String local, String remote, String hostaddr) {
+	/** put file to the primary dataserver */
+	public void putFile(String local, String remote, String replicas) {
 
-		int port = Integer.parseInt(hostaddr.split(":")[1]);
-		String rpcname = "dsrpc";
+		String[] replicaArr = replicas.split(",");
+		String primary = replicaArr[0];
+		int port = Integer.parseInt(primary.split(":")[1]);
 		try {
 			final Registry registry = LocateRegistry.getRegistry("localhost", port);
-			DataServerRpc stub = (DataServerRpc) registry.lookup(rpcname);
+			DataServerRpc stub = (DataServerRpc) registry.lookup(Constants.DATARPC_NAME);
 			stub.put(remote, getFromLocal(local));
+			// command the primary to forward data to replicas, reduce client I/O.
+			stub.forwardToReplicas(remote, replicaArr);
 		} catch (RemoteException | NotBoundException e) {
 			log.error("Client exception: " + e.toString());
 

@@ -22,17 +22,19 @@ import org.sstore.utils.Constants;
 public class DataServerRpcImpl implements DataServerRpc, Runnable {
 
 	private final static Logger log = Logger.getLogger(DataServerRpc.class.getName());
-	private static DataServerFileIO dsfileio = new DataServerFileIO();
+	private static DataServerFileIO dsfileio;
 	private String metahost;
 	private int localport;
 
 	public DataServerRpcImpl() {
 		super();
 	}
-
+	
 	public DataServerRpcImpl(String metahost, int localport) {
 		this.metahost = metahost;
 		this.localport = localport;
+		String rootpath = "localhost-" + localport + "/";
+		dsfileio = new DataServerFileIO(rootpath);
 	}
 
 	public void startRpcServer(int port) {
@@ -46,6 +48,29 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 		} catch (Exception e) {
 			log.error("Dataserver RPC err: " + e.getMessage());
 			e.printStackTrace();
+		}
+	}
+
+	/** forward data to other replicas except the primary itself. */
+	public void forwardToReplicas(String filename, String[] replicas) {
+		byte[] data = dsfileio.get(filename);
+		// skip the primary by starting at index 1, method needs to be improved.
+		for (int i = 1; i < replicas.length; i++) {
+			forward(filename, data, replicas[i]);
+		}
+	}
+
+	/** forward data to a replica by address */
+	public void forward(String remote, byte[] data, String hostaddr) {
+		String[] addrarr = hostaddr.split(":");
+		String host = addrarr[0];
+		int port = Integer.parseInt(addrarr[1]);
+		try {
+			final Registry dsregistry = LocateRegistry.getRegistry(host, port);
+			DataServerRpc stub = (DataServerRpc) dsregistry.lookup(Constants.DATARPC_NAME);
+			stub.put(remote, data);
+		} catch (RemoteException | NotBoundException e) {
+			log.info(e.getMessage());
 		}
 	}
 
