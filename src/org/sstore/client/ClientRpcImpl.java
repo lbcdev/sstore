@@ -13,30 +13,38 @@ import org.apache.log4j.Logger;
 import org.sstore.server.meta.MetaRpc;
 import org.sstore.server.storage.DataServerRpc;
 
+/**
+ * rpc client handles rpc calls to metaserver and dataserver.
+ * The calls include: put, get, and delete.
+ * 
+ * @author lbchen
+ *
+ */
 public class ClientRpcImpl implements ClientRpc {
 
 	private final static Logger log = Logger.getLogger(ClientRpcImpl.class.getName());
 	private Registry registry; // metaserver rpc registry.
 	private Registry dsregistry; // dataserver rpc registry.
 
-	public ClientRpcImpl() {
+	public ClientRpcImpl(String metahost) {
 		try {
-			registry = LocateRegistry.getRegistry("localhost");
+			registry = LocateRegistry.getRegistry(metahost);
 		} catch (RemoteException e) {
 			e.printStackTrace();
 		}
 	}
 
 	public static void main(String[] args) {
-		ClientRpcImpl clientrpc = new ClientRpcImpl();
+		String metahost = "localhost";
+		ClientRpcImpl clientrpc = new ClientRpcImpl(metahost);
 		String local = "resources/in2.jpg";
 		String remote = "in705.jpg";
-		String hostaddr = "localhost:1100";
 		clientrpc.putReq(local, remote);
 		local = "/Users/lbchen/out705.jpg";
 		clientrpc.getReq(remote, local);
 	}
 
+	/** send get request to metaserver via rpc. */
 	public byte[] getReq(String remote, String local) {
 		byte[] data = null;
 		try {
@@ -64,7 +72,7 @@ public class ClientRpcImpl implements ClientRpc {
 		}
 	}
 
-	/** send put request to metaserv4er */
+	/** send put request to metaserver via rpc. */
 	public void putReq(String local, String remote) {
 		try {
 			final Registry registry = LocateRegistry.getRegistry("localhost");

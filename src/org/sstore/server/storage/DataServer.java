@@ -19,7 +19,7 @@ public class DataServer {
 
 	private final static Logger log = Logger.getLogger(DataServer.class.getName());
 	private static Set<Long> blockIds;
-	private static int serverId = 1;
+	private static String serverId = "";
 
 	public static void main(String[] args) {
 		DataServer dataserver = new DataServer();
@@ -32,11 +32,13 @@ public class DataServer {
 		case 1: // no local port defined, use the default one.
 			metahost = args[0];
 			localport = Constants.LOCALPORT;
+			serverId = "localhost:" + localport;
 			dataserver.initialize(metahost, localport);
 			break;
 		case 2: // localport defined.
 			metahost = args[0];
 			localport = Integer.parseInt(args[1]);
+			serverId = "localhost:" + localport;
 			dataserver.initialize(metahost, localport);
 			break;
 		default: // invalid options.
@@ -79,7 +81,7 @@ public class DataServer {
 		return msg.toString();
 	}
 
-	public int getServerId() {
+	public String getServerId() {
 		return serverId;
 	}
 

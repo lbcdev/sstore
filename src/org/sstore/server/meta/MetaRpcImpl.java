@@ -6,8 +6,6 @@ import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 import org.apache.log4j.Logger;
 import org.sstore.protocol.Block;
@@ -23,19 +21,17 @@ import org.sstore.utils.Constants;
  */
 public class MetaRpcImpl implements MetaRpc {
 
-	private final static Logger log = Logger.getLogger(MetaServer.class.getName());
+	private final static Logger log = Logger.getLogger(MetaRpcImpl.class.getName());
 
-	private static Map<Integer, Set<Long>> dstable;
-	
 	private static MetaServer metaserver;
-	
+
 	public void startRpcServer() {
 		try {
 			metaserver = new MetaServer();
 			MetaRpcImpl obj = new MetaRpcImpl();
 			MetaRpc stub = (MetaRpc) UnicastRemoteObject.exportObject(obj, 0);
 			Registry registry = LocateRegistry.createRegistry(Registry.REGISTRY_PORT);
-			registry.bind("metarpc", stub);
+			registry.bind(Constants.METARPC_NAME, stub);
 			log.info("RPC server ready");
 
 		} catch (Exception e) {
@@ -49,54 +45,58 @@ public class MetaRpcImpl implements MetaRpc {
 	 * to the client.
 	 */
 	public String findDataServer(String remote) {
-		// String hostaddr = "localhost:1100";
-		String hostaddr = metaserver.lookupF2DSTable(remote);
-		if (hostaddr != null)
-			return hostaddr;
+		// get all replicas.
+		String replicas = metaserver.lookupF2DSTable(remote);
+		// return primary only.
+		String primary = replicas.split(",")[0];
+		log.info(primary);
+		if (primary != null)
+			return primary;
 		return "file not found";
 	}
 
+	/**  */
 	public String assignDataServer(String remote) {
-		
+
 		String replicas = metaserver.assignReplica(remote);
 		metaserver.updateF2DSTable(remote, replicas);
-		log.info("update file-dataserver table");
-		return replicas;
+		log.info("assign replicas" + replicas);
+		String primary = replicas.split(",")[0];
+		return primary;
 	}
 
 	/** Receive heart beat block info from dataserver. */
 	public String heartBeat(String msg) {
-		String sid = msg.split(",")[0];
+		String sid = msg.split(",")[1];
 		String[] blockstrs = msg.split(",")[2].split("-");
 		HashSet<Long> blockset = new HashSet<Long>();
 		for (String str : blockstrs) {
 			blockset.add(Long.parseLong(str));
 		}
-//		metaserver.updateDSTable(Long.parseLong(sid), blockset);
-		
+		// metaserver.updateDSTable(Long.parseLong(sid), blockset);
+
 		metaserver.updateDSStatus(sid);
 		log.info("receive heartbeat from " + sid);
 		return "ack";
 	}
 
-	/** Receive heart beat message from dataserver. */
+	/** more general heartbeat message, in-progress. */
 	public void heartBeat(Message msg) {
-
 		switch (msg.getType()) {
-
 		case Constants.BLOCKMSG:
 			break;
-
 		default:
 			break;
 		}
 	}
 
+	/** test method */
 	public byte[] readFile(List<Block> blks, int start, int end) throws RemoteException {
 		String test = "read from rpc";
 		return test.getBytes();
 	}
 
+	/** test method */
 	public String readTest() {
 		return "read from rpc";
 	}

@@ -15,4 +15,11 @@ public class Constants {
 	public final static String TRIPLE_REPLIC = "triple-r";
 	public final static String ERASURE_CODING = "erasure";
 	public final static int REPLIC_FACTOR = 3;
+	
+	// Heartbeat interval in milliseconds.
+	public final static int HEARTBEAT_INTERVAL = 10000;
+	
+	public final static String METARPC_NAME = "metarpc";
+	public final static String DATARPC_NAME = "dsrpc";
+
 }

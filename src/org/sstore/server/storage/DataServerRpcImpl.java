@@ -8,7 +8,17 @@ import java.rmi.server.UnicastRemoteObject;
 
 import org.apache.log4j.Logger;
 import org.sstore.server.meta.MetaRpc;
+import org.sstore.utils.Constants;
 
+/**
+ * dataserver rpc handles all calls from clients and sends heartbeat message to
+ * metaserver.
+ * 
+ * It runs heartbeat as a thread in background.
+ * 
+ * @author lbchen
+ *
+ */
 public class DataServerRpcImpl implements DataServerRpc, Runnable {
 
 	private final static Logger log = Logger.getLogger(DataServerRpc.class.getName());
@@ -30,7 +40,7 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 			DataServerRpcImpl obj = new DataServerRpcImpl();
 			DataServerRpc stub = (DataServerRpc) UnicastRemoteObject.exportObject(obj, 0);
 			Registry registry = LocateRegistry.createRegistry(port);
-			registry.bind("dsrpc", stub);
+			registry.bind(Constants.DATARPC_NAME, stub);
 			log.info("Dataserver RPC ready");
 
 		} catch (Exception e) {
@@ -51,11 +61,11 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 		sendHeartBeat(metahost, 0);
 	}
 
+	/** send heartbeat message to metaserver, including dataserver status. */
 	public void sendHeartBeat(String metahost, int localport) {
 		try {
-			// System.setSecurityManager(new RMISecurityManager());
 			final Registry registry = LocateRegistry.getRegistry(metahost);
-			MetaRpc stub = (MetaRpc) registry.lookup("metarpc");
+			MetaRpc stub = (MetaRpc) registry.lookup(Constants.METARPC_NAME);
 
 			DataServer dataserver = new DataServer();
 			String response = stub.heartBeat(dataserver.buildBlockMessage());
@@ -66,11 +76,12 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 		}
 	}
 
+	/** thread to send heart beat every N seconds. */
 	public void run() {
 		while (true) {
 			sendHeartBeat(metahost, localport);
 			try {
-				Thread.sleep(10000);
+				Thread.sleep(Constants.HEARTBEAT_INTERVAL);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}

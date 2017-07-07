@@ -13,17 +13,17 @@ public class BlockMessage implements Message, Serializable{
 	 */
 	private static final long serialVersionUID = -7694473841706027117L;
 	private static long id = System.currentTimeMillis();
-	private int serverId;
+	private String serverId;
 	private static int type = Constants.BLOCKMSG ;
 	
 	public int getType(){
 		return type;
 	}
-	public int getServerId() {
+	public String getServerId() {
 		return serverId;
 	}
 
-	public void setServerId(int serverId) {
+	public void setServerId(String serverId) {
 		this.serverId = serverId;
 	}
 
@@ -45,7 +45,7 @@ public class BlockMessage implements Message, Serializable{
 		this.blockIds = blockIds;
 	}
 
-	public BlockMessage(int serverId, Set<Long> blockIds){
+	public BlockMessage(String serverId, Set<Long> blockIds){
 		this.serverId = serverId;
 		this.blockIds = blockIds;
 	}

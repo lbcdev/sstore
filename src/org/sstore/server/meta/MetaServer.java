@@ -58,7 +58,7 @@ public class MetaServer {
 
 		dsList = new ArrayList<String>();
 
-		updateDSList();
+		// updateDSList();
 		startServer();
 	}
 
@@ -77,7 +77,6 @@ public class MetaServer {
 		dsList.add("localhost:1102");
 		dsList.add("localhost:1103");
 		dsList.add("localhost:1104");
-
 	}
 
 	/**
@@ -88,7 +87,9 @@ public class MetaServer {
 		DataServerStatus status = new DataServerStatus();
 		status.setActive(true);
 		dsTable.put(sid, status);
-		dsList.add(sid);
+		if (!dsList.contains(sid))
+			dsList.add(sid);
+		printDSList();
 	}
 
 	/** assign replicas to a file, triple-replication by default */
@@ -96,8 +97,8 @@ public class MetaServer {
 		long seed = System.currentTimeMillis();
 		Random rand = new Random(seed);
 		int primary = rand.nextInt(dsList.size());
-		int r2 = primary + Constants.REPLIC_FACTOR;
-		int r3 = r2 + Constants.REPLIC_FACTOR;
+		int r2 = (primary + Constants.REPLIC_FACTOR) % dsList.size();
+		int r3 = (r2 + Constants.REPLIC_FACTOR) % dsList.size();
 		String replicas = dsList.get(primary) + "," + dsList.get(r2) + "," + dsList.get(r3);
 		return replicas;
 	}
@@ -148,6 +149,13 @@ public class MetaServer {
 		while (iter.hasNext()) {
 			String key = iter.next();
 			log.info(key + ":" + table.get(key));
+		}
+	}
+
+	void printDSList() {
+		log.info("Latest dataserver list.");
+		for (String ds : dsList) {
+			log.info(ds);
 		}
 	}
 }

@@ -4,7 +4,7 @@ import org.sstore.client.ClientRpcImpl;
 
 public class TestClient {
 
-	private static ClientRpcImpl clientrpc = new ClientRpcImpl();
+	private static ClientRpcImpl clientrpc;
 	public static void main(String[] args) {
 		
 		testPutReq(4);
