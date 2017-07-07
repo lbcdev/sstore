@@ -5,9 +5,11 @@ import java.rmi.RemoteException;
 
 public interface DataServerRpc extends Remote{
 	
-	public void startRpcServer() throws RemoteException;
+	public void startRpcServer(int port) throws RemoteException;
 	
-	public void sendHeartBeat() throws RemoteException;
+	public void sendHeartBeat(String host) throws RemoteException;
+
+	public void sendHeartBeat(String host, int port) throws RemoteException;
 	
 	public byte[] get(String remote) throws RemoteException;
 	

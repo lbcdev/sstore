@@ -4314,3 +4314,123 @@
 2017-07-05 17:30:23 INFO  DataServer:56 - build block message: 1499283778465,1,1-2-3
 2017-07-05 17:30:23 INFO  MetaServer:78 - receive block info: 1499283778465
 2017-07-05 17:30:23 INFO  DataServerRpc:50 - ack
+2017-07-06 19:02:16 INFO  MetaServer:39 - RPC server ready
+2017-07-06 19:02:27 ERROR DataServer:42 - invalid option(s)
+2017-07-06 19:17:11 ERROR DataServer:42 - invalid option(s)
+2017-07-06 19:19:14 ERROR DataServer:42 - invalid option(s)
+2017-07-06 19:19:38 INFO  DataServerRpc:33 - Dataserver RPC ready
+2017-07-06 19:19:38 ERROR DataServerRpc:65 - Client exception: java.rmi.ConnectIOException: Exception creating connection to: 1100; nested exception is: 
+	java.net.NoRouteToHostException: No route to host
+2017-07-06 19:19:48 ERROR DataServerRpc:65 - Client exception: java.rmi.ConnectIOException: Exception creating connection to: 1100; nested exception is: 
+	java.net.NoRouteToHostException: No route to host
+2017-07-06 19:19:58 ERROR DataServerRpc:65 - Client exception: java.rmi.ConnectIOException: Exception creating connection to: 1100; nested exception is: 
+	java.net.NoRouteToHostException: No route to host
+2017-07-06 19:20:06 ERROR DataServer:42 - invalid option(s)
+2017-07-06 19:20:46 INFO  MetaServer:39 - RPC server ready
+2017-07-06 19:20:51 ERROR DataServer:42 - invalid option(s)
+2017-07-06 19:20:55 ERROR DataServer:42 - invalid option(s)
+2017-07-06 19:21:26 INFO  DataServer:29 - 2
+2017-07-06 19:21:26 ERROR DataServer:43 - invalid option(s)
+2017-07-06 19:21:48 INFO  DataServer:29 - 2
+2017-07-06 19:21:48 INFO  DataServerRpc:33 - Dataserver RPC ready
+2017-07-06 19:21:48 ERROR DataServerRpc:65 - Client exception: java.rmi.NotBoundException: metarpc
+2017-07-06 19:21:58 ERROR DataServerRpc:65 - Client exception: java.rmi.NotBoundException: metarpc
+2017-07-06 19:22:08 ERROR DataServerRpc:65 - Client exception: java.rmi.NotBoundException: metarpc
+2017-07-06 19:22:18 ERROR DataServerRpc:65 - Client exception: java.rmi.NotBoundException: metarpc
+2017-07-06 19:24:20 INFO  DataServer:29 - 2
+2017-07-06 19:24:20 INFO  DataServerRpc:34 - Dataserver RPC ready
+2017-07-06 19:24:20 INFO  DataServer:78 - build block message: 1499383460626,1,1-2-3
+2017-07-06 19:24:20 INFO  MetaServer:78 - receive heartbeat from 1499383460626
+2017-07-06 19:24:20 INFO  DataServerRpc:62 - ack
+2017-07-06 19:24:26 INFO  DataServer:29 - 2
+2017-07-06 19:24:26 INFO  DataServerRpc:34 - Dataserver RPC ready
+2017-07-06 19:24:27 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:24:27 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:24:27 INFO  DataServerRpc:62 - ack
+2017-07-06 19:24:37 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:24:37 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:24:37 INFO  DataServerRpc:62 - ack
+2017-07-06 19:24:44 INFO  DataServer:29 - 2
+2017-07-06 19:24:44 INFO  DataServerRpc:34 - Dataserver RPC ready
+2017-07-06 19:24:44 INFO  DataServer:78 - build block message: 1499383484690,1,1-2-3
+2017-07-06 19:24:44 INFO  MetaServer:78 - receive heartbeat from 1499383484690
+2017-07-06 19:24:44 INFO  DataServerRpc:62 - ack
+2017-07-06 19:24:47 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:24:47 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:24:47 INFO  DataServerRpc:62 - ack
+2017-07-06 19:24:54 INFO  DataServer:78 - build block message: 1499383484690,1,1-2-3
+2017-07-06 19:24:54 INFO  MetaServer:78 - receive heartbeat from 1499383484690
+2017-07-06 19:24:54 INFO  DataServerRpc:62 - ack
+2017-07-06 19:24:57 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:24:57 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:24:57 INFO  DataServerRpc:62 - ack
+2017-07-06 19:25:04 INFO  DataServer:78 - build block message: 1499383484690,1,1-2-3
+2017-07-06 19:25:04 INFO  MetaServer:78 - receive heartbeat from 1499383484690
+2017-07-06 19:25:04 INFO  DataServerRpc:62 - ack
+2017-07-06 19:25:07 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:25:07 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:25:07 INFO  DataServerRpc:62 - ack
+2017-07-06 19:25:12 INFO  DataServer:29 - 2
+2017-07-06 19:25:12 ERROR DataServerRpc:37 - Dataserver RPC err: Port already in use: 1100; nested exception is: 
+	java.net.BindException: Address already in use
+2017-07-06 19:25:12 INFO  DataServer:78 - build block message: 1499383512966,1,1-2-3
+2017-07-06 19:25:12 INFO  MetaServer:78 - receive heartbeat from 1499383512966
+2017-07-06 19:25:12 INFO  DataServerRpc:62 - ack
+2017-07-06 19:25:17 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:25:17 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:25:17 INFO  DataServerRpc:62 - ack
+2017-07-06 19:25:27 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:25:27 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:25:27 INFO  DataServerRpc:62 - ack
+2017-07-06 19:25:37 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:25:37 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:25:37 INFO  DataServerRpc:62 - ack
+2017-07-06 19:25:47 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:25:47 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:25:47 INFO  DataServerRpc:62 - ack
+2017-07-06 19:25:57 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:25:57 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:25:57 INFO  DataServerRpc:62 - ack
+2017-07-06 19:26:07 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:26:07 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:26:07 INFO  DataServerRpc:62 - ack
+2017-07-06 19:26:17 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:26:17 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:26:17 INFO  DataServerRpc:62 - ack
+2017-07-06 19:26:27 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:26:27 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:26:27 INFO  DataServerRpc:62 - ack
+2017-07-06 19:26:37 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:26:37 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:26:37 INFO  DataServerRpc:62 - ack
+2017-07-06 19:26:47 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:26:47 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:26:47 INFO  DataServerRpc:62 - ack
+2017-07-06 19:26:57 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:26:57 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:26:57 INFO  DataServerRpc:62 - ack
+2017-07-06 19:27:07 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:27:07 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:27:07 INFO  DataServerRpc:62 - ack
+2017-07-06 19:27:17 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:27:17 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:27:17 INFO  DataServerRpc:62 - ack
+2017-07-06 19:27:27 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:27:27 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:27:27 INFO  DataServerRpc:62 - ack
+2017-07-06 19:27:37 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:27:37 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:27:37 INFO  DataServerRpc:62 - ack
+2017-07-06 19:27:47 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:27:47 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:27:47 INFO  DataServerRpc:62 - ack
+2017-07-06 19:27:57 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:27:57 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:27:57 INFO  DataServerRpc:62 - ack
+2017-07-06 19:28:07 INFO  DataServer:78 - build block message: 1499383467025,1,1-2-3
+2017-07-06 19:28:07 INFO  MetaServer:78 - receive heartbeat from 1499383467025
+2017-07-06 19:28:07 INFO  DataServerRpc:62 - ack
+2017-07-06 19:30:55 INFO  DataServer:29 - 0
+2017-07-06 19:30:55 ERROR DataServer:43 - invalid option(s)
+2017-07-06 19:34:26 INFO  DataServer:29 - 0
+2017-07-06 19:34:26 ERROR DataServer:43 - invalid option(s)

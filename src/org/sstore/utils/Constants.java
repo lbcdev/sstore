@@ -2,6 +2,8 @@ package org.sstore.utils;
 
 public class Constants {
 	
+	public final static int LOCALPORT = 1100;
+	
 	/** message type */
 	public final static int BLOCKMSG = 1;
 	public final static int STATUSMSG = 2;

@@ -61,7 +61,7 @@ public class MetaRpcImpl implements MetaRpc {
 		String replicas = metaserver.assignReplica(remote);
 		metaserver.updateF2DSTable(remote, replicas);
 		log.info("update file-dataserver table");
-		return dsaddr;
+		return replicas;
 	}
 
 	/** Receive heart beat block info from dataserver. */

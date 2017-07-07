@@ -18,9 +18,11 @@ import org.sstore.utils.Constants;
  * Metaserver serves as the manager of the system and stores only metadata of
  * data and storage servers.
  * 
- * The metaserver maintains two key tables: 1) filename -> blocks (persistent on
- * disk); 2) block -> dataserver list (received from dataserver via heartbeat
- * messages)
+ * The metaserver maintains two key tables:
+ * 
+ * 1) filename -> blocks (persistent on disk);
+ * 
+ * 2) block -> dataserver list (received from dataserver via heartbeat messages)
  * 
  * @author lbchen
  * 
@@ -42,7 +44,7 @@ public class MetaServer {
 	private static Map<String, DataServerStatus> dsTable;
 	// dataserver index table, for assigning replicas
 	private static List<String> dsList;
-	
+
 	public static void main(String[] args) {
 		MetaServer metaserver = new MetaServer();
 		metaserver.initialize();
@@ -53,21 +55,23 @@ public class MetaServer {
 		f2bTable = new HashMap<String, String>();
 		f2dsTable = new HashMap<String, String>();
 		dsTable = new HashMap<String, DataServerStatus>();
-		
+
 		dsList = new ArrayList<String>();
-		
+
 		updateDSList();
 		startServer();
 	}
-	
+
 	/** start metaserver rpc service */
 	void startServer() {
 		MetaRpcImpl metarpc = new MetaRpcImpl();
 		metarpc.startRpcServer();
 	}
 
-	/** periodically update the list of dataservers, remove those are not alive */
-	void updateDSList(){
+	/**
+	 * periodically update the list of dataservers, remove those are not alive
+	 */
+	void updateDSList() {
 		dsList.add("localhost:1100");
 		dsList.add("localhost:1101");
 		dsList.add("localhost:1102");
@@ -75,27 +79,29 @@ public class MetaServer {
 		dsList.add("localhost:1104");
 
 	}
-	
-	/** update dataserver status, only active state enabled now, 
-	 * more status to be added */
-	void updateDSStatus(String sid){
+
+	/**
+	 * update dataserver status, only active state enabled now, more status to
+	 * be added
+	 */
+	void updateDSStatus(String sid) {
 		DataServerStatus status = new DataServerStatus();
 		status.setActive(true);
 		dsTable.put(sid, status);
 		dsList.add(sid);
 	}
-	
+
 	/** assign replicas to a file, triple-replication by default */
-	String assignReplica(String filename){
+	String assignReplica(String filename) {
 		long seed = System.currentTimeMillis();
 		Random rand = new Random(seed);
 		int primary = rand.nextInt(dsList.size());
 		int r2 = primary + Constants.REPLIC_FACTOR;
 		int r3 = r2 + Constants.REPLIC_FACTOR;
-		String replicas = dsList.get(primary) + "," + dsList.get(r2) + "," + dsList.get(r3); 
+		String replicas = dsList.get(primary) + "," + dsList.get(r2) + "," + dsList.get(r3);
 		return replicas;
 	}
-	
+
 	/**
 	 * lookup file-dataserver table by file name and return dataserver address
 	 * if find.
@@ -103,7 +109,7 @@ public class MetaServer {
 	String lookupF2DSTable(String filename) {
 		return f2dsTable.get(filename);
 	}
-	
+
 	/** update file-dataserver table */
 	void updateF2DSTable(String filename, String sid) {
 		f2dsTable.put(filename, sid);
@@ -136,7 +142,6 @@ public class MetaServer {
 		if (b2dsTable != null)
 			b2dsTable.put(serverId, blkIds);
 	}
-
 
 	static void printTable(Map<String, String> table) {
 		Iterator<String> iter = table.keySet().iterator();

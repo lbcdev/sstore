@@ -13,10 +13,19 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 
 	private final static Logger log = Logger.getLogger(DataServerRpc.class.getName());
 	private static DataServerFileIO dsfileio = new DataServerFileIO();
+	private String metahost;
+	private int localport;
 
-	private final static int port = 1100;
+	public DataServerRpcImpl() {
+		super();
+	}
 
-	public void startRpcServer() {
+	public DataServerRpcImpl(String metahost, int localport) {
+		this.metahost = metahost;
+		this.localport = localport;
+	}
+
+	public void startRpcServer(int port) {
 		try {
 			DataServerRpcImpl obj = new DataServerRpcImpl();
 			DataServerRpc stub = (DataServerRpc) UnicastRemoteObject.exportObject(obj, 0);
@@ -38,29 +47,28 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 		dsfileio.put(fname, data);
 	}
 
-	public void sendHeartBeat() {
+	public void sendHeartBeat(String metahost) {
+		sendHeartBeat(metahost, 0);
+	}
+
+	public void sendHeartBeat(String metahost, int localport) {
 		try {
 			// System.setSecurityManager(new RMISecurityManager());
-			final Registry registry = LocateRegistry.getRegistry("localhost");
+			final Registry registry = LocateRegistry.getRegistry(metahost);
 			MetaRpc stub = (MetaRpc) registry.lookup("metarpc");
 
 			DataServer dataserver = new DataServer();
-			// String bmsg = "1,1,{1,2,3,4}";
 			String response = stub.heartBeat(dataserver.buildBlockMessage());
 			log.info(response);
-			// HelloRMI obj = (HelloRMI)
-			// Naming.lookup("//localhost/HelloRMIImpl");
-			// System.out.println(obj.sayHello("lbc"));
 
 		} catch (RemoteException | NotBoundException e) {
 			log.error("Client exception: " + e.toString());
-
 		}
 	}
 
 	public void run() {
 		while (true) {
-			sendHeartBeat();
+			sendHeartBeat(metahost, localport);
 			try {
 				Thread.sleep(10000);
 			} catch (InterruptedException e) {
