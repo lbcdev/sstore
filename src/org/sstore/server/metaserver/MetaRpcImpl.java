@@ -1,4 +1,4 @@
-package org.sstore.server.meta;
+package org.sstore.server.metaserver;
 
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;

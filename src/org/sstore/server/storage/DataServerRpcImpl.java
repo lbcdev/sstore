@@ -7,7 +7,7 @@ import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 
 import org.apache.log4j.Logger;
-import org.sstore.server.meta.MetaRpc;
+import org.sstore.server.metaserver.MetaRpc;
 import org.sstore.utils.Constants;
 
 /**

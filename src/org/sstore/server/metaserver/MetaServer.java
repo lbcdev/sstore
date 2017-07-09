@@ -1,4 +1,4 @@
-package org.sstore.server.meta;
+package org.sstore.server.metaserver;
 
 import java.io.FileWriter;
 import java.io.IOException;
