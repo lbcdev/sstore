@@ -35,10 +35,12 @@ public class DataServerFileIO {
 
 	/** get all files under dir */
 	public Set<String> getFiles(String subdir) {
-		File file = new File(rootdir + subdir);
+		String dir = rootdir + subdir;
+		log.info("Read directory: " + dir );
+		File file = new File(rootdir);
 		File[] files = file.listFiles();
 		Set<String> fileset = new HashSet<String>();
-		if (files.length > 0) {
+		if (files!=null) {
 			for (File f : files) {
 				fileset.add(f.getName());
 			}

@@ -111,9 +111,19 @@ public class MetaServer {
 		return f2dsTable.get(filename);
 	}
 
-	/** update file-dataserver table */
-	void updateF2DSTable(String filename, String sid) {
-		f2dsTable.put(filename, sid);
+	/** thread-safe, update file-dataserver table */
+	synchronized void updateF2DSTable(String filename, String sid) {
+		// if file and its replicas exist, add new dataserver to the existing
+		// pair; if not, create a new pair.
+		if (f2dsTable.get(filename) != null) {
+			String replicas = f2dsTable.get(filename);
+			if (!replicas.contains(sid)) {
+				replicas = replicas + "," + sid;
+			}
+			f2dsTable.put(filename, replicas);
+		} else {
+			f2dsTable.put(filename, sid);
+		}
 		flushF2DSTable();
 		printTable(f2dsTable);
 	}
@@ -143,6 +153,7 @@ public class MetaServer {
 	}
 
 	static void printTable(Map<String, String> table) {
+		log.info("------ print table ------");
 		Iterator<String> iter = table.keySet().iterator();
 		while (iter.hasNext()) {
 			String key = iter.next();
@@ -151,7 +162,7 @@ public class MetaServer {
 	}
 
 	void printDSList() {
-		log.info("Latest dataserver list.");
+		log.info("------- print dataserver list --------");
 		for (String ds : dsList) {
 			log.info(ds);
 		}

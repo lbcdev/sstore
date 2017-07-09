@@ -50,7 +50,7 @@ public class DataServer {
 	}
 
 	void initialize(String metahost, int localport) {
-		dsfileio = new DataServerFileIO(serverId);
+		dsfileio = new DataServerFileIO();
 		startServer(localport);
 		startRpcThread(metahost, localport);
 	}

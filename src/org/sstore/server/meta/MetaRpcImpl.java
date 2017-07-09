@@ -67,13 +67,9 @@ public class MetaRpcImpl implements MetaRpc {
 	public String heartBeat(String msg) {
 		String sid = msg.split(",")[1];
 		String[] filestr = msg.split(",")[2].split("-");
-		HashSet<Long> fileset = new HashSet<Long>();
-		for (String str : filestr) {
-			fileset.add(Long.parseLong(str));
+		for (String fname : filestr) {
+			metaserver.updateF2DSTable(fname, sid);
 		}
-		
-//		 metaserver.updateF2DSTable(filename, sid);
-
 		metaserver.updateDSStatus(sid);
 		log.info("receive heartbeat from " + sid);
 		return "ack";
