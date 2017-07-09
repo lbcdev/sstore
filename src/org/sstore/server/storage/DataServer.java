@@ -1,10 +1,9 @@
 package org.sstore.server.storage;
 
-import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 import org.apache.log4j.Logger;
-import org.sstore.protocol.BlockMessage;
 import org.sstore.utils.Constants;
 
 /**
@@ -20,14 +19,15 @@ public class DataServer {
 	private final static Logger log = Logger.getLogger(DataServer.class.getName());
 	private static Set<Long> blockIds;
 	private static String serverId = "";
+	private static DataServerFileIO dsfileio;
 
 	public static void main(String[] args) {
 		DataServer dataserver = new DataServer();
 		String metahost = "";
 		int localport = 0;
-		
+
 		log.info(args.length);
-		
+
 		switch (args.length) {
 		case 1: // no local port defined, use the default one.
 			metahost = args[0];
@@ -50,6 +50,7 @@ public class DataServer {
 	}
 
 	void initialize(String metahost, int localport) {
+		dsfileio = new DataServerFileIO(serverId);
 		startServer(localport);
 		startRpcThread(metahost, localport);
 	}
@@ -65,21 +66,37 @@ public class DataServer {
 		heartbeatTh.start();
 	}
 
-	public Set<Long> getBlockIds() {
+	// public Set<Long> getBlockIds() {
+	//
+	// blockIds = new HashSet<Long>();
+	// blockIds.add((long) 1);
+	// blockIds.add((long) 2);
+	// blockIds.add((long) 3);
+	//
+	// return blockIds;
+	// }
 
-		blockIds = new HashSet<Long>();
-		blockIds.add((long) 1);
-		blockIds.add((long) 2);
-		blockIds.add((long) 3);
+	/** regular heartbeat message, contains files stored in the dataserver. */
+	public String buildHBMessage() {
+		StringBuffer hbbuf = new StringBuffer();
+		long mid = System.currentTimeMillis();
+		hbbuf.append(mid + ",");
+		hbbuf.append(serverId + ",");
 
-		return blockIds;
+		Set<String> files = dsfileio.getFiles("");
+		Iterator<String> iter = files.iterator();
+		while (iter.hasNext()) {
+			hbbuf.append(iter.next() + "-");
+		}
+		// remove the last '-'.
+		String msg = hbbuf.substring(0, hbbuf.length() - 1);
+		return msg;
 	}
-
-	public String buildBlockMessage() {
-		BlockMessage msg = new BlockMessage(getServerId(), getBlockIds());
-		log.info("build block message: " + msg.toString());
-		return msg.toString();
-	}
+	// public String buildBlockMessage() {
+	// BlockMessage msg = new BlockMessage(getServerId(), getBlockIds());
+	// log.info("build block message: " + msg.toString());
+	// return msg.toString();
+	// }
 
 	public String getServerId() {
 		return serverId;

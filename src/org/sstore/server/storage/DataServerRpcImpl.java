@@ -93,7 +93,7 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 			MetaRpc stub = (MetaRpc) registry.lookup(Constants.METARPC_NAME);
 
 			DataServer dataserver = new DataServer();
-			String response = stub.heartBeat(dataserver.buildBlockMessage());
+			String response = stub.heartBeat(dataserver.buildHBMessage());
 			log.info(response);
 
 		} catch (RemoteException | NotBoundException e) {

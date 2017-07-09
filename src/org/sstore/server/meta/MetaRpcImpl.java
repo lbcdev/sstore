@@ -66,12 +66,13 @@ public class MetaRpcImpl implements MetaRpc {
 	/** Receive heart beat block info from dataserver. */
 	public String heartBeat(String msg) {
 		String sid = msg.split(",")[1];
-		String[] blockstrs = msg.split(",")[2].split("-");
-		HashSet<Long> blockset = new HashSet<Long>();
-		for (String str : blockstrs) {
-			blockset.add(Long.parseLong(str));
+		String[] filestr = msg.split(",")[2].split("-");
+		HashSet<Long> fileset = new HashSet<Long>();
+		for (String str : filestr) {
+			fileset.add(Long.parseLong(str));
 		}
-		// metaserver.updateDSTable(Long.parseLong(sid), blockset);
+		
+//		 metaserver.updateF2DSTable(filename, sid);
 
 		metaserver.updateDSStatus(sid);
 		log.info("receive heartbeat from " + sid);

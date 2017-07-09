@@ -32,7 +32,7 @@ public class MetaServer {
 	public static final Logger log = Logger.getLogger(MetaServer.class.getName());
 
 	// block to dataserver table, unused now
-	private static Map<Long, Set<Long>> b2dsTable;
+	private static Map<Long, Set<String>> b2dsTable;
 	// file to block table, unused now.
 	private static Map<String, String> f2bTable;
 	// file to primary replica table
@@ -51,7 +51,7 @@ public class MetaServer {
 	}
 
 	void initialize() {
-		b2dsTable = new HashMap<Long, Set<Long>>();
+		b2dsTable = new HashMap<Long, Set<String>>();
 		f2bTable = new HashMap<String, String>();
 		f2dsTable = new HashMap<String, String>();
 		dsTable = new HashMap<String, DataServerStatus>();
@@ -122,8 +122,6 @@ public class MetaServer {
 	void flushF2DSTable() {
 		Iterator<String> iter = f2dsTable.keySet().iterator();
 		try {
-			// BufferedOutputStream out = new BufferedOutputStream(new
-			// Out(Constants.METAROOTDIR));
 			FileWriter out = new FileWriter(Constants.METAROOTDIR + "f2dsTable");
 			while (iter.hasNext()) {
 				String key = iter.next();
@@ -139,9 +137,9 @@ public class MetaServer {
 	}
 
 	/** synchronized update on the block-server table. */
-	synchronized void updateDSTable(long serverId, Set<Long> blkIds) {
+	synchronized void updateDSTable(long serverId, Set<String> files) {
 		if (b2dsTable != null)
-			b2dsTable.put(serverId, blkIds);
+			b2dsTable.put(serverId, files);
 	}
 
 	static void printTable(Map<String, String> table) {
