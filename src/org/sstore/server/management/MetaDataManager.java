@@ -8,6 +8,22 @@ package org.sstore.server.management;
  * @author lbchen
  *
  */
-public class MetaDataManager {
-	
+public class MetaDataManager implements Runnable {
+
+	public void run(){
+		
+	}
+	/** detect failed dataserver. */
+	public void checkDSStatus(){
+		
+	}
+
+	/**
+	 * clean up F2DSTable based on failed dataserver.
+	 * 
+	 * @param dsname
+	 */
+	public void cleanF2DSTableByDS(String dsname) {
+
+	}
 }

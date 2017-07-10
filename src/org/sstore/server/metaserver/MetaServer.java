@@ -82,10 +82,13 @@ public class MetaServer {
 	/**
 	 * update dataserver status, only active state enabled now, more status to
 	 * be added
+	 * 
+	 * @param sid dataserver id.
 	 */
 	void updateDSStatus(String sid) {
 		DataServerStatus status = new DataServerStatus();
 		status.setActive(true);
+		status.setTTL(Constants.HEARTBEAT_TTL);
 		dsTable.put(sid, status);
 		if (!dsList.contains(sid))
 			dsList.add(sid);
