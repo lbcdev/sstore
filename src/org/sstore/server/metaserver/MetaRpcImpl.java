@@ -67,6 +67,8 @@ public class MetaRpcImpl implements MetaRpc {
 	public String heartBeat(String msg) {
 		String sid = msg.split(",")[1];
 		String[] filestr = msg.split(",")[2].split("-");
+		
+		metaserver.updateDS2FTable(sid, filestr);
 		for (String fname : filestr) {
 			metaserver.updateF2DSTable(fname, sid);
 		}

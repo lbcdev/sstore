@@ -41,9 +41,11 @@ public class MetaServer {
 	private static Map<String, String> f2rplTable;
 
 	// dataserver status table
-	private static Map<String, DataServerStatus> dsTable;
+	private static HashMap<String, DataServerStatus> dsTable;
 	// dataserver index table, for assigning replicas
 	private static List<String> dsList;
+	// dataserver file list.
+	private static Map<String, String[]> ds2fTable;
 
 	public static void main(String[] args) {
 		MetaServer metaserver = new MetaServer();
@@ -57,6 +59,7 @@ public class MetaServer {
 		dsTable = new HashMap<String, DataServerStatus>();
 
 		dsList = new ArrayList<String>();
+		ds2fTable = new HashMap<String, String[]>();
 
 		// updateDSList();
 		startServer();
@@ -69,21 +72,44 @@ public class MetaServer {
 	}
 
 	/**
-	 * periodically update the list of dataservers, remove those are not alive
+	 * return files stored on the dataserver.
+	 * @param sid dataserver id
+	 * @return a list of files
 	 */
-	void updateDSList() {
-		dsList.add("localhost:1100");
-		dsList.add("localhost:1101");
-		dsList.add("localhost:1102");
-		dsList.add("localhost:1103");
-		dsList.add("localhost:1104");
+	public String[] getFilesOnDataServer(String sid) {
+		return ds2fTable.get(sid);
+	}
+
+	/**
+	 * update dataserver to files table.
+	 * 
+	 * @param dsid
+	 *            dataserver id
+	 * @param flist
+	 *            list of files on the dataserver
+	 */
+	public void updateDS2FTable(String dsid, String[] flist) {
+		if (ds2fTable == null) {
+			ds2fTable = new HashMap<String, String[]>();
+		}
+		ds2fTable.put(dsid, flist);
+	}
+
+	/**
+	 * return dataserver status.
+	 * 
+	 * @return dsTable. dataserver status table.
+	 */
+	public HashMap<String, DataServerStatus> getDSTable() {
+		return dsTable;
 	}
 
 	/**
 	 * update dataserver status, only active state enabled now, more status to
 	 * be added
 	 * 
-	 * @param sid dataserver id.
+	 * @param sid
+	 *            dataserver id.
 	 */
 	void updateDSStatus(String sid) {
 		DataServerStatus status = new DataServerStatus();
@@ -110,7 +136,7 @@ public class MetaServer {
 	 * lookup file-dataserver table by file name and return dataserver address
 	 * if find.
 	 */
-	String lookupF2DSTable(String filename) {
+	public String lookupF2DSTable(String filename) {
 		return f2dsTable.get(filename);
 	}
 
