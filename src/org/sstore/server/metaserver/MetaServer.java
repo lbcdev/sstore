@@ -11,6 +11,7 @@ import java.util.Random;
 import java.util.Set;
 
 import org.apache.log4j.Logger;
+import org.sstore.server.management.MetaDataManager;
 import org.sstore.server.storage.DataServerStatus;
 import org.sstore.utils.Constants;
 
@@ -61,8 +62,13 @@ public class MetaServer {
 		dsList = new ArrayList<String>();
 		ds2fTable = new HashMap<String, String[]>();
 
-		// updateDSList();
 		startServer();
+		startMetaManager();
+	}
+	/** start a new thread for metadata manager. */
+	void startMetaManager() {
+		Thread thread = new Thread(new MetaDataManager());
+		thread.start();
 	}
 
 	/** start metaserver rpc service */
@@ -168,18 +174,23 @@ public class MetaServer {
 	 *            dataserver id
 	 */
 	public synchronized void removeReplicaOfFile(String filename, String dsid) {
+		// remove dataserver from dsTable, dsList.
+		dsTable.remove(dsid);
+		dsList.remove(dsid);
 		String replicas = f2dsTable.get(filename);
 		String[] replicaarr = replicas.split(",");
 		// create new replica list without dsid
 		StringBuffer sbuf = new StringBuffer();
-		for(String replica: replicaarr){
-			if(replica != dsid){
+		for (String replica : replicaarr) {
+			if (replica != dsid) {
 				sbuf.append(replica + ",");
 			}
 		}
 		// remove the last ',' and update new replica list.
-		String newReplicas = sbuf.substring(sbuf.length()-1).toString();
+		String newReplicas = sbuf.substring(sbuf.length() - 1).toString();
 		f2dsTable.put(filename, newReplicas);
+		log.info("removeReplicaOfFile...");
+		printTable(f2dsTable);
 	}
 
 	/** flush file-dataserver table to disk */

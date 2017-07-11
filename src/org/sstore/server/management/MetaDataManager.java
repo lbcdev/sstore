@@ -30,8 +30,10 @@ public class MetaDataManager implements Runnable {
 	public void run() {
 		while (true) {
 			List<String> failedList = checkDSStatus();
-			for (String dsname : failedList) {
-				cleanF2DSTableByDS(dsname);
+			if (failedList.size() > 0) {
+				for (String dsname : failedList) {
+					cleanF2DSTableByDS(dsname);
+				}
 			}
 			try {
 				Thread.sleep(Constants.HEARTBEAT_INTERVAL);
@@ -52,6 +54,8 @@ public class MetaDataManager implements Runnable {
 			if (status.getTTL() < 0) {
 				failedList.add(key);
 			}
+			// decrease ttl by 1.
+			status.setTTL(status.getTTL()-1);
 		}
 		log.info("checkDSStatus: get failed dataserver of" + failedList.size());
 		return failedList;
@@ -60,13 +64,14 @@ public class MetaDataManager implements Runnable {
 	/**
 	 * clean up F2DSTable based on failed dataserver.
 	 * 
-	 * @param dsname dataserver id
+	 * @param dsname
+	 *            dataserver id
 	 */
 	public void cleanF2DSTableByDS(String dsid) {
 		log.info("cleanF2DSTableByDS start...");
 		String[] files = metaserver.getFilesOnDataServer(dsid);
 		// remove dataserver dsid from replica list of file.
-		for(String fname: files){
+		for (String fname : files) {
 			metaserver.removeReplicaOfFile(fname, dsid);
 		}
 	}
