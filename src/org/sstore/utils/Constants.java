@@ -19,7 +19,7 @@ public class Constants {
 	// Heartbeat interval in milliseconds.
 	public final static int HEARTBEAT_INTERVAL = 10000;
 	// default TTL value = 3 times of heartbeat interval.
-	public final static int HEARTBEAT_TTL = 2;
+	public final static int HEARTBEAT_TTL = 1;
 	
 	public final static String METARPC_NAME = "metarpc";
 	public final static String DATARPC_NAME = "dsrpc";

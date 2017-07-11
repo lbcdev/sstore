@@ -65,6 +65,7 @@ public class MetaServer {
 		startServer();
 		startMetaManager();
 	}
+
 	/** start a new thread for metadata manager. */
 	void startMetaManager() {
 		Thread thread = new Thread(new MetaDataManager());
@@ -178,18 +179,22 @@ public class MetaServer {
 		dsTable.remove(dsid);
 		dsList.remove(dsid);
 		String replicas = f2dsTable.get(filename);
+		log.info("removeReplicaOfFile old replicas: " + replicas);
+		log.info("removeReplicaOfFile removing: " + dsid);
 		String[] replicaarr = replicas.split(",");
 		// create new replica list without dsid
 		StringBuffer sbuf = new StringBuffer();
 		for (String replica : replicaarr) {
-			if (replica != dsid) {
-				sbuf.append(replica + ",");
+			if (!replica.equals(dsid)) {
+				log.info("removeReplicaOfFile live " + replica);
+				sbuf.append(replica);
+				sbuf.append(",");
 			}
 		}
 		// remove the last ',' and update new replica list.
-		String newReplicas = sbuf.substring(sbuf.length() - 1).toString();
+		String newReplicas = sbuf.substring(0, sbuf.length() - 1).toString();
 		f2dsTable.put(filename, newReplicas);
-		log.info("removeReplicaOfFile...");
+		log.info("removeReplicaOfFile new replicas" + newReplicas);
 		printTable(f2dsTable);
 	}
 
