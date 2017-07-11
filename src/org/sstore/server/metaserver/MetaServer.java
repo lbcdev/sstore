@@ -73,7 +73,9 @@ public class MetaServer {
 
 	/**
 	 * return files stored on the dataserver.
-	 * @param sid dataserver id
+	 * 
+	 * @param sid
+	 *            dataserver id
 	 * @return a list of files
 	 */
 	public String[] getFilesOnDataServer(String sid) {
@@ -111,7 +113,7 @@ public class MetaServer {
 	 * @param sid
 	 *            dataserver id.
 	 */
-	void updateDSStatus(String sid) {
+	public void updateDSStatus(String sid) {
 		DataServerStatus status = new DataServerStatus();
 		status.setActive(true);
 		status.setTTL(Constants.HEARTBEAT_TTL);
@@ -141,7 +143,7 @@ public class MetaServer {
 	}
 
 	/** thread-safe, update file-dataserver table */
-	synchronized void updateF2DSTable(String filename, String sid) {
+	public synchronized void updateF2DSTable(String filename, String sid) {
 		// if file and its replicas exist, add new dataserver to the existing
 		// pair; if not, create a new pair.
 		if (f2dsTable.get(filename) != null) {
@@ -155,6 +157,29 @@ public class MetaServer {
 		}
 		flushF2DSTable();
 		printTable(f2dsTable);
+	}
+
+	/**
+	 * remove dataserver dsid from the replica list of a file.
+	 * 
+	 * @param filename
+	 *            file
+	 * @param dsid
+	 *            dataserver id
+	 */
+	public synchronized void removeReplicaOfFile(String filename, String dsid) {
+		String replicas = f2dsTable.get(filename);
+		String[] replicaarr = replicas.split(",");
+		// create new replica list without dsid
+		StringBuffer sbuf = new StringBuffer();
+		for(String replica: replicaarr){
+			if(replica != dsid){
+				sbuf.append(replica + ",");
+			}
+		}
+		// remove the last ',' and update new replica list.
+		String newReplicas = sbuf.substring(sbuf.length()-1).toString();
+		f2dsTable.put(filename, newReplicas);
 	}
 
 	/** flush file-dataserver table to disk */

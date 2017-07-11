@@ -65,9 +65,9 @@ public class MetaDataManager implements Runnable {
 	public void cleanF2DSTableByDS(String dsid) {
 		log.info("cleanF2DSTableByDS start...");
 		String[] files = metaserver.getFilesOnDataServer(dsid);
+		// remove dataserver dsid from replica list of file.
 		for(String fname: files){
-			String replicas = metaserver.lookupF2DSTable(fname);
-			
+			metaserver.removeReplicaOfFile(fname, dsid);
 		}
 	}
 }
