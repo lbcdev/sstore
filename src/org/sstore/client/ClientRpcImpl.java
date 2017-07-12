@@ -38,8 +38,8 @@ public class ClientRpcImpl implements ClientRpc {
 	public static void main(String[] args) {
 		String metahost = "localhost";
 		ClientRpcImpl clientrpc = new ClientRpcImpl(metahost);
-		String local = "resources/in2.jpg";
-		String remote = "in705.jpg";
+		String local = "resources/in.jpg";
+		String remote = "in.jpg";
 		clientrpc.putReq(local, remote);
 		local = "/Users/lbchen/out705.jpg";
 		clientrpc.getReq(remote, local);
