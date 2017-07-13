@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import org.sstore.security.encryption.CipherHandler;
 import org.sstore.server.metaserver.MetaRpc;
 import org.sstore.utils.Constants;
+import org.sstore.utils.StreamFileUtils;
 
 /**
  * dataserver rpc handles all calls from clients and sends heartbeat message to
@@ -24,10 +25,9 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 
 	private final static Logger log = Logger.getLogger(DataServerRpc.class.getName());
 	private static DataServerFileIO dsfileio;
-	private CipherHandler cipherHandler;
+	private static CipherHandler cipherHandler;
 	private String metahost;
 	private int localport;
-	private String seckey = "sstore";
 
 	public DataServerRpcImpl() {
 		super();
@@ -38,7 +38,7 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 		this.localport = localport;
 		String rootpath = "localhost-" + localport + "/";
 		dsfileio = new DataServerFileIO(rootpath);
-		cipherHandler = new CipherHandler(seckey);
+		cipherHandler = new CipherHandler();
 	}
 
 	public void startRpcServer(int port) {
@@ -79,12 +79,15 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 	}
 
 	public byte[] get(String remote) {
-		return cipherHandler.decipher(dsfileio.get(remote));
+//		byte[] cdata = dsfileio.get(remote);
+		byte[] cdata = StreamFileUtils.readBytes(remote);
+		return cipherHandler.decipher(cdata);
 	}
 
 	public void put(String fname, byte[] data) {
-
-		dsfileio.put(fname, cipherHandler.cipher(data));
+		byte[] cdata = cipherHandler.cipher(data);
+//		dsfileio.put(fname, cdata);
+		StreamFileUtils.writeBytes(fname, cdata);
 	}
 
 	public void sendHeartBeat(String metahost) {

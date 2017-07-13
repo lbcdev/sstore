@@ -60933,3 +60933,2280 @@
 	java.net.ConnectException: Connection refused
 2017-07-11 16:45:09 ERROR DataServerRpc:100 - Client exception: java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
 	java.net.ConnectException: Connection refused
+2017-07-13 00:17:54 INFO  MetaRpcImpl:35 - RPC server ready
+2017-07-13 00:17:54 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 00:18:01 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:18:01 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:18:01 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:18:01 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:18:01 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:18:04 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 00:18:11 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:18:11 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:18:11 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:18:11 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:18:11 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:18:14 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 00:18:21 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:18:21 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:18:21 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:18:21 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:18:21 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:18:24 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 00:18:31 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:18:31 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:18:31 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:18:31 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:18:31 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:18:34 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 00:18:41 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:18:41 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:18:41 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:18:41 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:18:41 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:18:45 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 00:18:51 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:18:51 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:18:51 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:18:51 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:18:51 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:18:55 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 00:19:01 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:19:01 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:19:01 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:19:01 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:19:01 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:19:05 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 00:19:11 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:19:11 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:19:11 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:19:11 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:19:11 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:19:15 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 00:19:21 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:19:21 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:19:21 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:19:21 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:19:21 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:19:25 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 00:19:31 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:19:31 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:19:31 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:19:31 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:19:31 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:19:35 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 00:19:41 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:19:41 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:19:41 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:19:41 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:19:41 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:19:45 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 00:19:51 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:19:51 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:19:51 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:19:51 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:19:51 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:19:55 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 00:20:01 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:20:01 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:20:01 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:20:01 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:20:01 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:20:05 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 00:20:12 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:20:12 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:20:12 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:20:12 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:20:12 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:20:15 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 00:20:22 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:20:22 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:20:22 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:20:22 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:20:22 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:20:25 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 00:20:36 INFO  MetaRpcImpl:35 - RPC server ready
+2017-07-13 00:20:36 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 00:20:42 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:20:42 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:20:42 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:20:42 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:20:42 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:20:46 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 00:20:51 INFO  DataServer:29 - 2
+2017-07-13 00:20:51 ERROR DataServerRpc:52 - Dataserver RPC err: Port already in use: 1100; nested exception is: 
+	java.net.BindException: Address already in use
+2017-07-13 00:20:52 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:20:52 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:20:52 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:20:52 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:20:52 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:20:56 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 00:21:06 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 00:21:16 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of1
+2017-07-13 00:21:16 INFO  MetaDataManager:71 - cleanF2DSTableByDS start...
+2017-07-13 00:21:16 INFO  MetaServer:182 - removeReplicaOfFile old replicas: localhost:1100
+2017-07-13 00:21:16 INFO  MetaServer:183 - removeReplicaOfFile removing: localhost:1100
+2017-07-13 00:21:31 INFO  DataServer:29 - 2
+2017-07-13 00:21:31 ERROR DataServerRpc:52 - Dataserver RPC err: Port already in use: 1100; nested exception is: 
+	java.net.BindException: Address already in use
+2017-07-13 00:21:31 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 00:21:31 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:21:31 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:21:31 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:21:31 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:21:31 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:21:31 INFO  DataServerRpc:101 - ack
+2017-07-13 00:21:39 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:21:39 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:21:39 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:21:39 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:21:39 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:21:49 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:21:49 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:21:49 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:21:49 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:21:49 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:21:50 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:21:50 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:21:50 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 00:21:50 INFO  MetaRpcImpl:62 - assign replicaslocalhost:1100,localhost:1100,localhost:1100
+2017-07-13 00:21:50 INFO  ClientRpcImpl:83 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 00:21:59 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:21:59 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:21:59 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 00:21:59 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:21:59 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:21:59 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:22:09 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:22:09 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:22:09 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 00:22:09 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:22:09 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:22:09 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 00:22:19 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 00:22:19 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 00:22:19 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 00:22:19 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 00:22:19 INFO  MetaServer:237 - localhost:1100
+2017-07-13 00:22:19 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:31:30 INFO  MetaRpcImpl:35 - RPC server ready
+2017-07-13 10:31:30 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:31:35 INFO  DataServer:29 - 2
+2017-07-13 10:31:35 INFO  DataServerRpc:49 - Dataserver RPC ready
+2017-07-13 10:31:35 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 10:31:35 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:31:35 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:31:35 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:31:35 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:31:35 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:31:35 INFO  DataServerRpc:101 - ack
+2017-07-13 10:31:40 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:31:50 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:31:52 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:31:52 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:31:52 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:31:52 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:31:52 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:31:57 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:31:57 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:31:57 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:31:57 INFO  MetaRpcImpl:62 - assign replicaslocalhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:31:57 INFO  ClientRpcImpl:83 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:32:00 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:32:02 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:32:02 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:32:02 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:32:02 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:32:02 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:32:02 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:32:10 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:32:12 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:32:12 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:32:12 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:32:12 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:32:12 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:32:12 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:32:20 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:32:22 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:32:22 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:32:22 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:32:22 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:32:22 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:32:22 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:32:30 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:32:32 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:32:32 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:32:32 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:32:32 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:32:32 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:32:32 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:32:40 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:32:42 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:32:42 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:32:42 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:32:42 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:32:42 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:32:42 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:32:50 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:32:52 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:32:52 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:32:52 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:32:52 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:32:52 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:32:52 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:33:00 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:33:02 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:33:02 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:33:02 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:33:02 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:33:02 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:33:02 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:33:10 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:33:12 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:33:12 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:33:12 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:33:12 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:33:12 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:33:12 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:33:20 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:33:22 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:33:22 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:33:22 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:33:22 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:33:22 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:33:22 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:33:30 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:33:32 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:33:32 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:33:32 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:33:32 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:33:32 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:33:32 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:33:40 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:33:42 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:33:42 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:33:42 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:33:42 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:33:42 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:33:42 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:33:50 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:33:52 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:33:52 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:33:52 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:33:52 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:33:52 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:33:52 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:34:00 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:34:02 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:34:02 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:34:02 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:34:02 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:34:02 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:34:02 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:34:10 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:34:12 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:34:12 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:34:12 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:34:12 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:34:12 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:34:12 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:34:20 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:34:22 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:34:22 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:34:22 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:34:22 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:34:22 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:34:22 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:34:30 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:34:32 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:34:32 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:34:32 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:34:32 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:34:32 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:34:32 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:34:40 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:34:42 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:34:42 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:34:42 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:34:42 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:34:42 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:34:42 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:34:50 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:34:52 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:34:52 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:34:52 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:34:52 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:34:52 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:34:52 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:35:00 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:35:02 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:35:02 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:35:02 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:35:02 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:35:02 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:35:02 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:35:10 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:35:12 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:35:12 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:35:12 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:35:12 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:35:12 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:35:12 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:35:20 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:35:22 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:35:22 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:35:22 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:35:22 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:35:22 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:35:22 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:35:30 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:35:33 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:35:33 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:35:33 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:35:33 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:35:33 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:35:33 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:35:40 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:35:43 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:35:43 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:35:43 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:35:43 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:35:43 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:35:43 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:35:50 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:35:53 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:35:53 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:35:53 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:35:53 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:35:53 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:35:53 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:36:00 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:36:03 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:36:03 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:36:03 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:36:03 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:36:03 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:36:03 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:36:10 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:36:13 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:36:13 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:36:13 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:36:13 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:36:13 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:36:13 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:36:20 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:36:23 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:36:23 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:36:23 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:36:23 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:36:23 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:36:23 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:36:30 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:36:33 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:36:33 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:36:33 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:36:33 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:36:33 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:36:33 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:36:40 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:36:43 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:36:43 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:36:43 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:36:43 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:36:43 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:36:43 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:36:50 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:36:53 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:36:53 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:36:53 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:36:53 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:36:53 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:36:53 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:37:00 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:37:03 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:37:03 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:37:03 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:37:03 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:37:03 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:37:03 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:37:10 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:37:13 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:37:13 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:37:13 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:37:13 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:37:13 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:37:13 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:37:20 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:37:23 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:37:23 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:37:23 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:37:23 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:37:23 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:37:23 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:37:30 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:37:33 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:37:33 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:37:33 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:37:33 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:37:33 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:37:33 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:37:40 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:37:43 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:37:43 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:37:43 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:37:43 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:37:43 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:37:43 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:37:50 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:37:53 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:37:53 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:37:53 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:37:53 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:37:53 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:37:53 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:38:00 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:38:03 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:38:03 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:38:03 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:38:03 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:38:03 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:38:03 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:38:10 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:38:13 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:38:13 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:38:13 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:38:13 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:38:13 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:38:13 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:38:20 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:38:23 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:38:23 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:38:23 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:38:23 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:38:23 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:38:23 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:38:30 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:38:33 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:38:33 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:38:33 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:38:33 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:38:33 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:38:33 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:38:40 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:38:43 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:38:43 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:38:43 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:38:43 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:38:43 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:38:43 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:38:50 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:38:53 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:38:53 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:38:53 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:38:53 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:38:53 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:38:53 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:39:00 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:39:03 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:39:03 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:39:03 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:39:03 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:39:03 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:39:03 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:39:10 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:39:13 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:39:13 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:39:13 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:39:13 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:39:13 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:39:13 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:39:20 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:39:23 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:39:23 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:39:23 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:39:23 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:39:23 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:39:23 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:39:30 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:39:33 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:39:33 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:39:33 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:39:33 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:39:33 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:39:33 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:39:40 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:39:43 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:39:43 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:39:43 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:39:43 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:39:43 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:39:43 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:39:51 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:39:53 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:39:53 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:39:53 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:39:53 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:39:53 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:39:53 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:40:01 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:40:03 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:40:03 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:40:03 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:40:03 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:40:03 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:40:03 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:40:11 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:40:13 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:40:13 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:40:13 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:40:13 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:40:13 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:40:13 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:40:21 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:40:23 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:40:23 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:40:23 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:40:23 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:40:23 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:40:23 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:40:31 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:40:33 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:40:33 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:40:33 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:40:33 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:40:33 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:40:33 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:40:41 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:40:43 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:40:43 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:40:43 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:40:43 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:40:43 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:40:43 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:40:51 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:40:53 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:40:53 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:40:53 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:40:53 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:40:53 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:40:53 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:41:01 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:41:03 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:41:03 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:41:03 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:41:03 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:41:03 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:41:03 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:41:11 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:41:13 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:41:13 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:41:13 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:41:13 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:41:13 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:41:13 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:41:21 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:41:23 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:41:23 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:41:23 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:41:23 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:41:23 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:41:23 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:41:31 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:41:33 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:41:33 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:41:33 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:41:33 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:41:33 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:41:33 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:41:41 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:41:43 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:41:43 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:41:43 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:41:43 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:41:43 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:41:43 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:41:51 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:41:53 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:41:53 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:41:53 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:41:53 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:41:53 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:41:53 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:42:01 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:42:03 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:42:03 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:42:03 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:42:03 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:42:03 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:42:03 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:42:11 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:42:13 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:42:13 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:42:13 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:42:13 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:42:13 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:42:13 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:42:21 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:42:23 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:42:23 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:42:23 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:42:23 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:42:23 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:42:23 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:42:31 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:42:33 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:42:33 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:42:33 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:42:33 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:42:33 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:42:33 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:42:41 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:42:43 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:42:43 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:42:43 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:42:43 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:42:43 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:42:43 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:42:51 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:42:53 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:42:53 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:42:53 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:42:53 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:42:53 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:42:53 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:43:01 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:43:03 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:43:03 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:43:03 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:43:03 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:43:03 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:43:03 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:43:11 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:43:13 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:43:13 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:43:13 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:43:13 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:43:13 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:43:13 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:43:21 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:43:23 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:43:23 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:43:23 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:43:23 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:43:23 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:43:23 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:43:31 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:43:33 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:43:33 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:43:33 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:43:33 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:43:33 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:43:33 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:43:41 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:43:43 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:43:43 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:43:43 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:43:43 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:43:43 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:43:43 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:43:51 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:43:53 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:43:53 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:43:53 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:43:53 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:43:53 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:43:53 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:44:01 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:44:03 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:44:03 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:44:03 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:44:03 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:44:03 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:44:03 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:44:11 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:44:13 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:44:13 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:44:13 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:44:13 INFO  MetaRpcImpl:62 - assign replicaslocalhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:44:13 INFO  ClientRpcImpl:83 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:44:13 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:44:13 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:44:13 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:44:13 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:44:13 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:44:13 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:44:21 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:44:23 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:44:23 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:44:23 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:44:23 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:44:23 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:44:23 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:44:31 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:44:33 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:44:33 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:44:33 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:44:33 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:44:33 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:44:33 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:44:41 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:44:43 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:44:43 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:44:43 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:44:43 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:44:43 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:44:43 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:44:51 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:44:53 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:44:53 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:44:53 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:44:53 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:44:53 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:44:53 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:45:01 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:45:03 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:45:03 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:45:03 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:45:03 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:45:03 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:45:03 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:45:11 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:45:13 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:45:13 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:45:13 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:45:13 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:45:13 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:45:13 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:45:21 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:45:23 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:45:23 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:45:23 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:45:23 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:45:23 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:45:23 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:45:31 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:45:33 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:45:33 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:45:33 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:45:33 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:45:33 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:45:33 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:45:41 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:45:43 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:45:43 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:45:43 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:45:43 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:45:43 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:45:43 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:45:51 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:45:53 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:45:53 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:45:53 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:45:53 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:45:53 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:45:53 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:46:01 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:46:04 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:46:04 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:46:04 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:46:04 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:46:04 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:46:04 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:46:11 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:46:20 INFO  DataServer:29 - 2
+2017-07-13 10:46:20 INFO  DataServerRpc:49 - Dataserver RPC ready
+2017-07-13 10:46:21 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:46:21 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 10:46:21 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:46:21 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:46:21 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:46:21 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:46:21 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:46:21 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:46:21 INFO  DataServerRpc:101 - ack
+2017-07-13 10:46:27 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:46:27 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:46:27 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:46:27 INFO  MetaRpcImpl:62 - assign replicaslocalhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:46:27 INFO  ClientRpcImpl:83 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:46:31 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:46:31 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 10:46:31 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:46:31 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:46:31 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:46:31 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:46:31 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:46:31 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:46:31 INFO  DataServerRpc:101 - ack
+2017-07-13 10:46:41 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:46:41 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 10:46:41 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:46:41 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:46:41 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:46:41 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:46:41 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:46:41 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:46:41 INFO  DataServerRpc:101 - ack
+2017-07-13 10:46:44 ERROR ClientRpcImpl:104 - Client exception: java.rmi.UnmarshalException: Error unmarshaling return header; nested exception is: 
+	java.io.EOFException
+2017-07-13 10:46:44 INFO  MetaRpcImpl:51 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:46:44 INFO  ClientRpcImpl:55 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:46:44 ERROR ClientRpcImpl:72 - Client exception: java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused
+2017-07-13 10:46:51 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:47:01 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 10:47:11 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of1
+2017-07-13 10:47:11 INFO  MetaDataManager:71 - cleanF2DSTableByDS start...
+2017-07-13 10:47:11 INFO  MetaServer:182 - removeReplicaOfFile old replicas: localhost:1100
+2017-07-13 10:47:11 INFO  MetaServer:183 - removeReplicaOfFile removing: localhost:1100
+2017-07-13 10:48:04 INFO  DataServer:29 - 2
+2017-07-13 10:48:04 INFO  DataServerRpc:49 - Dataserver RPC ready
+2017-07-13 10:48:04 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 10:48:04 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:48:04 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:48:04 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:48:04 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:48:04 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:48:04 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:48:04 INFO  DataServerRpc:101 - ack
+2017-07-13 10:48:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:48:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:48:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:48:08 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:48:08 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:48:08 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:48:14 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:48:14 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:48:14 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:48:14 INFO  MetaRpcImpl:62 - assign replicaslocalhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:48:14 INFO  ClientRpcImpl:83 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:48:14 INFO  MetaRpcImpl:51 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:48:14 INFO  ClientRpcImpl:55 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:48:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:48:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:48:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:48:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:48:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:48:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:48:18 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:48:18 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:48:18 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:48:28 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:48:28 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:48:28 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:48:28 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:48:28 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:48:28 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:48:28 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:48:28 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:48:28 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:48:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:48:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:48:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:48:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:48:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:48:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:48:38 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:48:38 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:48:38 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:48:48 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:48:48 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:48:48 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:48:48 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:48:48 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:48:48 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:48:48 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:48:48 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:48:48 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:48:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:48:58 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:48:58 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:48:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:48:58 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:48:58 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:48:58 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:48:58 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:48:58 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:49:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:49:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:49:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:49:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:49:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:49:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:49:08 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:49:08 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:49:08 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:49:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:49:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:49:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:49:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:49:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:49:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:49:18 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:49:18 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:49:18 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:49:28 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:49:28 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:49:28 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:49:28 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:49:28 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:49:28 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:49:28 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:49:28 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:49:28 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:49:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:49:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:49:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:49:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:49:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:49:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:49:38 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:49:38 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:49:38 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:49:48 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:49:48 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:49:48 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:49:48 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:49:48 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:49:48 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:49:48 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:49:48 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:49:48 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:49:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:49:58 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:49:58 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:49:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:49:58 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:49:58 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:49:58 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:49:58 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:49:58 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:50:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:50:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:50:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:50:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:50:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:50:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:50:08 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:50:08 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:50:08 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:50:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:50:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:50:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:50:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:50:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:50:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:50:18 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:50:18 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:50:18 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:50:28 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:50:28 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:50:28 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:50:28 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:50:28 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:50:28 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:50:28 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:50:28 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:50:28 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:50:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:50:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:50:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:50:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:50:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:50:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:50:38 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:50:38 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:50:38 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:50:48 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:50:48 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:50:48 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:50:48 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:50:48 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:50:48 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:50:48 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:50:48 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:50:48 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:50:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:50:58 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:50:58 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:50:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:50:58 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:50:58 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:50:58 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:50:58 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:50:58 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:51:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:51:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:51:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:51:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:51:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:51:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:51:08 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:51:08 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:51:08 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:51:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:51:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:51:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:51:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:51:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:51:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:51:18 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:51:18 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:51:18 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:51:28 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:51:28 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:51:28 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:51:28 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:51:28 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:51:28 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:51:28 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:51:28 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:51:28 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:51:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:51:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:51:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:51:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:51:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:51:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:51:38 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:51:38 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:51:38 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:51:48 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:51:48 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:51:48 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:51:48 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:51:48 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:51:48 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:51:48 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:51:48 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:51:48 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:51:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:51:58 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:51:58 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:51:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:51:58 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:51:58 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:51:58 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:51:58 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:51:58 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:52:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:52:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:52:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:52:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:52:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:52:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:52:08 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:52:08 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:52:08 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:52:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:52:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:52:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:52:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:52:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:52:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:52:18 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:52:18 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:52:18 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:52:28 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:52:28 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:52:28 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:52:28 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:52:28 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:52:28 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:52:28 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:52:28 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:52:28 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:52:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:52:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:52:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:52:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:52:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:52:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:52:38 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:52:38 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:52:38 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:52:45 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:52:45 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:52:45 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:52:45 INFO  MetaRpcImpl:62 - assign replicaslocalhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:52:45 INFO  ClientRpcImpl:83 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:52:45 INFO  MetaRpcImpl:51 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:52:45 INFO  ClientRpcImpl:55 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:52:48 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:52:48 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:52:48 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:52:48 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:52:48 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:52:48 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:52:48 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:52:48 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:52:48 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:52:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:52:58 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:52:58 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:52:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:52:58 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:52:58 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:52:58 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:52:58 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:52:58 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:53:02 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:53:02 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:53:02 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:53:02 INFO  MetaRpcImpl:62 - assign replicaslocalhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:53:02 INFO  ClientRpcImpl:83 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:53:02 INFO  MetaRpcImpl:51 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:53:02 INFO  ClientRpcImpl:55 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:53:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:53:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:53:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:53:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:53:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:53:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:53:08 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:53:08 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:53:08 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:53:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:53:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:53:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:53:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:53:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:53:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:53:18 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:53:18 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:53:18 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:53:28 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:53:28 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:53:28 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:53:28 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:53:28 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:53:28 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:53:28 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:53:28 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:53:28 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:53:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:53:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:53:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:53:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:53:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:53:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:53:38 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:53:38 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:53:38 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:53:48 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:53:48 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:53:48 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:53:48 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:53:48 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:53:48 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:53:48 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:53:48 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:53:48 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:53:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:53:58 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:53:58 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:53:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:53:58 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:53:58 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:53:58 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:53:58 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:53:58 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:54:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:54:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:54:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:54:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:54:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:54:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:54:08 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:54:08 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:54:08 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:54:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:54:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:54:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:54:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:54:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:54:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:54:18 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:54:18 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:54:18 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:54:28 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:54:28 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:54:28 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:54:28 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:54:28 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:54:28 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:54:28 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:54:28 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:54:28 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:54:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:54:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:54:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:54:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:54:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:54:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:54:38 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:54:38 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:54:38 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:54:48 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:54:48 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:54:48 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:54:48 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:54:48 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:54:48 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:54:48 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:54:48 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:54:48 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:54:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:54:58 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:54:58 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:54:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:54:58 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:54:58 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:54:58 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:54:58 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:54:58 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:55:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:55:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:55:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:55:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:55:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:55:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:55:08 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:55:08 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:55:08 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:55:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:55:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:55:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:55:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:55:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:55:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:55:18 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:55:18 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:55:18 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:55:28 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:55:28 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:55:28 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:55:28 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:55:28 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:55:28 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:55:28 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:55:28 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:55:28 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:55:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:55:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:55:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:55:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:55:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:55:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:55:38 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:55:38 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:55:38 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:55:51 INFO  DataServer:29 - 2
+2017-07-13 10:55:51 INFO  DataServerRpc:49 - Dataserver RPC ready
+2017-07-13 10:55:51 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 10:55:51 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:55:51 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:55:51 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:55:51 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:55:51 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:55:51 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:55:51 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:55:51 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:55:51 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:55:51 INFO  DataServerRpc:101 - ack
+2017-07-13 10:55:57 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:55:57 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:55:57 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:55:57 INFO  MetaRpcImpl:62 - assign replicaslocalhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:55:57 INFO  ClientRpcImpl:83 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:55:57 INFO  DataServerFileIO:55 - get file: /Users/lbchen/data/localhost-1100/in.jpg
+2017-07-13 10:55:57 INFO  DataServerFileIO:57 - get data length: 287264
+2017-07-13 10:55:57 INFO  MetaRpcImpl:51 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:55:57 INFO  ClientRpcImpl:55 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:56:01 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 10:56:01 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:56:01 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:56:01 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:56:01 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:56:01 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:56:01 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:56:01 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:56:01 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:56:01 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:56:01 INFO  DataServerRpc:101 - ack
+2017-07-13 10:56:11 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 10:56:11 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:56:11 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:56:11 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:56:11 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:56:11 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:56:11 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:56:11 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:56:11 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:56:11 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:56:11 INFO  DataServerRpc:101 - ack
+2017-07-13 10:56:21 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 10:56:21 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:56:21 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:56:21 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:56:21 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:56:21 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:56:21 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:56:21 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:56:21 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:56:21 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:56:21 INFO  DataServerRpc:101 - ack
+2017-07-13 10:56:31 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 10:56:31 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:56:31 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:56:31 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:56:31 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 10:56:31 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 10:56:31 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 10:56:31 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 10:56:31 INFO  MetaServer:237 - localhost:1100
+2017-07-13 10:56:31 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 10:56:31 INFO  DataServerRpc:101 - ack
+2017-07-13 10:56:31 ERROR ClientRpcImpl:72 - Client exception: java.rmi.UnmarshalException: Error unmarshaling return header; nested exception is: 
+	java.io.EOFException
+2017-07-13 11:01:11 INFO  DataServer:29 - 2
+2017-07-13 11:01:11 INFO  DataServerRpc:49 - Dataserver RPC ready
+2017-07-13 11:01:11 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:01:11 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:01:11 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:01:11 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:01:11 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:01:11 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:01:11 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:01:11 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:01:11 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:01:11 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:01:11 INFO  DataServerRpc:101 - ack
+2017-07-13 11:01:21 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:01:21 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:01:21 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:01:21 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:01:21 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:01:21 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:01:21 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:01:21 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:01:21 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:01:21 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:01:21 INFO  DataServerRpc:101 - ack
+2017-07-13 11:01:38 INFO  MetaRpcImpl:35 - RPC server ready
+2017-07-13 11:01:38 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:01:48 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:01:58 INFO  DataServer:29 - 2
+2017-07-13 11:01:58 INFO  DataServerRpc:49 - Dataserver RPC ready
+2017-07-13 11:01:58 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:01:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:01:58 INFO  MetaServer:230 - in.jpg:localhost:1100
+2017-07-13 11:01:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:01:58 INFO  MetaServer:230 - in.jpg:localhost:1100
+2017-07-13 11:01:58 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:01:58 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:01:58 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:01:58 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:01:58 INFO  DataServerRpc:101 - ack
+2017-07-13 11:01:58 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:02:01 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:02:01 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:02:01 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:02:01 INFO  MetaRpcImpl:62 - assign replicaslocalhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:02:01 INFO  ClientRpcImpl:83 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:02:01 INFO  DataServerFileIO:55 - get file: /Users/lbchen/data/localhost-1100/in.jpg
+2017-07-13 11:02:01 INFO  DataServerFileIO:57 - get data length: 287264
+2017-07-13 11:02:01 INFO  MetaRpcImpl:51 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:02:01 INFO  ClientRpcImpl:55 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:02:01 INFO  DataServerFileIO:55 - get file: /Users/lbchen/data/localhost-1100/in.jpg
+2017-07-13 11:02:01 INFO  DataServerFileIO:57 - get data length: 287272
+2017-07-13 11:02:08 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:02:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:02:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:02:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:02:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:02:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:02:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:02:08 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:02:08 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:02:08 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:02:08 INFO  DataServerRpc:101 - ack
+2017-07-13 11:02:08 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:02:18 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:02:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:02:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:02:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:02:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:02:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:02:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:02:18 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:02:18 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:02:18 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:02:18 INFO  DataServerRpc:101 - ack
+2017-07-13 11:02:18 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:02:28 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:02:28 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:02:28 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:02:28 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:02:28 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:02:28 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:02:28 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:02:28 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:02:28 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:02:28 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:02:28 INFO  DataServerRpc:101 - ack
+2017-07-13 11:02:28 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:02:38 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:02:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:02:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:02:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:02:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:02:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:02:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:02:38 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:02:38 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:02:38 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:02:38 INFO  DataServerRpc:101 - ack
+2017-07-13 11:02:38 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:02:43 ERROR ClientRpcImpl:72 - Client exception: java.rmi.UnmarshalException: Error unmarshaling return header; nested exception is: 
+	java.io.EOFException
+2017-07-13 11:02:48 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:02:58 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of1
+2017-07-13 11:02:58 INFO  MetaDataManager:71 - cleanF2DSTableByDS start...
+2017-07-13 11:02:58 INFO  MetaServer:182 - removeReplicaOfFile old replicas: localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:02:58 INFO  MetaServer:183 - removeReplicaOfFile removing: localhost:1100
+2017-07-13 11:03:08 INFO  DataServer:29 - 2
+2017-07-13 11:03:08 INFO  DataServerRpc:49 - Dataserver RPC ready
+2017-07-13 11:03:08 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:03:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:03:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:03:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:03:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:03:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:03:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:03:08 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:03:08 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:03:08 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:03:08 INFO  DataServerRpc:101 - ack
+2017-07-13 11:03:11 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:03:11 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:03:11 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:03:11 INFO  MetaRpcImpl:62 - assign replicaslocalhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:03:11 INFO  ClientRpcImpl:83 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:03:18 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:03:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:03:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:03:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:03:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:03:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:03:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:03:18 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:03:18 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:03:18 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:03:18 INFO  DataServerRpc:101 - ack
+2017-07-13 11:03:28 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:03:28 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:03:28 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:03:28 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:03:28 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:03:28 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:03:28 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:03:28 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:03:28 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:03:28 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:03:28 INFO  DataServerRpc:101 - ack
+2017-07-13 11:03:38 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:03:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:03:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:03:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:03:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:03:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:03:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:03:38 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:03:38 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:03:38 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:03:38 INFO  DataServerRpc:101 - ack
+2017-07-13 11:03:48 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:03:48 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:03:48 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:03:48 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:03:48 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:03:48 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:03:48 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:03:48 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:03:48 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:03:48 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:03:48 INFO  DataServerRpc:101 - ack
+2017-07-13 11:03:58 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:03:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:03:58 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:03:58 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:03:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:03:58 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:03:58 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:03:58 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:03:58 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:03:58 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:03:58 INFO  DataServerRpc:101 - ack
+2017-07-13 11:03:59 ERROR ClientRpcImpl:104 - Client exception: java.rmi.UnmarshalException: Error unmarshaling return header; nested exception is: 
+	java.io.EOFException
+2017-07-13 11:03:59 INFO  MetaRpcImpl:51 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:03:59 INFO  ClientRpcImpl:55 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:03:59 ERROR ClientRpcImpl:72 - Client exception: java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused
+2017-07-13 11:06:17 INFO  DataServer:29 - 2
+2017-07-13 11:06:17 INFO  DataServerRpc:49 - Dataserver RPC ready
+2017-07-13 11:06:17 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:06:17 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:06:17 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:06:17 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:06:17 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:06:17 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:06:17 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:06:17 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:06:17 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:06:17 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:06:17 INFO  DataServerRpc:100 - ack
+2017-07-13 11:06:23 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:06:23 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:06:23 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:06:23 INFO  MetaRpcImpl:62 - assign replicaslocalhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:06:23 INFO  ClientRpcImpl:83 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:06:24 INFO  DataServerFileIO:55 - get file: /Users/lbchen/data/localhost-1100/in.jpg
+2017-07-13 11:06:24 INFO  DataServerFileIO:57 - get data length: 287264
+2017-07-13 11:06:24 INFO  MetaRpcImpl:51 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:06:24 INFO  ClientRpcImpl:55 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:06:24 INFO  DataServerFileIO:55 - get file: /Users/lbchen/data/localhost-1100/in.jpg
+2017-07-13 11:06:24 INFO  DataServerFileIO:57 - get data length: 287272
+2017-07-13 11:06:27 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:06:27 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:06:27 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:06:27 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:06:27 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:06:27 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:06:27 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:06:27 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:06:27 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:06:27 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:06:27 INFO  DataServerRpc:100 - ack
+2017-07-13 11:06:37 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:06:37 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:06:37 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:06:37 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:06:37 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:06:37 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:06:37 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:06:37 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:06:37 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:06:37 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:06:37 INFO  DataServerRpc:100 - ack
+2017-07-13 11:06:47 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:06:47 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:06:47 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:06:47 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:06:47 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:06:47 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:06:47 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:06:47 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:06:47 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:06:47 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:06:47 INFO  DataServerRpc:100 - ack
+2017-07-13 11:06:57 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:06:57 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:06:57 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:06:57 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:06:57 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:06:57 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:06:57 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:06:57 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:06:57 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:06:57 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:06:57 INFO  DataServerRpc:100 - ack
+2017-07-13 11:07:07 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:07:07 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:07:07 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:07:07 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:07:07 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:07:07 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:07:07 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:07:07 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:07:07 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:07:07 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:07:07 INFO  DataServerRpc:100 - ack
+2017-07-13 11:07:17 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:07:17 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:07:17 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:07:17 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:07:17 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:07:17 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:07:17 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:07:17 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:07:17 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:07:17 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:07:17 INFO  DataServerRpc:100 - ack
+2017-07-13 11:07:27 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:07:27 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:07:27 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:07:27 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:07:27 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:07:27 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:07:27 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:07:27 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:07:27 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:07:27 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:07:27 INFO  DataServerRpc:100 - ack
+2017-07-13 11:07:37 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:07:37 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:07:37 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:07:37 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:07:37 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:07:37 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:07:37 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:07:37 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:07:37 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:07:37 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:07:37 INFO  DataServerRpc:100 - ack
+2017-07-13 11:07:47 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:07:47 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:07:47 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:07:47 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:07:47 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:07:47 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:07:47 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:07:47 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:07:47 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:07:47 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:07:47 INFO  DataServerRpc:100 - ack
+2017-07-13 11:07:57 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:07:57 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:07:57 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:07:57 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:07:57 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:07:57 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:07:57 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:07:57 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:07:57 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:07:57 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:07:57 INFO  DataServerRpc:100 - ack
+2017-07-13 11:08:07 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:08:07 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:08:07 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:08:07 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:08:07 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:08:07 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:08:07 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:08:07 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:08:07 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:08:07 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:08:07 INFO  DataServerRpc:100 - ack
+2017-07-13 11:08:17 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:08:17 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:08:17 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:08:17 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:08:17 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:08:17 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:08:17 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:08:17 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:08:17 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:08:17 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:08:17 INFO  DataServerRpc:100 - ack
+2017-07-13 11:08:27 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:08:27 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:08:27 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:08:27 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:08:27 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:08:27 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:08:27 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:08:27 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:08:27 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:08:27 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:08:27 INFO  DataServerRpc:100 - ack
+2017-07-13 11:08:37 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:08:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:08:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:08:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:08:38 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:08:38 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:08:38 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:08:38 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:08:38 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:08:38 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:08:38 INFO  DataServerRpc:100 - ack
+2017-07-13 11:08:48 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:08:48 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:08:48 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:08:48 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:08:48 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:08:48 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:08:48 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:08:48 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:08:48 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:08:48 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:08:48 INFO  DataServerRpc:100 - ack
+2017-07-13 11:08:48 INFO  DataServer:29 - 2
+2017-07-13 11:08:48 ERROR DataServerRpc:52 - Dataserver RPC err: Port already in use: 1100; nested exception is: 
+	java.net.BindException: Address already in use
+2017-07-13 11:08:48 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:08:48 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:08:48 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:08:48 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:08:48 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:08:48 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:08:48 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:08:48 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:08:48 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:08:48 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:08:48 INFO  DataServerRpc:101 - ack
+2017-07-13 11:08:52 INFO  DataServer:29 - 2
+2017-07-13 11:08:52 ERROR DataServerRpc:52 - Dataserver RPC err: Port already in use: 1100; nested exception is: 
+	java.net.BindException: Address already in use
+2017-07-13 11:08:52 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:08:52 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:08:52 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:08:52 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:08:52 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:08:52 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:08:52 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:08:52 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:08:52 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:08:52 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:08:52 INFO  DataServerRpc:101 - ack
+2017-07-13 11:08:58 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:08:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:08:58 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:08:58 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:08:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:08:58 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:08:58 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:08:58 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:08:58 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:08:58 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:08:58 INFO  DataServerRpc:100 - ack
+2017-07-13 11:08:58 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:08:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:08:58 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:08:58 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:08:58 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:08:58 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:08:58 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:08:58 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:08:58 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:08:58 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:08:58 INFO  DataServerRpc:101 - ack
+2017-07-13 11:09:01 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:09:01 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:09:01 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:09:01 INFO  MetaRpcImpl:62 - assign replicaslocalhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:09:01 INFO  ClientRpcImpl:83 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:09:01 INFO  DataServerFileIO:55 - get file: /Users/lbchen/data/localhost-1100/in.jpg
+2017-07-13 11:09:01 INFO  DataServerFileIO:57 - get data length: 287264
+2017-07-13 11:09:01 INFO  MetaRpcImpl:51 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:09:01 INFO  ClientRpcImpl:55 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:09:01 INFO  DataServerFileIO:55 - get file: /Users/lbchen/data/localhost-1100/in.jpg
+2017-07-13 11:09:01 INFO  DataServerFileIO:57 - get data length: 287272
+2017-07-13 11:09:08 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:09:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:09:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:09:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:09:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:09:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:09:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:09:08 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:09:08 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:09:08 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:09:08 INFO  DataServerRpc:100 - ack
+2017-07-13 11:09:08 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:09:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:09:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:09:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:09:08 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:09:08 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:09:08 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:09:08 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:09:08 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:09:08 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:09:08 INFO  DataServerRpc:101 - ack
+2017-07-13 11:09:18 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:09:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:09:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:09:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:09:18 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:09:18 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:09:18 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:09:18 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:09:18 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:09:18 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:09:18 INFO  DataServerRpc:100 - ack
+2017-07-13 11:09:31 INFO  MetaRpcImpl:35 - RPC server ready
+2017-07-13 11:09:31 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:09:37 INFO  DataServer:29 - 2
+2017-07-13 11:09:37 INFO  DataServerRpc:49 - Dataserver RPC ready
+2017-07-13 11:09:37 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:09:37 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:09:37 INFO  MetaServer:230 - in.jpg:localhost:1100
+2017-07-13 11:09:37 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:09:37 INFO  MetaServer:230 - in.jpg:localhost:1100
+2017-07-13 11:09:37 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:09:37 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:09:37 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:09:37 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:09:37 INFO  DataServerRpc:101 - ack
+2017-07-13 11:09:41 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:09:45 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:09:45 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:09:45 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:09:45 INFO  MetaRpcImpl:62 - assign replicaslocalhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:09:45 INFO  ClientRpcImpl:83 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:09:47 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:09:47 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:09:47 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:09:47 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:09:47 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:09:47 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:09:47 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:09:47 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:09:47 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:09:47 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:09:47 INFO  DataServerRpc:101 - ack
+2017-07-13 11:09:51 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:09:57 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:09:57 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:09:57 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:09:57 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:09:57 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:09:57 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:09:57 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:09:57 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:09:57 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:09:57 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:09:57 INFO  DataServerRpc:101 - ack
+2017-07-13 11:10:01 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:10:07 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:10:07 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:10:07 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:10:07 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:10:07 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:10:07 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:10:07 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:10:07 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:10:07 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:10:07 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:10:07 INFO  DataServerRpc:101 - ack
+2017-07-13 11:10:11 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:10:15 ERROR ClientRpcImpl:104 - Client exception: java.rmi.UnmarshalException: Error unmarshaling return header; nested exception is: 
+	java.io.EOFException
+2017-07-13 11:10:15 INFO  MetaRpcImpl:51 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:10:15 INFO  ClientRpcImpl:55 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:10:15 ERROR ClientRpcImpl:72 - Client exception: java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused
+2017-07-13 11:10:21 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:10:31 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of1
+2017-07-13 11:10:31 INFO  MetaDataManager:71 - cleanF2DSTableByDS start...
+2017-07-13 11:10:31 INFO  MetaServer:182 - removeReplicaOfFile old replicas: localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:10:31 INFO  MetaServer:183 - removeReplicaOfFile removing: localhost:1100
+2017-07-13 11:11:03 INFO  DataServer:29 - 2
+2017-07-13 11:11:03 INFO  DataServerRpc:49 - Dataserver RPC ready
+2017-07-13 11:11:03 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:11:03 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:11:03 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:11:03 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:11:03 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:11:03 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:11:03 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:11:03 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:11:03 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:11:03 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:11:03 INFO  DataServerRpc:102 - ack
+2017-07-13 11:11:13 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:11:13 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:11:13 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:11:13 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:11:13 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:11:13 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:11:13 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:11:13 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:11:13 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:11:13 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:11:13 INFO  DataServerRpc:102 - ack
+2017-07-13 11:11:17 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:11:17 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:11:17 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:11:17 INFO  MetaRpcImpl:62 - assign replicaslocalhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:11:17 INFO  ClientRpcImpl:83 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:11:17 INFO  DataServerFileIO:55 - get file: /Users/lbchen/data/localhost-1100/in.jpg
+2017-07-13 11:11:17 INFO  DataServerFileIO:57 - get data length: 287264
+2017-07-13 11:11:17 INFO  MetaRpcImpl:51 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:11:17 INFO  ClientRpcImpl:55 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:11:17 INFO  DataServerFileIO:55 - get file: /Users/lbchen/data/localhost-1100/in.jpg
+2017-07-13 11:11:17 INFO  DataServerFileIO:57 - get data length: 287272
+2017-07-13 11:11:23 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:11:23 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:11:23 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:11:23 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:11:23 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:11:23 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:11:23 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:11:23 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:11:23 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:11:23 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:11:23 INFO  DataServerRpc:102 - ack
+2017-07-13 11:11:33 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:11:33 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:11:33 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:11:33 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:11:33 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:11:33 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:11:33 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:11:33 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:11:33 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:11:33 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:11:33 INFO  DataServerRpc:102 - ack
+2017-07-13 11:11:43 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:11:43 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:11:43 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:11:43 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:11:43 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:11:43 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:11:43 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:11:43 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:11:43 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:11:43 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:11:43 INFO  DataServerRpc:102 - ack
+2017-07-13 11:11:53 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:11:53 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:11:53 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:11:53 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:11:53 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:11:53 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:11:53 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:11:53 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:11:53 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:11:53 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:11:53 INFO  DataServerRpc:102 - ack
+2017-07-13 11:12:03 ERROR ClientRpcImpl:72 - Client exception: java.rmi.UnmarshalException: Error unmarshaling return header; nested exception is: 
+	java.io.EOFException
+2017-07-13 11:13:06 INFO  MetaRpcImpl:35 - RPC server ready
+2017-07-13 11:13:06 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:13:13 INFO  DataServer:29 - 2
+2017-07-13 11:13:13 INFO  DataServerRpc:50 - Dataserver RPC ready
+2017-07-13 11:13:14 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:13:14 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:13:14 INFO  MetaServer:230 - in.jpg:localhost:1100
+2017-07-13 11:13:14 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:13:14 INFO  MetaServer:230 - in.jpg:localhost:1100
+2017-07-13 11:13:14 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:13:14 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:13:14 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:13:14 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:13:14 INFO  DataServerRpc:105 - ack
+2017-07-13 11:13:16 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:13:20 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:13:20 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:20 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:13:20 INFO  MetaRpcImpl:62 - assign replicaslocalhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:20 INFO  ClientRpcImpl:83 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:20 INFO  DataServerFileIO:55 - get file: /Users/lbchen/data/localhost-1100/in.jpg
+2017-07-13 11:13:20 INFO  DataServerFileIO:57 - get data length: 287272
+2017-07-13 11:13:20 INFO  MetaRpcImpl:51 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:20 INFO  ClientRpcImpl:55 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:24 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:13:24 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:13:24 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:24 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:13:24 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:13:24 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:24 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:13:24 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:13:24 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:13:24 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:13:24 INFO  DataServerRpc:105 - ack
+2017-07-13 11:13:26 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:13:32 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:13:32 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:32 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:13:32 INFO  MetaRpcImpl:62 - assign replicaslocalhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:32 INFO  ClientRpcImpl:83 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:32 INFO  DataServerFileIO:55 - get file: /Users/lbchen/data/localhost-1100/in.jpg
+2017-07-13 11:13:32 INFO  DataServerFileIO:57 - get data length: 287272
+2017-07-13 11:13:32 INFO  MetaRpcImpl:51 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:32 INFO  ClientRpcImpl:55 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:34 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:13:34 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:13:34 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:34 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:13:34 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:13:34 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:34 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:13:34 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:13:34 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:13:34 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:13:34 INFO  DataServerRpc:105 - ack
+2017-07-13 11:13:36 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:13:44 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:13:44 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:13:44 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:44 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:13:44 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:13:44 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:44 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:13:44 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:13:44 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:13:44 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:13:44 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:13:44 INFO  DataServerRpc:105 - ack
+2017-07-13 11:13:46 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:13:46 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:46 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:13:46 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:13:46 INFO  MetaRpcImpl:62 - assign replicaslocalhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:46 INFO  ClientRpcImpl:83 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:46 INFO  DataServerFileIO:55 - get file: /Users/lbchen/data/localhost-1100/in.jpg
+2017-07-13 11:13:46 INFO  DataServerFileIO:57 - get data length: 0
+2017-07-13 11:13:46 INFO  MetaRpcImpl:51 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:46 INFO  ClientRpcImpl:55 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:46 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:13:54 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:13:54 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:13:54 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:54 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:13:54 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:13:54 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:13:54 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:13:54 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:13:54 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:13:54 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:13:54 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:13:54 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:13:54 INFO  DataServerRpc:105 - ack
+2017-07-13 11:13:56 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:14:04 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:14:04 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:14:04 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:04 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:14:04 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:14:04 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:14:04 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:04 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:14:04 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:14:04 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:14:04 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:14:04 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:14:04 INFO  DataServerRpc:105 - ack
+2017-07-13 11:14:06 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:14:14 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:14:14 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:14:14 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:14 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:14:14 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:14:14 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:14:14 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:14 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:14:14 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:14:14 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:14:14 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:14:14 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:14:14 INFO  DataServerRpc:105 - ack
+2017-07-13 11:14:16 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:14:19 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:14:19 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:19 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:14:19 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:14:19 INFO  MetaRpcImpl:62 - assign replicaslocalhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:19 INFO  ClientRpcImpl:83 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:19 INFO  DataServerFileIO:55 - get file: /Users/lbchen/data/localhost-1100/in.jpg
+2017-07-13 11:14:19 INFO  DataServerFileIO:57 - get data length: 0
+2017-07-13 11:14:19 INFO  MetaRpcImpl:51 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:19 INFO  ClientRpcImpl:55 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:24 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:14:24 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:14:24 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:24 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:14:24 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:14:24 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:14:24 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:24 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:14:24 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:14:24 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:14:24 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:14:24 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:14:24 INFO  DataServerRpc:105 - ack
+2017-07-13 11:14:26 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:14:28 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:14:28 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:28 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:14:28 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:14:28 INFO  MetaRpcImpl:62 - assign replicaslocalhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:28 INFO  ClientRpcImpl:83 - localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:28 INFO  DataServerFileIO:55 - get file: /Users/lbchen/data/localhost-1100/in.jpg
+2017-07-13 11:14:28 INFO  DataServerFileIO:57 - get data length: 0
+2017-07-13 11:14:28 INFO  MetaRpcImpl:51 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:28 INFO  ClientRpcImpl:55 - localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:34 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:14:34 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:14:34 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:34 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:14:34 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:14:34 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:14:34 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:34 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:14:34 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:14:34 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:14:34 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:14:34 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:14:34 INFO  DataServerRpc:105 - ack
+2017-07-13 11:14:36 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:14:44 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:14:44 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:14:44 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:44 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:14:44 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:14:44 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:14:44 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:44 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:14:44 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:14:44 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:14:44 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:14:44 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:14:44 INFO  DataServerRpc:105 - ack
+2017-07-13 11:14:46 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:14:54 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:14:54 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:14:54 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:54 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:14:54 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:14:54 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:14:54 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:14:54 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:14:54 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:14:54 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:14:54 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:14:54 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:14:54 INFO  DataServerRpc:105 - ack
+2017-07-13 11:14:56 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:15:04 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:15:04 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:15:04 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:15:04 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:15:04 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:15:04 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:15:04 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:15:04 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:15:04 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:15:04 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:15:04 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:15:04 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:15:04 INFO  DataServerRpc:105 - ack
+2017-07-13 11:15:06 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:15:14 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:15:14 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:15:14 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:15:14 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:15:14 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:15:14 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:15:14 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:15:14 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:15:14 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:15:14 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:15:14 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:15:14 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:15:14 INFO  DataServerRpc:105 - ack
+2017-07-13 11:15:16 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:15:24 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:15:24 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:15:24 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:15:24 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:15:24 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:15:24 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:15:24 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:15:24 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:15:24 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:15:24 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:15:24 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:15:24 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:15:24 INFO  DataServerRpc:105 - ack
+2017-07-13 11:15:26 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:15:34 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:15:34 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:15:34 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:15:34 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:15:34 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:15:34 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:15:34 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:15:34 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:15:34 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:15:34 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:15:34 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:15:34 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:15:34 INFO  DataServerRpc:105 - ack
+2017-07-13 11:15:36 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:15:44 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:15:44 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:15:44 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:15:44 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:15:44 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:15:44 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:15:44 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:15:44 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:15:44 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:15:44 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:15:44 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:15:44 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:15:44 INFO  DataServerRpc:105 - ack
+2017-07-13 11:15:46 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:15:54 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:15:54 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:15:54 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:15:54 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:15:54 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:15:54 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:15:54 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:15:54 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:15:54 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:15:54 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:15:54 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:15:54 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:15:54 INFO  DataServerRpc:105 - ack
+2017-07-13 11:15:56 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:16:04 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:16:04 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:16:04 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:16:04 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:16:04 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:16:04 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:16:04 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:16:04 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:16:04 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:16:04 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:16:04 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:16:04 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:16:04 INFO  DataServerRpc:105 - ack
+2017-07-13 11:16:06 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:16:14 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:16:14 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:16:14 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:16:14 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:16:14 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:16:14 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:16:14 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:16:14 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:16:14 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:16:14 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:16:14 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:16:14 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:16:14 INFO  DataServerRpc:105 - ack
+2017-07-13 11:16:16 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 11:16:24 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 11:16:24 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:16:24 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:16:24 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:16:24 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:16:24 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 11:16:24 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 11:16:24 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 11:16:24 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 11:16:24 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 11:16:24 INFO  MetaServer:237 - localhost:1100
+2017-07-13 11:16:24 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 11:16:24 INFO  DataServerRpc:105 - ack
+2017-07-13 11:16:26 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0

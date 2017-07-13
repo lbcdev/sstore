@@ -29,11 +29,12 @@ public class CipherHandler {
 	private DESKeySpec desKeySpec;
 	private SecretKeyFactory kf;
 	private String instance = "DES/ECB/PKCS5Padding";
+	private byte[] desKeyData = { (byte) 0x01, (byte) 0x02, (byte) 0x03, (byte) 0x04, (byte) 0x05, (byte) 0x06,
+			(byte) 0x07, (byte) 0x08 };
 
-	public CipherHandler(String inputkey) {
+	public CipherHandler() {
 		try {
 			cipher = Cipher.getInstance(instance);
-			byte[] desKeyData = inputkey.getBytes();
 			desKeySpec = new DESKeySpec(desKeyData);
 			kf = SecretKeyFactory.getInstance("DES");
 			key = kf.generateSecret(desKeySpec);
@@ -42,6 +43,13 @@ public class CipherHandler {
 		}
 	}
 
+	/**
+	 * Encrypt data and return it.
+	 * 
+	 * @param in
+	 *            input bytes
+	 * @return encrypted data
+	 */
 	public byte[] cipher(byte[] in) {
 		byte[] cdata = null;
 		try {
@@ -54,6 +62,13 @@ public class CipherHandler {
 		return cdata;
 	}
 
+	/**
+	 * Decrypt ciphered data and return it.
+	 * 
+	 * @param in
+	 *            ciphered data
+	 * @return deciphered data
+	 */
 	public byte[] decipher(byte[] in) {
 		byte[] decpherdata = null;
 		try {
