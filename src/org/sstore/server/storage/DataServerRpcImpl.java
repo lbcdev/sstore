@@ -7,6 +7,7 @@ import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 
 import org.apache.log4j.Logger;
+import org.sstore.security.encryption.CipherHandler;
 import org.sstore.server.metaserver.MetaRpc;
 import org.sstore.utils.Constants;
 
@@ -23,18 +24,21 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 
 	private final static Logger log = Logger.getLogger(DataServerRpc.class.getName());
 	private static DataServerFileIO dsfileio;
+	private CipherHandler cipherHandler;
 	private String metahost;
 	private int localport;
+	private String seckey = "sstore";
 
 	public DataServerRpcImpl() {
 		super();
 	}
-	
+
 	public DataServerRpcImpl(String metahost, int localport) {
 		this.metahost = metahost;
 		this.localport = localport;
 		String rootpath = "localhost-" + localport + "/";
 		dsfileio = new DataServerFileIO(rootpath);
+		cipherHandler = new CipherHandler(seckey);
 	}
 
 	public void startRpcServer(int port) {
@@ -75,11 +79,12 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 	}
 
 	public byte[] get(String remote) {
-		return dsfileio.get(remote);
+		return cipherHandler.decipher(dsfileio.get(remote));
 	}
 
 	public void put(String fname, byte[] data) {
-		dsfileio.put(fname, data);
+
+		dsfileio.put(fname, cipherHandler.cipher(data));
 	}
 
 	public void sendHeartBeat(String metahost) {
