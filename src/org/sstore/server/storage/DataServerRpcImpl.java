@@ -79,15 +79,15 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 	}
 
 	public byte[] get(String remote) {
-//		byte[] cdata = dsfileio.get(remote);
-		byte[] cdata = StreamFileUtils.readBytes(remote);
+		byte[] cdata = dsfileio.get(remote);
+		log.info("get " + cdata[0]);
 		return cipherHandler.decipher(cdata);
 	}
 
 	public void put(String fname, byte[] data) {
 		byte[] cdata = cipherHandler.cipher(data);
-//		dsfileio.put(fname, cdata);
-		StreamFileUtils.writeBytes(fname, cdata);
+		log.info("put " + cdata[0]);
+		dsfileio.put(fname, cdata);
 	}
 
 	public void sendHeartBeat(String metahost) {

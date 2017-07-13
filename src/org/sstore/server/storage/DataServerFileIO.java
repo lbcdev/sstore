@@ -72,6 +72,7 @@ public class DataServerFileIO {
 			FileOutputStream out = new FileOutputStream(rootdir + filename);
 			out.write(bytes);
 			out.flush();
+			log.info("put size " + bytes.length);
 			out.close();
 		} catch (IOException e) {
 			e.printStackTrace();

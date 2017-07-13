@@ -98,8 +98,9 @@ public class ClientRpcImpl implements ClientRpc {
 			final Registry registry = LocateRegistry.getRegistry("localhost", port);
 			DataServerRpc stub = (DataServerRpc) registry.lookup(Constants.DATARPC_NAME);
 			stub.put(remote, getFromLocal(local));
-			// command the primary to forward data to replicas, reduce client I/O.
-			stub.forwardToReplicas(remote, replicaArr);
+			// command the primary to forward data to replicas, reduce client
+			// I/O.
+//			stub.forwardToReplicas(remote, replicaArr);
 		} catch (RemoteException | NotBoundException e) {
 			log.error("Client exception: " + e.toString());
 
@@ -113,6 +114,7 @@ public class ClientRpcImpl implements ClientRpc {
 			File file = new File(filename);
 			FileInputStream in = new FileInputStream(file);
 			data = new byte[(int) file.length()];
+			log.info("getFromLocal size " + data.length);
 			in.read(data);
 			in.close();
 		} catch (IOException e) {
