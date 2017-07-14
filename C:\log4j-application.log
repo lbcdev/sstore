@@ -65868,3 +65868,709 @@
 2017-07-13 13:04:26 INFO  MetaServer:237 - localhost:1100
 2017-07-13 13:04:26 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
 2017-07-13 13:04:26 INFO  DataServerRpc:105 - ack
+2017-07-13 13:04:31 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:04:36 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:04:36 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:04:36 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:04:36 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:04:36 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:04:36 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:04:36 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:04:36 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:04:36 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:04:36 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:04:36 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:04:36 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:04:36 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:04:36 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:04:36 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:04:36 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:04:36 INFO  DataServerRpc:105 - ack
+2017-07-13 13:04:41 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:04:46 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:04:46 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:04:46 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:04:46 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:04:46 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:04:46 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:04:46 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:04:46 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:04:46 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:04:46 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:04:46 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:04:46 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:04:46 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:04:46 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:04:46 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:04:46 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:04:46 INFO  DataServerRpc:105 - ack
+2017-07-13 13:04:51 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:04:56 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:04:56 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:04:56 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:04:56 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:04:56 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:04:56 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:04:56 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:04:56 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:04:56 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:04:56 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:04:56 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:04:56 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:04:56 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:04:56 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:04:56 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:04:56 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:04:56 INFO  DataServerRpc:105 - ack
+2017-07-13 13:05:01 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:05:06 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:05:06 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:05:06 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:05:06 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:05:06 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:05:06 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:05:06 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:05:06 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:05:06 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:05:06 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:05:06 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:05:06 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:05:06 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:05:06 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:05:06 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:05:06 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:05:06 INFO  DataServerRpc:105 - ack
+2017-07-13 13:05:11 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:05:16 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:05:16 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:05:16 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:05:16 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:05:16 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:05:16 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:05:16 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:05:16 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:05:16 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:05:16 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:05:16 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:05:16 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:05:16 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:05:16 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:05:16 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:05:16 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:05:16 INFO  DataServerRpc:105 - ack
+2017-07-13 13:05:21 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:05:26 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:05:26 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:05:26 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:05:26 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:05:26 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:05:26 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:05:26 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:05:26 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:05:26 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:05:26 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:05:26 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:05:26 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:05:26 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:05:26 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:05:26 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:05:26 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:05:26 INFO  DataServerRpc:105 - ack
+2017-07-13 13:05:31 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:05:36 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:05:36 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:05:36 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:05:36 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:05:36 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:05:36 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:05:36 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:05:36 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:05:36 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:05:36 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:05:36 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:05:36 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:05:36 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:05:36 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:05:36 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:05:36 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:05:36 INFO  DataServerRpc:105 - ack
+2017-07-13 13:05:41 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:05:46 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:05:46 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:05:46 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:05:46 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:05:46 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:05:46 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:05:46 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:05:46 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:05:46 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:05:46 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:05:46 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:05:46 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:05:46 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:05:46 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:05:46 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:05:46 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:05:46 INFO  DataServerRpc:105 - ack
+2017-07-13 13:05:51 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:05:56 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:05:56 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:05:56 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:05:56 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:05:56 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:05:56 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:05:56 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:05:56 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:05:56 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:05:56 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:05:56 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:05:56 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:05:56 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:05:56 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:05:56 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:05:56 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:05:56 INFO  DataServerRpc:105 - ack
+2017-07-13 13:06:01 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:06:06 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:06:06 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:06:06 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:06:06 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:06:06 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:06:06 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:06:06 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:06:06 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:06:06 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:06:06 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:06:06 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:06:06 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:06:06 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:06:06 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:06:06 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:06:06 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:06:06 INFO  DataServerRpc:105 - ack
+2017-07-13 13:06:11 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:06:16 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:06:16 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:06:16 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:06:16 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:06:16 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:06:16 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:06:16 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:06:16 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:06:16 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:06:16 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:06:16 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:06:16 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:06:16 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:06:16 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:06:16 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:06:16 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:06:16 INFO  DataServerRpc:105 - ack
+2017-07-13 13:06:21 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:06:26 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:06:26 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:06:26 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:06:26 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:06:26 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:06:26 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:06:26 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:06:26 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:06:26 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:06:26 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:06:26 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:06:26 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:06:26 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:06:26 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:06:26 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:06:26 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:06:26 INFO  DataServerRpc:105 - ack
+2017-07-13 13:06:31 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:06:36 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:06:36 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:06:36 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:06:36 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:06:36 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:06:36 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:06:36 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:06:36 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:06:36 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:06:36 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:06:36 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:06:36 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:06:36 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:06:36 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:06:36 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:06:36 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:06:36 INFO  DataServerRpc:105 - ack
+2017-07-13 13:06:41 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:06:46 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:06:46 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:06:46 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:06:46 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:06:46 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:06:46 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:06:46 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:06:46 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:06:46 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:06:46 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:06:46 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:06:46 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:06:46 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:06:46 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:06:46 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:06:46 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:06:46 INFO  DataServerRpc:105 - ack
+2017-07-13 13:06:51 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:06:56 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:06:56 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:06:56 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:06:56 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:06:56 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:06:56 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:06:56 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:06:56 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:06:56 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:06:56 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:06:56 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:06:56 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:06:56 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:06:56 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:06:56 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:06:56 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:06:56 INFO  DataServerRpc:105 - ack
+2017-07-13 13:07:01 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:07:06 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:07:06 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:07:06 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:07:06 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:07:06 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:07:06 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:07:06 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:07:06 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:07:06 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:07:06 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:07:06 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:07:06 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:07:06 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:07:06 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:07:06 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:07:06 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:07:06 INFO  DataServerRpc:105 - ack
+2017-07-13 13:07:11 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:07:16 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:07:16 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:07:16 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:07:16 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:07:16 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:07:16 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:07:16 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:07:16 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:07:16 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:07:16 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:07:16 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:07:16 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:07:16 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:07:16 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:07:16 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:07:16 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:07:16 INFO  DataServerRpc:105 - ack
+2017-07-13 13:07:21 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:07:26 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:07:26 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:07:26 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:07:26 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:07:26 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:07:26 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:07:26 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:07:26 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:07:26 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:07:26 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:07:26 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:07:26 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:07:26 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:07:26 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:07:26 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:07:26 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:07:26 INFO  DataServerRpc:105 - ack
+2017-07-13 13:07:31 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:07:36 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:07:36 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:07:36 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:07:36 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:07:36 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:07:36 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:07:36 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:07:36 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:07:36 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:07:36 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:07:36 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:07:36 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:07:36 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:07:36 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:07:36 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:07:36 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:07:36 INFO  DataServerRpc:105 - ack
+2017-07-13 13:07:41 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:07:46 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:07:46 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:07:46 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:07:46 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:07:46 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:07:46 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:07:46 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:07:46 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:07:46 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:07:46 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:07:46 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:07:46 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:07:46 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:07:46 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:07:46 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:07:46 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:07:46 INFO  DataServerRpc:105 - ack
+2017-07-13 13:07:51 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:07:56 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:07:56 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:07:56 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:07:56 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:07:56 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:07:56 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:07:56 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:07:56 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:07:56 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:07:56 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:07:56 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:07:56 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:07:56 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:07:56 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:07:56 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:07:56 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:07:56 INFO  DataServerRpc:105 - ack
+2017-07-13 13:08:01 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:08:06 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:08:06 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:08:06 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:08:06 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:08:06 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:08:06 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:08:06 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:08:06 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:08:06 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:08:06 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:08:06 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:08:06 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:08:06 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:08:06 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:08:06 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:08:06 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:08:06 INFO  DataServerRpc:105 - ack
+2017-07-13 13:08:11 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:08:16 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:08:16 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:08:16 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:08:16 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:08:16 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:08:16 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:08:16 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:08:16 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:08:16 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:08:16 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:08:16 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:08:16 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:08:16 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:08:16 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:08:16 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:08:16 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:08:16 INFO  DataServerRpc:105 - ack
+2017-07-13 13:08:21 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:08:26 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:08:26 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:08:26 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:08:26 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:08:26 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:08:26 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:08:26 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:08:26 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:08:26 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:08:26 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:08:26 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:08:26 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:08:26 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:08:26 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:08:26 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:08:26 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:08:26 INFO  DataServerRpc:105 - ack
+2017-07-13 13:08:31 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:08:36 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:08:36 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:08:36 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:08:36 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:08:36 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:08:36 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:08:36 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:08:36 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:08:36 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:08:36 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:08:36 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:08:36 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:08:36 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:08:36 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:08:36 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:08:36 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:08:36 INFO  DataServerRpc:105 - ack
+2017-07-13 13:08:41 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:08:46 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:08:46 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:08:46 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:08:46 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:08:46 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:08:46 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:08:46 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:08:46 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:08:46 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:08:46 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:08:46 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:08:46 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:08:46 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:08:46 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:08:46 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:08:46 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:08:46 INFO  DataServerRpc:105 - ack
+2017-07-13 13:08:51 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:08:56 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:08:56 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:08:56 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:08:56 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:08:56 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:08:56 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:08:56 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:08:56 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:08:56 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:08:56 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:08:56 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:08:56 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:08:56 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:08:56 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:08:56 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:08:56 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:08:56 INFO  DataServerRpc:105 - ack
+2017-07-13 13:09:01 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:09:06 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:09:06 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:09:06 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:09:06 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:09:06 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:09:06 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:09:06 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:09:06 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:09:06 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:09:06 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:09:06 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:09:06 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:09:06 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:09:06 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:09:06 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:09:06 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:09:06 INFO  DataServerRpc:105 - ack
+2017-07-13 13:09:11 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:09:16 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:09:16 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:09:16 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:09:16 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:09:16 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:09:16 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:09:16 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:09:16 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:09:16 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:09:16 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:09:16 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:09:16 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:09:16 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:09:16 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:09:16 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:09:16 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:09:16 INFO  DataServerRpc:105 - ack
+2017-07-13 13:09:21 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:09:26 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:09:26 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:09:26 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:09:26 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:09:26 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:09:26 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:09:26 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:09:26 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:09:26 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:09:26 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:09:26 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:09:26 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:09:26 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:09:26 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:09:26 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:09:26 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:09:26 INFO  DataServerRpc:105 - ack
+2017-07-13 13:09:31 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:09:36 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:09:36 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:09:36 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:09:36 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:09:36 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:09:36 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:09:36 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:09:36 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:09:36 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:09:36 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:09:36 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:09:36 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:09:36 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:09:36 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:09:36 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:09:36 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:09:36 INFO  DataServerRpc:105 - ack
+2017-07-13 13:09:41 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:09:47 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:09:47 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:09:47 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:09:47 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:09:47 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:09:47 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:09:47 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:09:47 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:09:47 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:09:47 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:09:47 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:09:47 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:09:47 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:09:47 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:09:47 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:09:47 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:09:47 INFO  DataServerRpc:105 - ack
+2017-07-13 13:09:51 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:09:57 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:09:57 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:09:57 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:09:57 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:09:57 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:09:57 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:09:57 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:09:57 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:09:57 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:09:57 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:09:57 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:09:57 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:09:57 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:09:57 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:09:57 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:09:57 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:09:57 INFO  DataServerRpc:105 - ack
+2017-07-13 13:10:01 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-13 13:10:07 INFO  DataServerFileIO:39 - Read directory: /Users/lbchen/data/localhost-1100/
+2017-07-13 13:10:07 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:10:07 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:10:07 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:10:07 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:10:07 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:10:07 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:10:07 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:10:07 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:10:07 INFO  MetaServer:226 - ------ print table ------
+2017-07-13 13:10:07 INFO  MetaServer:230 - in.jpg:localhost:1100,localhost:1100,localhost:1100,localhost:1100
+2017-07-13 13:10:07 INFO  MetaServer:230 - in705.jpg:localhost:1100
+2017-07-13 13:10:07 INFO  MetaServer:230 - .DS_Store:localhost:1100
+2017-07-13 13:10:07 INFO  MetaServer:235 - ------- print dataserver list --------
+2017-07-13 13:10:07 INFO  MetaServer:237 - localhost:1100
+2017-07-13 13:10:07 INFO  MetaRpcImpl:76 - receive heartbeat from localhost:1100
+2017-07-13 13:10:07 INFO  DataServerRpc:105 - ack
+2017-07-13 13:10:11 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:18:02 INFO  MetaRpcImpl:35 - RPC server ready
+2017-07-14 16:18:02 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:18:12 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:18:22 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:18:32 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:18:42 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:18:52 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:19:02 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:19:12 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:19:27 INFO  MetaRpcImpl:35 - RPC server ready
+2017-07-14 16:19:27 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:19:37 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:19:47 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:19:57 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:20:07 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:20:17 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:20:27 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:20:37 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:20:47 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:20:57 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:21:05 ERROR ClientRpcImpl:84 - No dataserver active.
+2017-07-14 16:21:07 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:21:17 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:21:27 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:21:37 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:21:47 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:21:57 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:22:07 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:22:17 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:22:27 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:22:37 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:22:47 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:22:57 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:23:07 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:23:17 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:23:27 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:23:37 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:23:47 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:23:57 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:24:07 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:24:17 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:24:27 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:24:37 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:24:47 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:24:57 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:25:07 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:25:17 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:25:28 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:25:38 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:25:48 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:25:58 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:26:08 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:26:18 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:26:28 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:26:38 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:26:48 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:26:58 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:27:08 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:27:18 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:27:28 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:27:38 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:27:48 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:27:58 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:28:08 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:28:18 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:28:28 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:28:38 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:28:48 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:28:58 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:29:08 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:29:18 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:29:28 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:29:38 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:29:48 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:29:58 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:30:08 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:30:18 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:30:28 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:30:38 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:30:48 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:30:58 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:31:08 INFO  MetaDataManager:60 - checkDSStatus: get failed dataserver of0
+2017-07-14 16:31:22 INFO  MetaRpcImpl:35 - RPC server ready
+2017-07-14 16:31:22 ERROR MetaDataManager:52 - No dataserver active
+2017-07-14 16:32:23 INFO  DataServer:29 - 2
+2017-07-14 16:32:24 INFO  DataServerRpc:50 - Dataserver RPC ready
+2017-07-14 16:32:24 ERROR DataServerRpc:108 - Client exception: java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused
+2017-07-14 16:32:33 INFO  MetaRpcImpl:35 - RPC server ready
+2017-07-14 16:32:33 ERROR MetaDataManager:52 - No dataserver active
+2017-07-14 16:32:43 ERROR MetaDataManager:52 - No dataserver active
+2017-07-14 16:32:53 ERROR MetaDataManager:52 - No dataserver active
+2017-07-14 16:33:03 ERROR MetaDataManager:52 - No dataserver active

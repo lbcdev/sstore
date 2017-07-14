@@ -23,6 +23,9 @@ public class Constants {
 	
 	public final static String METARPC_NAME = "metarpc";
 	public final static String DATARPC_NAME = "dsrpc";
-
+	
+	/** message */
+	public final static String NODATASERVER_MSG = "No dataserver active";
+	public final static String INSUFFICIENT_DS = "No enough dataserver";
 	
 }

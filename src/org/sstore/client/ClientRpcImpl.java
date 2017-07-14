@@ -80,6 +80,10 @@ public class ClientRpcImpl implements ClientRpc {
 			final Registry registry = LocateRegistry.getRegistry("localhost");
 			MetaRpc stub = (MetaRpc) registry.lookup("metarpc");
 			String replicas = stub.assignDataServer(remote);
+			if(replicas == null){
+				log.error("No dataserver active.");
+				System.exit(0);
+			}
 			log.info(replicas);
 			putFile(local, remote, replicas);
 		} catch (RemoteException | NotBoundException e) {

@@ -58,16 +58,19 @@ public class MetaRpcImpl implements MetaRpc {
 	public String assignDataServer(String remote) {
 
 		String replicas = metaserver.assignReplica(remote);
-		metaserver.updateF2DSTable(remote, replicas);
-		log.info("assign replicas" + replicas);
-		return replicas;
+		if (replicas != null) {
+			metaserver.updateF2DSTable(remote, replicas);
+			log.info("assign replicas" + replicas);
+			return replicas;
+		}
+		return null;
 	}
 
 	/** Receive heart beat block info from dataserver. */
 	public String heartBeat(String msg) {
 		String sid = msg.split(",")[1];
 		String[] filestr = msg.split(",")[2].split("-");
-		
+
 		metaserver.updateDS2FTable(sid, filestr);
 		for (String fname : filestr) {
 			metaserver.updateF2DSTable(fname, sid);

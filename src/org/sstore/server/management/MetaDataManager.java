@@ -47,6 +47,14 @@ public class MetaDataManager implements Runnable {
 	public List<String> checkDSStatus() {
 		List<String> failedList = new ArrayList<String>();
 		HashMap<String, DataServerStatus> dsTable = metaserver.getDSTable();
+
+		if (dsTable.size() == 0) {
+			log.error(Constants.NODATASERVER_MSG);
+			return failedList;
+		}
+		if (dsTable.size() < 3) {
+			log.error(Constants.INSUFFICIENT_DS);
+		}
 		Iterator<String> iter = dsTable.keySet().iterator();
 		while (iter.hasNext()) {
 			String key = iter.next();
@@ -55,9 +63,9 @@ public class MetaDataManager implements Runnable {
 				failedList.add(key);
 			}
 			// decrease ttl by 1.
-			status.setTTL(status.getTTL()-1);
+			status.setTTL(status.getTTL() - 1);
 		}
-		log.info("checkDSStatus: get failed dataserver of" + failedList.size());
+		log.info("checkDSStatus: get " + failedList.size() + "failed dataserver");
 		return failedList;
 	}
 
@@ -75,4 +83,5 @@ public class MetaDataManager implements Runnable {
 			metaserver.removeReplicaOfFile(fname, dsid);
 		}
 	}
+
 }

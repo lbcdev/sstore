@@ -134,11 +134,18 @@ public class MetaServer {
 	String assignReplica(String filename) {
 		long seed = System.currentTimeMillis();
 		Random rand = new Random(seed);
-		int primary = rand.nextInt(dsList.size());
-		int r2 = (primary + Constants.REPLIC_FACTOR) % dsList.size();
-		int r3 = (r2 + Constants.REPLIC_FACTOR) % dsList.size();
-		String replicas = dsList.get(primary) + "," + dsList.get(r2) + "," + dsList.get(r3);
-		return replicas;
+		if (dsList.size() <= 0) {
+			return null;
+		} else {
+			int primary = rand.nextInt(dsList.size());
+			if (dsList.size() >= 3) {
+				int r2 = (primary + Constants.REPLIC_FACTOR) % dsList.size();
+				int r3 = (r2 + Constants.REPLIC_FACTOR) % dsList.size();
+				String replicas = dsList.get(primary) + "," + dsList.get(r2) + "," + dsList.get(r3);
+				return replicas;
+			} else
+				return dsList.get(primary);
+		}
 	}
 
 	/**
