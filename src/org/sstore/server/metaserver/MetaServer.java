@@ -169,7 +169,7 @@ public class MetaServer {
 		} else {
 			f2dsTable.put(filename, sid);
 		}
-		flushF2DSTable();
+//		flushF2DSTable();
 		printTable(f2dsTable);
 	}
 
