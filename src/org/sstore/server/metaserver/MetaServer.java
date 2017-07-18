@@ -11,6 +11,7 @@ import java.util.Random;
 import java.util.Set;
 
 import org.apache.log4j.Logger;
+import org.sstore.client.ClientInfo;
 import org.sstore.server.management.MetaDataManager;
 import org.sstore.server.storage.DataServerStatus;
 import org.sstore.utils.Constants;
@@ -47,6 +48,10 @@ public class MetaServer {
 	private static List<String> dsList;
 	// dataserver file list.
 	private static Map<String, String[]> ds2fTable;
+
+	/** Security-related data structures */
+	// client registry table
+	private static Map<Integer, ClientInfo> clientTable;
 
 	public static void main(String[] args) {
 		MetaServer metaserver = new MetaServer();
@@ -169,7 +174,7 @@ public class MetaServer {
 		} else {
 			f2dsTable.put(filename, sid);
 		}
-//		flushF2DSTable();
+		// flushF2DSTable();
 		printTable(f2dsTable);
 	}
 

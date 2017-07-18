@@ -36,7 +36,6 @@ public class CipherHandler {
 			inputKey = Arrays.copyOf(inputKey, length);
 			skspec = new SecretKeySpec(inputKey, "AES");
 			aesCipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
-
 		} catch (NoSuchAlgorithmException | NoSuchPaddingException e) {
 			e.printStackTrace();
 		}
