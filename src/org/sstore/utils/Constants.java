@@ -28,4 +28,6 @@ public class Constants {
 	public final static String NODATASERVER_MSG = "No dataserver active";
 	public final static String INSUFFICIENT_DS = "No enough dataserver";
 	
+	/** key length */
+	public final static int DEFAULT_KEY_LENGTH = 16;
 }

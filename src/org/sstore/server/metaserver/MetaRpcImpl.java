@@ -40,6 +40,11 @@ public class MetaRpcImpl implements MetaRpc {
 		}
 	}
 
+	/** client registry */
+	public long registry() {
+		return metaserver.registry();
+	}
+
 	/**
 	 * find a replica server that holds the remote file and return the address
 	 * to the client.

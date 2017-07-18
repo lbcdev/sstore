@@ -9,6 +9,8 @@ import org.sstore.protocol.BlockMessage;
 
 public interface MetaRpc extends Remote {
 
+	public long registry() throws RemoteException;
+	
 	public String heartBeat(String msg) throws RemoteException;
 
 	public String findDataServer(String remote) throws RemoteException;

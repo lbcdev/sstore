@@ -14,14 +14,9 @@ package org.sstore.security.auth;
 public class AuthManager {
 
 	/** client registry method, returns unique client id. */
-	public long registry() {
-		long clientId;
-		clientId = generateId();
-		return clientId;
-	}
-
-	/** generate unique client id, use millisecond temporally */
-	private synchronized long generateId() {
+	public static long registry() {
 		return System.currentTimeMillis();
 	}
+
+	
 }

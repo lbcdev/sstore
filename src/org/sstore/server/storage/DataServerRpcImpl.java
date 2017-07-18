@@ -8,9 +8,9 @@ import java.rmi.server.UnicastRemoteObject;
 
 import org.apache.log4j.Logger;
 import org.sstore.security.encryption.CipherHandler;
+import org.sstore.security.encryption.DataKeyGenerator;
 import org.sstore.server.metaserver.MetaRpc;
 import org.sstore.utils.Constants;
-import org.sstore.utils.StreamFileUtils;
 
 /**
  * dataserver rpc handles all calls from clients and sends heartbeat message to
@@ -38,7 +38,6 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 		this.localport = localport;
 		String rootpath = "localhost-" + localport + "/";
 		dsfileio = new DataServerFileIO(rootpath);
-		cipherHandler = new CipherHandler();
 	}
 
 	public void startRpcServer(int port) {
@@ -78,16 +77,21 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 		}
 	}
 
-	public byte[] get(String remote) {
-		byte[] cdata = dsfileio.get(remote);
+	public byte[] get(String remote, long clientId) {
+		DataKeyGenerator keyGen = new DataKeyGenerator();
+		byte[] key = keyGen.genKey(remote, clientId, Constants.DEFAULT_KEY_LENGTH);
+		cipherHandler = new CipherHandler(key, Constants.DEFAULT_KEY_LENGTH);		byte[] cdata = dsfileio.get(remote);
 		log.info("get " + cdata[0]);
 		return cipherHandler.decipher(cdata);
 	}
 
-	public void put(String fname, byte[] data) {
+	public void put(String filename, byte[] data, long clientId) {
+		DataKeyGenerator keyGen = new DataKeyGenerator();
+		byte[] key = keyGen.genKey(filename, clientId, Constants.DEFAULT_KEY_LENGTH);
+		cipherHandler = new CipherHandler(key, Constants.DEFAULT_KEY_LENGTH);
 		byte[] cdata = cipherHandler.cipher(data);
 		log.info("put " + cdata[0]);
-		dsfileio.put(fname, cdata);
+		dsfileio.put(filename, cdata);
 	}
 
 	public void sendHeartBeat(String metahost) {

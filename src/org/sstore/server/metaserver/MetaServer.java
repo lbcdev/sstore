@@ -12,6 +12,7 @@ import java.util.Set;
 
 import org.apache.log4j.Logger;
 import org.sstore.client.ClientInfo;
+import org.sstore.security.auth.AuthManager;
 import org.sstore.server.management.MetaDataManager;
 import org.sstore.server.storage.DataServerStatus;
 import org.sstore.utils.Constants;
@@ -51,7 +52,7 @@ public class MetaServer {
 
 	/** Security-related data structures */
 	// client registry table
-	private static Map<Integer, ClientInfo> clientTable;
+	private static Map<Long, ClientInfo> clientTable;
 
 	public static void main(String[] args) {
 		MetaServer metaserver = new MetaServer();
@@ -67,6 +68,8 @@ public class MetaServer {
 		dsList = new ArrayList<String>();
 		ds2fTable = new HashMap<String, String[]>();
 
+		clientTable = new HashMap<Long, ClientInfo>();
+		
 		startServer();
 		startMetaManager();
 	}
@@ -81,6 +84,14 @@ public class MetaServer {
 	void startServer() {
 		MetaRpcImpl metarpc = new MetaRpcImpl();
 		metarpc.startRpcServer();
+	}
+
+	/** client program registry. */
+	public long registry() {
+		long clientId = AuthManager.registry();
+		ClientInfo clientInfo = new ClientInfo();
+		clientTable.put(clientId, clientInfo);
+		return clientId;
 	}
 
 	/**

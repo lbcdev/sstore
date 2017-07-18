@@ -11,9 +11,9 @@ public interface DataServerRpc extends Remote {
 
 	public void sendHeartBeat(String host, int port) throws RemoteException;
 
-	public byte[] get(String remote) throws RemoteException;
+	public byte[] get(String remote, long clientId) throws RemoteException;
 
-	public void put(String fname, byte[] data) throws RemoteException;
+	public void put(String fname, byte[] data, long clientId) throws RemoteException;
 
 	public void forwardToReplicas(String fname, String[] replicas) throws RemoteException;
 

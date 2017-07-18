@@ -29,10 +29,10 @@ public class CipherHandler {
 	static SecretKeyFactory kf;
 	static SecretKeySpec skspec;
 
-	public CipherHandler(String key, int length) {
+	public CipherHandler(byte[] key, int length) {
 		try {
 			MessageDigest sha = MessageDigest.getInstance("SHA-1");
-			byte[] inputKey = sha.digest(key.getBytes());
+			byte[] inputKey = sha.digest(key);
 			inputKey = Arrays.copyOf(inputKey, length);
 			skspec = new SecretKeySpec(inputKey, "AES");
 			aesCipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
