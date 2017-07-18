@@ -55,23 +55,23 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 	}
 
 	/** forward data to other replicas except the primary itself. */
-	public void forwardToReplicas(String filename, String[] replicas) {
+	public void forwardToReplicas(String filename, String[] replicas, long clientId) {
 		byte[] data = dsfileio.get(filename);
 		// skip the primary by starting at index 1, method needs to be improved.
 		for (int i = 1; i < replicas.length; i++) {
-			forward(filename, data, replicas[i]);
+			forward(filename, data, replicas[i], clientId);
 		}
 	}
 
 	/** forward data to a replica by address */
-	public void forward(String remote, byte[] data, String hostaddr) {
+	public void forward(String remote, byte[] data, String hostaddr, long clientId) {
 		String[] addrarr = hostaddr.split(":");
 		String host = addrarr[0];
 		int port = Integer.parseInt(addrarr[1]);
 		try {
 			final Registry dsregistry = LocateRegistry.getRegistry(host, port);
 			DataServerRpc stub = (DataServerRpc) dsregistry.lookup(Constants.DATARPC_NAME);
-			stub.put(remote, data);
+			stub.put(remote, data, clientId);
 		} catch (RemoteException | NotBoundException e) {
 			log.info(e.getMessage());
 		}
@@ -81,7 +81,7 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 		DataKeyGenerator keyGen = new DataKeyGenerator();
 		byte[] key = keyGen.genKey(remote, clientId, Constants.DEFAULT_KEY_LENGTH);
 		cipherHandler = new CipherHandler(key, Constants.DEFAULT_KEY_LENGTH);		byte[] cdata = dsfileio.get(remote);
-		log.info("get " + cdata[0]);
+		log.info("generate dep key: " + key[0]);
 		return cipherHandler.decipher(cdata);
 	}
 
@@ -90,7 +90,7 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 		byte[] key = keyGen.genKey(filename, clientId, Constants.DEFAULT_KEY_LENGTH);
 		cipherHandler = new CipherHandler(key, Constants.DEFAULT_KEY_LENGTH);
 		byte[] cdata = cipherHandler.cipher(data);
-		log.info("put " + cdata[0]);
+		log.info("generate ecp key " + key[0] + " for " + filename);
 		dsfileio.put(filename, cdata);
 	}
 

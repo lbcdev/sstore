@@ -27,7 +27,7 @@ public class ClientRpcImpl implements ClientRpc {
 	private Registry registry; // metaserver rpc registry.
 	private Registry dsregistry; // dataserver rpc registry.
 	private static long clientId;
-	
+
 	public ClientRpcImpl(String metahost) {
 		try {
 			registry = LocateRegistry.getRegistry(metahost);
@@ -45,9 +45,14 @@ public class ClientRpcImpl implements ClientRpc {
 		clientrpc.putReq(local, remote);
 		local = "/Users/lbchen/out705.jpg";
 		clientrpc.getReq(remote, local);
+		
+		remote = "in1.jpg";
+		clientrpc.putReq(local, remote);
+		local = "/Users/lbchen/out718.jpg";
+		clientrpc.getReq(remote, local);
 	}
 
-	public void registry(){
+	public void registry() {
 		try {
 			MetaRpc stub = (MetaRpc) registry.lookup(Constants.METARPC_NAME);
 			clientId = stub.registry();
@@ -55,6 +60,7 @@ public class ClientRpcImpl implements ClientRpc {
 			log.info(e.getMessage());
 		}
 	}
+
 	/** send get request to metaserver via rpc. */
 	public byte[] getReq(String remote, String local) {
 		byte[] data = null;
@@ -114,7 +120,7 @@ public class ClientRpcImpl implements ClientRpc {
 			stub.put(remote, getFromLocal(local), clientId);
 			// command the primary to forward data to replicas, reduce client
 			// I/O.
-			stub.forwardToReplicas(remote, replicaArr);
+			stub.forwardToReplicas(remote, replicaArr, clientId);
 		} catch (RemoteException | NotBoundException e) {
 			log.error("Client exception: " + e.toString());
 		}

@@ -15,7 +15,7 @@ public interface DataServerRpc extends Remote {
 
 	public void put(String fname, byte[] data, long clientId) throws RemoteException;
 
-	public void forwardToReplicas(String fname, String[] replicas) throws RemoteException;
+	public void forwardToReplicas(String fname, String[] replicas, long clientId) throws RemoteException;
 
 	public String readTest() throws RemoteException;
 }
