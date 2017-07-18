@@ -54,6 +54,9 @@ public class MetaServer {
 	// client registry table
 	private static Map<Long, ClientInfo> clientTable;
 
+	// secure mode is on by default.
+	private static boolean secureMode = true;
+
 	public static void main(String[] args) {
 		MetaServer metaserver = new MetaServer();
 		metaserver.initialize();
@@ -69,7 +72,7 @@ public class MetaServer {
 		ds2fTable = new HashMap<String, String[]>();
 
 		clientTable = new HashMap<Long, ClientInfo>();
-		
+
 		startServer();
 		startMetaManager();
 	}
@@ -92,6 +95,10 @@ public class MetaServer {
 		ClientInfo clientInfo = new ClientInfo();
 		clientTable.put(clientId, clientInfo);
 		return clientId;
+	}
+
+	public boolean getSecureMode() {
+		return secureMode;
 	}
 
 	/**

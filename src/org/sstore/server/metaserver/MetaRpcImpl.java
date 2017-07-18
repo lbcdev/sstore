@@ -71,6 +71,10 @@ public class MetaRpcImpl implements MetaRpc {
 		return null;
 	}
 
+	public boolean getSecureMode() {
+		return metaserver.getSecureMode();
+	}
+
 	/** Receive heart beat block info from dataserver. */
 	public String heartBeat(String msg) {
 		String sid = msg.split(",")[1];
