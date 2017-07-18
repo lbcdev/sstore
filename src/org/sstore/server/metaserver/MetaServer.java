@@ -192,8 +192,8 @@ public class MetaServer {
 		} else {
 			f2dsTable.put(filename, sid);
 		}
-		// flushF2DSTable();
-		printTable(f2dsTable);
+//		flushF2DSTable();
+//		printTable(f2dsTable);
 	}
 
 	/**
@@ -228,7 +228,7 @@ public class MetaServer {
 		}
 		f2dsTable.put(filename, newReplicas);
 		log.info("removeReplicaOfFile new replicas" + newReplicas);
-		printTable(f2dsTable);
+//		printTable(f2dsTable);
 	}
 
 	/** flush file-dataserver table to disk */
