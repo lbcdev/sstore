@@ -55,7 +55,7 @@ public class MetaServer {
 	private static Map<Long, ClientInfo> clientTable;
 
 	// secure mode is on by default.
-	private static boolean secureMode = true;
+	private static boolean secureMode = false;
 
 	public static void main(String[] args) {
 		MetaServer metaserver = new MetaServer();
@@ -221,8 +221,11 @@ public class MetaServer {
 				sbuf.append(",");
 			}
 		}
-		// remove the last ',' and update new replica list.
-		String newReplicas = sbuf.substring(0, sbuf.length() - 1).toString();
+		String newReplicas = "";
+		if (sbuf.length() > 0) {
+			// remove the last ',' and update new replica list.
+			newReplicas = sbuf.substring(0, sbuf.length() - 1).toString();
+		}
 		f2dsTable.put(filename, newReplicas);
 		log.info("removeReplicaOfFile new replicas" + newReplicas);
 		printTable(f2dsTable);
