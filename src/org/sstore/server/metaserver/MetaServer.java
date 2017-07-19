@@ -55,7 +55,7 @@ public class MetaServer {
 	private static Map<Long, ClientInfo> clientTable;
 
 	// secure mode is on by default.
-	private static boolean secureMode = true;
+	private static boolean secureMode = false;
 
 	public static void main(String[] args) {
 		MetaServer metaserver = new MetaServer();

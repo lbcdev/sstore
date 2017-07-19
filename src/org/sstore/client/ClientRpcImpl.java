@@ -45,7 +45,7 @@ public class ClientRpcImpl implements ClientRpc {
 		clientrpc.putReq(local, remote);
 		local = "/Users/lbchen/out705.jpg";
 		clientrpc.getReq(remote, local);
-		
+
 		remote = "in1.jpg";
 		clientrpc.putReq(local, remote);
 		local = "/Users/lbchen/out718.jpg";
@@ -112,17 +112,23 @@ public class ClientRpcImpl implements ClientRpc {
 	public void putFile(String local, String remote, String replicas) {
 
 		String[] replicaArr = replicas.split(",");
-		String primary = replicaArr[0];
-		int port = Integer.parseInt(primary.split(":")[1]);
-		try {
-			final Registry registry = LocateRegistry.getRegistry("localhost", port);
-			DataServerRpc stub = (DataServerRpc) registry.lookup(Constants.DATARPC_NAME);
-			stub.put(remote, getFromLocal(local), clientId);
-			// command the primary to forward data to replicas, reduce client
-			// I/O.
-			stub.forwardToReplicas(remote, replicaArr, clientId);
-		} catch (RemoteException | NotBoundException e) {
-			log.error("Client exception: " + e.toString());
+		if (replicaArr.length == 0) {
+			String primary = replicaArr[0];
+			int port = Integer.parseInt(primary.split(":")[1]);
+			try {
+				final Registry registry = LocateRegistry.getRegistry("localhost", port);
+				DataServerRpc stub = (DataServerRpc) registry.lookup(Constants.DATARPC_NAME);
+				stub.put(remote, getFromLocal(local), clientId);
+				/*
+				 * command the primary to forward data to replicas if replicas >
+				 * 1, reduce client I/O
+				 */
+				if (replicaArr.length > 1) {
+					stub.forwardToReplicas(remote, replicaArr, clientId);
+				}
+			} catch (RemoteException | NotBoundException e) {
+				log.error("Client exception: " + e.toString());
+			}
 		}
 	}
 

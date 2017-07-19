@@ -24,25 +24,28 @@ public class DataServerFileIO {
 
 	private static String rootdir = Constants.DATAROOTDIR;
 	private final static Logger log = Logger.getLogger(DataServerFileIO.class.getName());
-	
+	private DataBuffer buffer;
+
 	// default constructor.
 	public DataServerFileIO() {
 		super();
+		buffer = new DataBuffer();
 	}
 
 	// constructor with specific sub path.
 	public DataServerFileIO(String subpath) {
 		rootdir = rootdir + subpath;
+		buffer = new DataBuffer();
 	}
 
 	/** get all files under dir */
 	public Set<String> getFiles(String subdir) {
 		String dir = rootdir + subdir;
-		log.info("Read directory: " + dir );
+		log.info("Read directory: " + dir);
 		File file = new File(rootdir);
 		File[] files = file.listFiles();
 		Set<String> fileset = new HashSet<String>();
-		if (files!=null) {
+		if (files != null) {
 			for (File f : files) {
 				fileset.add(f.getName());
 			}
@@ -68,10 +71,12 @@ public class DataServerFileIO {
 		return data;
 	}
 
-	public void asyncPut(String filename, byte[] bytes){
-		Thread asyncThread = new Thread (new AsyncWrite(filename, bytes));
+	public void asyncPut(String filename, byte[] bytes) {
+		buffer.cache(filename, bytes);
+		Thread asyncThread = new Thread(new AsyncWrite(filename, bytes));
 		asyncThread.start();
 	}
+
 	/** write bytes to a file defined by filename */
 	public void put(String filename, byte[] bytes) {
 		try {

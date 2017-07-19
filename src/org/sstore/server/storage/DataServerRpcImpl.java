@@ -100,7 +100,7 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 			securePut(filename, data, clientId);
 		}
 		else {
-			dsfileio.put(filename, data);
+			dsfileio.asyncPut(filename, data);
 		}
 	}
 	
@@ -110,7 +110,7 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 		cipherHandler = new CipherHandler(key, Constants.DEFAULT_KEY_LENGTH);
 		byte[] cdata = cipherHandler.cipher(data);
 		log.info("generate ecp key " + key[0] + " for " + filename);
-		dsfileio.put(filename, cdata);
+		dsfileio.asyncPut(filename, cdata);
 	}
 
 	public void sendHeartBeat(String metahost) {
