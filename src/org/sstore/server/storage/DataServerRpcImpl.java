@@ -25,6 +25,7 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 
 	private final static Logger log = Logger.getLogger(DataServerRpc.class.getName());
 	private static DataServerFileIO dsfileio;
+	private static KeyBuffer keybuf;
 	private static CipherHandler cipherHandler;
 	private String metahost;
 	private int localport;
@@ -39,6 +40,7 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 		this.localport = localport;
 		String rootpath = "localhost-" + localport + "/";
 		dsfileio = new DataServerFileIO(rootpath);
+		keybuf = new KeyBuffer();
 	}
 
 	public void startRpcServer(int port) {
@@ -79,14 +81,13 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 	}
 
 	public byte[] get(String remote, long clientId) {
-		if(secureMode){
+		if (secureMode) {
 			return secureGet(remote, clientId);
-		}
-		else 
+		} else
 			return dsfileio.get(remote);
 	}
 
-	public byte[] secureGet(String remote, long clientId){
+	public byte[] secureGet(String remote, long clientId) {
 		DataKeyGenerator keyGen = new DataKeyGenerator();
 		byte[] key = keyGen.genKey(remote, clientId, Constants.DEFAULT_KEY_LENGTH);
 		cipherHandler = new CipherHandler(key, Constants.DEFAULT_KEY_LENGTH);
@@ -94,22 +95,23 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 		log.info("generate dep key: " + key[0]);
 		return cipherHandler.decipher(cdata);
 	}
-	
-	public void put(String filename, byte[] data, long clientId){
-		if(secureMode){
+
+	public void put(String filename, byte[] data, long clientId) {
+		if (secureMode) {
 			securePut(filename, data, clientId);
-		}
-		else {
+		} else {
 			dsfileio.asyncPut(filename, data);
 		}
 	}
-	
+
 	public void securePut(String filename, byte[] data, long clientId) {
 		DataKeyGenerator keyGen = new DataKeyGenerator();
 		byte[] key = keyGen.genKey(filename, clientId, Constants.DEFAULT_KEY_LENGTH);
 		cipherHandler = new CipherHandler(key, Constants.DEFAULT_KEY_LENGTH);
 		byte[] cdata = cipherHandler.cipher(data);
 		log.info("generate ecp key " + key[0] + " for " + filename);
+		/* cache encryption key for files */
+		keybuf.cache(filename, key);
 		dsfileio.asyncPut(filename, cdata);
 	}
 
