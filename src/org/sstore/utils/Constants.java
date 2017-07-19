@@ -10,6 +10,7 @@ public class Constants {
 	
 	/** default dir */
 	public final static String METAROOTDIR = "/Users/lbchen/meta/";
+	public final static String DATAROOTDIR = "/Users/lbchen/data/";
 	
 	/** replication policy */
 	public final static String TRIPLE_REPLIC = "triple-r";

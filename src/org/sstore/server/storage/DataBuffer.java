@@ -16,6 +16,10 @@ public class DataBuffer {
 	/* Key in-memory structure for data cacheing. */
 	private static Hashtable<String, byte[]> dataBuffer;
 
+	public DataBuffer() {
+		dataBuffer = new Hashtable<String, byte[]>();
+	}
+
 	/**
 	 * Add file into buffer, indexed by filename.
 	 * 
@@ -28,6 +32,13 @@ public class DataBuffer {
 		if (dataBuffer.size() < Constants.DATABUF_SIZE) {
 			dataBuffer.put(filename, data);
 		}
+	}
+
+	public byte[] searchBuffer(String filename) {
+		if (dataBuffer != null) {
+			return dataBuffer.get(filename);
+		}
+		return null;
 	}
 
 }

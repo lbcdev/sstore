@@ -8,6 +8,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.apache.log4j.Logger;
+import org.sstore.server.asyncio.AsyncWrite;
+import org.sstore.utils.Constants;
 
 /**
  * DataServerFileIO handles all input/output operations like put, get, and
@@ -20,9 +22,9 @@ import org.apache.log4j.Logger;
  */
 public class DataServerFileIO {
 
-	private static String rootdir = "/Users/lbchen/data/";
+	private static String rootdir = Constants.DATAROOTDIR;
 	private final static Logger log = Logger.getLogger(DataServerFileIO.class.getName());
-
+	
 	// default constructor.
 	public DataServerFileIO() {
 		super();
@@ -66,6 +68,10 @@ public class DataServerFileIO {
 		return data;
 	}
 
+	public void asyncPut(String filename, byte[] bytes){
+		Thread asyncThread = new Thread (new AsyncWrite(filename, bytes));
+		asyncThread.start();
+	}
 	/** write bytes to a file defined by filename */
 	public void put(String filename, byte[] bytes) {
 		try {
