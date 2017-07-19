@@ -65,7 +65,7 @@ public class MetaDataManager implements Runnable {
 			// decrease ttl by 1.
 			status.setTTL(status.getTTL() - 1);
 		}
-		log.info("checkDSStatus: get " + failedList.size() + "failed dataserver");
+		log.info("checkDSStatus: get " + failedList.size() + " failed dataserver");
 		return failedList;
 	}
 
