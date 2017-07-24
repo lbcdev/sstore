@@ -1,5 +1,7 @@
 package org.sstore.server.buffermanager;
 
+import org.sstore.server.storage.DataStatusBuffer;
+
 /**
  * This provides sort algorithm for all data in the buffer based on last access
  * time.
@@ -9,4 +11,8 @@ package org.sstore.server.buffermanager;
  */
 public class LeastRecentAccess {
 
+	public static String[] sort(DataStatusBuffer dsbuffer) {
+		String[] sortedBuffer = null;
+		return sortedBuffer;
+	}
 }

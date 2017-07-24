@@ -14,7 +14,7 @@ import org.sstore.utils.Constants;
 public class DataBuffer {
 
 	/* Key in-memory structure for data cacheing. */
-	private static Hashtable<String, byte[]> dataBuffer;
+	private static Hashtable<String, byte[]> dataBuffer = new Hashtable<String, byte[]>();
 
 	public DataBuffer() {
 		dataBuffer = new Hashtable<String, byte[]>();
@@ -28,17 +28,28 @@ public class DataBuffer {
 	 * @param data
 	 *            file content in bytes
 	 */
-	public void cache(String filename, byte[] data) {
+	public static void cache(String filename, byte[] data) {
 		if (dataBuffer.size() < Constants.DATABUF_SIZE) {
 			dataBuffer.put(filename, data);
 		}
 	}
 
-	public byte[] searchBuffer(String filename) {
+	public static byte[] searchBuffer(String filename) {
 		if (dataBuffer != null) {
 			return dataBuffer.get(filename);
 		}
 		return null;
 	}
 
+	public static void remove(String filename) {
+		if (dataBuffer != null)
+			dataBuffer.remove(filename);
+	}
+
+	public static void removeByCol(String[] filenames) {
+		if (dataBuffer != null)
+			for (String file : filenames) {
+				dataBuffer.remove(file);
+			}
+	}
 }

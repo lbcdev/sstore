@@ -72,7 +72,7 @@ public class DataServerFileIO {
 	}
 
 	public void asyncPut(String filename, byte[] bytes) {
-		buffer.cache(filename, bytes);
+		DataBuffer.cache(filename, bytes);
 		Thread asyncThread = new Thread(new AsyncWrite(rootdir + filename, bytes));
 		asyncThread.start();
 	}
