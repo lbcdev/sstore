@@ -89,7 +89,12 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 
 	public byte[] secureGet(String remote, long clientId) {
 		DataKeyGenerator keyGen = new DataKeyGenerator();
-		byte[] key = keyGen.genKey(remote, clientId, Constants.DEFAULT_KEY_LENGTH);
+		byte[] key;
+		if (keybuf.searchBuffer(remote) != null) {
+			key = keybuf.searchBuffer(remote);
+		} else {
+			key = keyGen.genKey(remote, clientId, Constants.DEFAULT_KEY_LENGTH);
+		}
 		cipherHandler = new CipherHandler(key, Constants.DEFAULT_KEY_LENGTH);
 		byte[] cdata = dsfileio.get(remote);
 		log.info("generate dep key: " + key[0]);
