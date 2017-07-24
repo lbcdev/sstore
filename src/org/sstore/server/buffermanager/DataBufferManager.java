@@ -14,6 +14,6 @@ public class DataBufferManager {
 	 * scan the whole buffer, release buffer space for new data.
 	 */
 	public void shuffle() {
-
+		
 	}
 }
