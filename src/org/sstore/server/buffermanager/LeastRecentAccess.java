@@ -11,7 +11,7 @@ import org.sstore.server.storage.DataStatusBuffer;
  */
 public class LeastRecentAccess {
 
-	public static String[] sort(DataStatusBuffer dsbuffer) {
+	public static String[] select(DataStatusBuffer dsbuffer) {
 		String[] sortedBuffer = null;
 		return sortedBuffer;
 	}

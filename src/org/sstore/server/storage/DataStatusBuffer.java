@@ -18,6 +18,9 @@ public class DataStatusBuffer {
 
 	}
 
+	public int size(){
+		return dsbuffer.size();
+	}
 	public synchronized static void cache(String filename, BufferedDataStatus datastatus) {
 		if (dsbuffer.size() < Constants.DATABUF_SIZE) {
 
