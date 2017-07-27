@@ -50,7 +50,7 @@ public class DataBufferManager implements Runnable {
 		 * two rounds of greedy algorithms select a subset of buffer to release.
 		 */
 		List<String> lruList = LeastAverageAccess.select(dsbuffer.getBuffer());
-		String[] finalList = LastAccessPolicy.select(lruList);
+		String[] finalList = LastAccessPolicy.select(lruList, dsbuffer.getBuffer());
 
 		/* sync two types of buffers. */
 		DataStatusBuffer.removeByCol(finalList);

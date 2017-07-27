@@ -33,6 +33,8 @@ public class Constants {
 	public final static int DEFAULT_KEY_LENGTH = 16;
 
 	/** buffer */
+	// last access time distribution size
+	public final static int LAT_DIST = 1000;
 	// Intervals to auto-release part of the buffer.
 	public final static int RLS_INTERVAL = 2000;
 	public final static int DATABUF_SIZE = 500;
