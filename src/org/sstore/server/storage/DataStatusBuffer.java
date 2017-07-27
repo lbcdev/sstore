@@ -18,9 +18,14 @@ public class DataStatusBuffer {
 
 	}
 
-	public int size(){
+	public HashMap<String, BufferedDataStatus> getBuffer() {
+		return dsbuffer;
+	}
+
+	public int size() {
 		return dsbuffer.size();
 	}
+
 	public synchronized static void cache(String filename, BufferedDataStatus datastatus) {
 		if (dsbuffer.size() < Constants.DATABUF_SIZE) {
 

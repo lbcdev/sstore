@@ -1,5 +1,7 @@
 package org.sstore.server.buffermanager;
 
+import java.util.List;
+
 import org.sstore.server.storage.DataBuffer;
 import org.sstore.server.storage.DataStatusBuffer;
 import org.sstore.utils.Constants;
@@ -47,8 +49,8 @@ public class DataBufferManager implements Runnable {
 		/*
 		 * two rounds of greedy algorithms select a subset of buffer to release.
 		 */
-		String[] sortedApsList = LeastRecentAccess.select(dsbuffer);
-		String[] finalList = LastAccessPolicy.select(sortedApsList, dsbuffer);
+		List<String> lruList = LeastAverageAccess.select(dsbuffer.getBuffer());
+		String[] finalList = LastAccessPolicy.select(lruList);
 
 		/* sync two types of buffers. */
 		DataStatusBuffer.removeByCol(finalList);
