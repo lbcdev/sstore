@@ -17,7 +17,7 @@ import org.sstore.utils.Constants;
  */
 public class LeastAverageAccess {
 
-	public static List<String> select(HashMap<String, BufferedDataStatus> dsbuffer) {
+	public static String[] select(HashMap<String, BufferedDataStatus> dsbuffer) {
 
 		/*
 		 * Use dictionary sort, count least N data and return them as a list.*
@@ -32,14 +32,14 @@ public class LeastAverageAccess {
 		}
 		// calculate the size of LAA list.
 		int listsize = (int) (Constants.DATABUF_SIZE * Constants.RELEASE_PORTION * 2);
-		List<String> laalist = new ArrayList<String>();
+		String[] laalist = new String[listsize];
 		int count = 0;
 		for (int i = 0; i < sortedList.length; i++) {
-			if (count > listsize)
+			if (count >= listsize)
 				break;
 			if (sortedList[i].size() > 0) {
 				for (int j = 0; j < sortedList[i].size(); j++) {
-					laalist.add(sortedList[i].get(j));
+					laalist[count] = sortedList[i].get(j);
 					count++;
 				}
 			}

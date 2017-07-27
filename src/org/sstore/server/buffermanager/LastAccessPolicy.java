@@ -9,9 +9,11 @@ import org.sstore.utils.Constants;
 
 public class LastAccessPolicy {
 
-	public static String[] select(List<String> apsList, HashMap<String, BufferedDataStatus> dsbuffer) {
+	public static List<String> select(String[] apsList, HashMap<String, BufferedDataStatus> dsbuffer) {
 		List<String>[] sortedlist = new ArrayList[Constants.LAT_DIST];
+		List<String> latlist = new ArrayList<String>();
 		
-		return null;
+		for()
+		return latlist;
 	}
 }
