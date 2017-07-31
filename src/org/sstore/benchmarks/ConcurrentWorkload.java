@@ -15,8 +15,9 @@ public class ConcurrentWorkload {
 	String local, remote;
 
 	public static void main(String[] args) {
-		ConcurrentWorkload cwordload = new ConcurrentWorkload();
-		cwordload.simplePut(10, 100, 10);
+		ConcurrentWorkload cworkload = new ConcurrentWorkload();
+		// cworkload.simplePut(10, 100, 10);
+		cworkload.simpleMix(10, 64, 100, 10);
 	}
 
 	public ConcurrentWorkload() {
@@ -57,7 +58,7 @@ public class ConcurrentWorkload {
 	public void simpleMix(int readPercent, int numOfClient, int putPerClient, int fileSize) {
 		long start = System.currentTimeMillis();
 		for (int i = 0; i < numOfClient; i++) {
-			Thread client = new Thread(new PutWorker(putPerClient));
+			Thread client = new Thread(new Worker(readPercent, putPerClient));
 			client.start();
 			try {
 				client.join();
@@ -67,7 +68,7 @@ public class ConcurrentWorkload {
 		}
 		long end = System.currentTimeMillis();
 		System.out.println(end - start);
-		float avgresp = (float) ((end - start) / putPerClient / numOfClient);
+		float avgresp = (float) ((end - start) / (float) putPerClient / (float) numOfClient);
 		float filepers = (float) ((putPerClient * numOfClient) * 1000 / (end - start));
 		System.out.println("Avg. latency: " + avgresp);
 		System.out.println("Avg. file per second: " + filepers);
@@ -89,14 +90,12 @@ public class ConcurrentWorkload {
 	}
 
 	class Worker implements Runnable {
-		int readper, numofreq;
 		int numofread, numofwrite;
 
 		public Worker(int rp, int num) {
-			readper = rp;
-			numofreq = num;
-			numofread = numofreq * (readper / 100);
-			numofwrite = numofreq - numofread;
+
+			numofread = num * (rp / 100);
+			numofwrite = num - numofread;
 		}
 
 		public void run() {
