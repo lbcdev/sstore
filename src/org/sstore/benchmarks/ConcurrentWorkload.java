@@ -17,7 +17,7 @@ public class ConcurrentWorkload {
 	public static void main(String[] args) {
 		ConcurrentWorkload cworkload = new ConcurrentWorkload();
 		// cworkload.simplePut(10, 100, 10);
-		cworkload.simpleMix(10, 64, 100, 10);
+		cworkload.simpleMix(10, 56, 100, 10);
 	}
 
 	public ConcurrentWorkload() {
