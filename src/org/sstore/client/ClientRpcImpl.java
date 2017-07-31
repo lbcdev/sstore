@@ -112,7 +112,7 @@ public class ClientRpcImpl implements ClientRpc {
 	public void putFile(String local, String remote, String replicas) {
 
 		String[] replicaArr = replicas.split(",");
-		if (replicaArr.length == 0) {
+		if (replicaArr.length > 0) {
 			String primary = replicaArr[0];
 			int port = Integer.parseInt(primary.split(":")[1]);
 			try {

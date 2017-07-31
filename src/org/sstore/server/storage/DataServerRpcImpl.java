@@ -29,7 +29,7 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 	private static CipherHandler cipherHandler;
 	private String metahost;
 	private int localport;
-	private static boolean secureMode = true;
+	private static boolean secureMode = false;
 
 	public DataServerRpcImpl() {
 		super();

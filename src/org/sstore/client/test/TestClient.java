@@ -8,7 +8,7 @@ public class TestClient {
 	private static ClientRpcImpl clientrpc;
 	public static void main(String[] args) {
 		clientrpc = new ClientRpcImpl(Constants.METARPC_NAME);
-		testPutReq(200);
+		testPutReq(10);
 	}
 
 	public static void testPutReq(int testnum) {

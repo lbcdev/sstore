@@ -13,11 +13,14 @@ public class ConcurrentWorkload {
 
 	ClientRpcImpl clientrpc;
 	String local, remote;
-
+	
+	public static void main(String[] args){
+		ConcurrentWorkload cwordload = new ConcurrentWorkload();
+		cwordload.simplePut(10, 100, 10);
+	}
 	public ConcurrentWorkload() {
 		clientrpc = new ClientRpcImpl(Constants.METARPC_NAME);
 		local = "/Users/lbchen/got.png";
-		remote = "/Users/lbchen/data/exp/";
 	}
 
 	/**
@@ -39,10 +42,11 @@ public class ConcurrentWorkload {
 			}
 		}
 		long end = System.currentTimeMillis();
-		long avgresp = (end - start) / putPerClient;
-		int filepers = (int) ((putPerClient * numOfClient) / (end - start) * 1000);
-		System.out.println(avgresp);
-		System.out.println(filepers);
+		System.out.println(end - start);
+		float avgresp = (float) (end - start) / putPerClient;
+		float filepers = (float) ((putPerClient * numOfClient) * 1000 / (end - start) );
+		System.out.println("Avg. latency: " + avgresp);
+		System.out.println("Avg. file per second: " + filepers);
 	}
 
 	public void simpleGet(int numOfClient, int putPerClient, int fileSize) {
@@ -62,7 +66,8 @@ public class ConcurrentWorkload {
 
 		public void run() {
 			while (readnum-- > 0) {
-				clientrpc.putReq(local, remote + readnum);
+				remote = readnum + "";
+				clientrpc.putReq(local, remote);
 			}
 		}
 	}

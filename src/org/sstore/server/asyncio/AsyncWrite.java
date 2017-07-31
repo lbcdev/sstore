@@ -17,7 +17,7 @@ public class AsyncWrite implements Runnable {
 
 	public void run() {
 		try {
-			FileOutputStream out = new FileOutputStream(Constants.DATAROOTDIR + filename);
+			FileOutputStream out = new FileOutputStream(filename);
 			out.write(data);
 			out.flush();
 			out.close();
