@@ -83,7 +83,9 @@ public class ClientRpcImpl implements ClientRpc {
 		try {
 			final Registry registry = LocateRegistry.getRegistry("localhost", port);
 			DataServerRpc stub = (DataServerRpc) registry.lookup(rpcname);
-			writeToLocal(local, stub.get(remote, clientId));
+			byte[] data = stub.get(remote, clientId);
+			log.info("read data size: " + data.length);
+//			writeToLocal(local, data);
 		} catch (RemoteException | NotBoundException e) {
 			log.error("Client exception: " + e.toString());
 

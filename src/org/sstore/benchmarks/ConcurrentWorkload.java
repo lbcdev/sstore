@@ -13,11 +13,12 @@ public class ConcurrentWorkload {
 
 	ClientRpcImpl clientrpc;
 	String local, remote;
-	
-	public static void main(String[] args){
+
+	public static void main(String[] args) {
 		ConcurrentWorkload cwordload = new ConcurrentWorkload();
 		cwordload.simplePut(10, 100, 10);
 	}
+
 	public ConcurrentWorkload() {
 		clientrpc = new ClientRpcImpl(Constants.METARPC_NAME);
 		local = "/Users/lbchen/got.png";
@@ -43,8 +44,8 @@ public class ConcurrentWorkload {
 		}
 		long end = System.currentTimeMillis();
 		System.out.println(end - start);
-		float avgresp = (float) (end - start) / putPerClient;
-		float filepers = (float) ((putPerClient * numOfClient) * 1000 / (end - start) );
+		float avgresp = (float) ((end - start) / putPerClient / numOfClient);
+		float filepers = (float) ((putPerClient * numOfClient) * 1000 / (end - start));
 		System.out.println("Avg. latency: " + avgresp);
 		System.out.println("Avg. file per second: " + filepers);
 	}
@@ -54,7 +55,22 @@ public class ConcurrentWorkload {
 	}
 
 	public void simpleMix(int readPercent, int numOfClient, int putPerClient, int fileSize) {
-
+		long start = System.currentTimeMillis();
+		for (int i = 0; i < numOfClient; i++) {
+			Thread client = new Thread(new PutWorker(putPerClient));
+			client.start();
+			try {
+				client.join();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		long end = System.currentTimeMillis();
+		System.out.println(end - start);
+		float avgresp = (float) ((end - start) / putPerClient / numOfClient);
+		float filepers = (float) ((putPerClient * numOfClient) * 1000 / (end - start));
+		System.out.println("Avg. latency: " + avgresp);
+		System.out.println("Avg. file per second: " + filepers);
 	}
 
 	class PutWorker implements Runnable {
@@ -67,6 +83,29 @@ public class ConcurrentWorkload {
 		public void run() {
 			while (readnum-- > 0) {
 				remote = readnum + "";
+				clientrpc.putReq(local, remote);
+			}
+		}
+	}
+
+	class Worker implements Runnable {
+		int readper, numofreq;
+		int numofread, numofwrite;
+
+		public Worker(int rp, int num) {
+			readper = rp;
+			numofreq = num;
+			numofread = numofreq * (readper / 100);
+			numofwrite = numofreq - numofread;
+		}
+
+		public void run() {
+			while (numofread-- > 0) {
+				remote = numofread + "";
+				clientrpc.getReq(remote, local);
+			}
+			while (numofwrite-- > 0) {
+				remote = numofwrite + "";
 				clientrpc.putReq(local, remote);
 			}
 		}
