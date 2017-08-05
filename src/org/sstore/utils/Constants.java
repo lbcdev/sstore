@@ -24,6 +24,7 @@ public class Constants {
 
 	public final static String METARPC_NAME = "metarpc";
 	public final static String DATARPC_NAME = "dsrpc";
+	public final static String KMSRPC_NAME = "kmsrpc";
 
 	/** message contents */
 	public final static String NODATASERVER_MSG = "No dataserver active";
