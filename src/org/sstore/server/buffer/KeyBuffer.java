@@ -1,4 +1,4 @@
-package org.sstore.server.storage;
+package org.sstore.server.buffer;
 
 import java.util.Hashtable;
 
