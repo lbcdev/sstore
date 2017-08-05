@@ -13,5 +13,4 @@ public interface KMServerRpc extends Remote {
 	
 	public byte[] requestKey(long fileId) throws RemoteException;
 	
-	
 }
