@@ -9,7 +9,7 @@ import java.rmi.server.UnicastRemoteObject;
 import org.apache.log4j.Logger;
 import org.sstore.security.encryption.CipherHandler;
 import org.sstore.security.encryption.DataKeyGenerator;
-import org.sstore.server.buffer.KeyBuffer;
+import org.sstore.server.buffer.KeyCache;
 import org.sstore.server.metaserver.MetaRpc;
 import org.sstore.utils.Constants;
 
@@ -26,7 +26,7 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 
 	private final static Logger log = Logger.getLogger(DataServerRpc.class.getName());
 	private static DataServerFileIO dsfileio;
-	private static KeyBuffer keybuf;
+	private static KeyCache keybuf;
 	private static CipherHandler cipherHandler;
 	private String metahost;
 	private int localport;
@@ -41,7 +41,7 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 		this.localport = localport;
 		String rootpath = "localhost-" + localport + "/";
 		dsfileio = new DataServerFileIO(rootpath);
-		keybuf = new KeyBuffer();
+		keybuf = new KeyCache();
 	}
 
 	public void startRpcServer(int port) {
@@ -91,8 +91,8 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 	public byte[] secureGet(String remote, long clientId) {
 		DataKeyGenerator keyGen = new DataKeyGenerator();
 		byte[] key;
-		if (keybuf.searchBuffer(remote) != null) {
-			key = keybuf.searchBuffer(remote);
+		if (keybuf.lookup(remote) != null) {
+			key = keybuf.lookup(remote);
 		} else {
 			key = keyGen.genKey(remote, clientId, Constants.DEFAULT_KEY_LENGTH);
 		}

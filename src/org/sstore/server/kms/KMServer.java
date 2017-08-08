@@ -1,6 +1,7 @@
 package org.sstore.server.kms;
 
 import org.sstore.security.encryption.DataKeyGenerator;
+import org.sstore.server.buffer.KeyCache;
 import org.sstore.utils.Constants;
 
 /**
@@ -17,16 +18,23 @@ public class KMServer {
 	public KMServer() {
 		keyGen = new DataKeyGenerator();
 	}
-
-	public byte[] getKey(long fid) {
-		byte[] key = null;
-
-		return key;
+	
+	/**
+	 * return key to client.
+	 * @param fid
+	 * @param cid
+	 * @return
+	 */
+	public byte[] getKey(String fid, long cid) {
+		if (kcache.lookup(fid) != null) {
+			return kcache.lookup(fid);
+		} else {
+			return computeKey(fid, cid);
+		}
 	}
 
-	byte[] computeKey(long fid, long cid) {
-		return keyGen.genKey(String.valueOf(fid), cid, Constants.DEFAULT_KEY_LENGTH);
+	byte[] computeKey(String fid, long cid) {
+		return keyGen.genKey(fid, cid, Constants.DEFAULT_KEY_LENGTH);
 	}
-	
-	
+
 }
