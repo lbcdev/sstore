@@ -11,7 +11,7 @@ public class TestKHTandKCache {
 	static CipherHandler handler;
 	private static HashMap<String, byte[]> kcache = new HashMap<String, byte[]>();
 	static long cid = 1838339;
-	static int klen = 32;
+	static int klen = 16;
 	static String rootdir = "/Users/lbchen/sstoredata/";
 	static String in = rootdir + "ism.png";
 	static String cout = rootdir + "ismc.png";
@@ -48,13 +48,13 @@ public class TestKHTandKCache {
 			DataKeyGenerator keyGen = new DataKeyGenerator();
 			byte[] key = keyGen.genKey("jifjdifdfd.jpg", cid, klen);
 
-			handler = new CipherHandler(key, klen);
+			handler = new CipherHandler(key);
 			byte[] cdata = handler.cipher(StreamFileUtils.readBytes(in));
 			StreamFileUtils.writeBytes(cout, cdata);
 			
 			keyGen = new DataKeyGenerator();
 			key = keyGen.genKey("jifjdifdfd.jpg", cid, klen);
-			handler = new CipherHandler(key, klen);
+			handler = new CipherHandler(key);
 			byte[] dcdata = handler.decipher(StreamFileUtils.readBytes(cout));
 			StreamFileUtils.writeBytes(dout, dcdata);
 		}
@@ -64,12 +64,12 @@ public class TestKHTandKCache {
 		for (int i = 0; i < num; i++) {
 			String fname = "jifjdifdfd-" + i;
 			byte[] key = kcache.get(fname);
-			handler = new CipherHandler(key, klen);
+			handler = new CipherHandler(key);
 			byte[] cdata = handler.cipher(StreamFileUtils.readBytes(in));
 			StreamFileUtils.writeBytes(cout, cdata);
 			
 			key = kcache.get(fname);
-			handler = new CipherHandler(key, klen);
+			handler = new CipherHandler(key);
 			byte[] dcdata = handler.decipher(StreamFileUtils.readBytes(cout));
 			StreamFileUtils.writeBytes(dout, dcdata);
 		}

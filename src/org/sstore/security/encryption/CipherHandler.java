@@ -43,6 +43,15 @@ public class CipherHandler {
 		}
 	}
 
+	public CipherHandler(byte[] key) {
+		skspec = new SecretKeySpec(key, "AES");
+		try {
+			aesCipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+		} catch (NoSuchAlgorithmException | NoSuchPaddingException e) {
+			e.printStackTrace();
+		}
+	}
+
 	/**
 	 * Encrypt data and return it.
 	 * 
