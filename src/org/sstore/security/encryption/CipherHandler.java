@@ -52,6 +52,14 @@ public class CipherHandler {
 		}
 	}
 
+	public CipherHandler(SecretKeySpec skey) {
+		skspec = skey;
+		try {
+			aesCipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+		} catch (NoSuchAlgorithmException | NoSuchPaddingException e) {
+			e.printStackTrace();
+		}
+	}
 	/**
 	 * Encrypt data and return it.
 	 * 

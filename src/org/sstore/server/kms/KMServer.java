@@ -14,13 +14,16 @@ import org.sstore.utils.Constants;
 public class KMServer {
 
 	private DataKeyGenerator keyGen;
+	private KeyCache kcache;
 
 	public KMServer() {
 		keyGen = new DataKeyGenerator();
+		kcache = new KeyCache();
 	}
-	
+
 	/**
 	 * return key to client.
+	 * 
 	 * @param fid
 	 * @param cid
 	 * @return
