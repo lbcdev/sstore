@@ -22,32 +22,42 @@ public class TestKHTandKCache {
 
 	public static void main(String[] args) {
 		TestKHTandKCache test = new TestKHTandKCache();
-		int num = 5000;
-		long start, end;
+		int num = 1000;
+		int cc = 16;
 		test.init(num);
-		start = System.currentTimeMillis();
-		test.kht(num);
-		end = System.currentTimeMillis();
-		System.out.println(end - start);
-		System.out.println("per op: " + (float) (end - start) / (float) num);
-		float kht_t = end - start;
-
-		start = System.currentTimeMillis();
-		test.kcache(num);
-		end = System.currentTimeMillis();
-		float kcache_t = end - start;
-		System.out.println(end - start);
-		System.out.println("per op: " + (float) (end - start) / (float) num);
-
-		System.out.println((kcache.size() * klen) / 1000 + " KB");
+		float raw_t = test.raw_r(cc, num);
+		float kht_t = test.kht_r(cc, num);
+		float kcache_t = test.kcache_r(cc, num);
 		float percent = (kht_t - kcache_t) / kht_t;
 		System.out.println((int) (percent * 100) + "%");
 
 	}
 
-	void kht(int num) {
-		for (int i = 0; i < num; i++) {
+	float raw_r(int cc, int num) {
+		long start, end;
+		start = System.currentTimeMillis();
 
+		while (cc-- > 0) {
+			Thread th = new Thread(new RawWorker(num));
+			th.start();
+			try {
+				th.join();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+
+		end = System.currentTimeMillis();
+		System.out.println(end - start);
+		System.out.println("per op: " + (float) (end - start) / (float) num);
+		return end - start;
+	}
+
+	float kht_w(int num) {
+		long start, end;
+		start = System.currentTimeMillis();
+
+		for (int i = 0; i < num; i++) {
 			DataKeyGenerator keyGen = new DataKeyGenerator();
 			// byte[] key = keyGen.genKey("jifjdifdfd.jpg", cid, klen);
 			SecretKeySpec skey = keyGen.gen("jifjdifdfd.jpg", cid, klen);
@@ -55,33 +65,70 @@ public class TestKHTandKCache {
 			handler = new CipherHandler(skey);
 			byte[] cdata = handler.cipher(StreamFileUtils.readBytes(in));
 			StreamFileUtils.writeBytes(cout, cdata);
-
-			keyGen = new DataKeyGenerator();
-			// key = keyGen.genKey("jifjdifdfd.jpg", cid, klen);
-			skey = keyGen.gen("jifjdifdfd.jpg", cid, klen);
-
-			handler = new CipherHandler(skey);
-			byte[] dcdata = handler.decipher(StreamFileUtils.readBytes(cout));
-			StreamFileUtils.writeBytes(dout, dcdata);
 		}
+		end = System.currentTimeMillis();
+		System.out.println(end - start);
+		System.out.println("per op: " + (float) (end - start) / (float) num);
+		float kht_t = end - start;
+		return kht_t;
 	}
 
-	void kcache(int num) {
+	float kht_r(int cc, int num) {
+		long start, end;
+		start = System.currentTimeMillis();
+		while (cc-- > 0) {
+			Thread th = new Thread(new KhtWorker(num));
+			th.start();
+			try {
+				th.join();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		end = System.currentTimeMillis();
+		System.out.println(end - start);
+		System.out.println("per op: " + (float) (end - start) / (float) num);
+		return end - start;
+	}
+
+	float kcache_w(int num) {
+		long start, end;
+		start = System.currentTimeMillis();
+
 		for (int i = 0; i < num; i++) {
 			String fname = "jifjdifdfd-" + i;
-//			byte[] key = kcache.get(fname);
+			// byte[] key = kcache.get(fname);
 			SecretKeySpec skey = skcache.get(fname);
 
 			handler = new CipherHandler(skey);
 			byte[] cdata = handler.cipher(StreamFileUtils.readBytes(in));
 			StreamFileUtils.writeBytes(cout, cdata);
-
-//			key = kcache.get(fname);
-			skey = skcache.get(fname);
-			handler = new CipherHandler(skey);
-			byte[] dcdata = handler.decipher(StreamFileUtils.readBytes(cout));
-			StreamFileUtils.writeBytes(dout, dcdata);
 		}
+
+		end = System.currentTimeMillis();
+		System.out.println(end - start);
+		System.out.println("per op: " + (float) (end - start) / (float) num);
+		return end - start;
+	}
+
+	float kcache_r(int cc, int num) {
+		long start, end;
+		start = System.currentTimeMillis();
+
+		while (cc-- > 0) {
+			Thread th = new Thread(new KcacheWorker(num));
+			th.start();
+			try {
+				th.join();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+
+		end = System.currentTimeMillis();
+		System.out.println(end - start);
+		System.out.println("per op: " + (float) (end - start) / (float) num);
+		return end - start;
 	}
 
 	void init(int num) {
@@ -91,7 +138,60 @@ public class TestKHTandKCache {
 			// byte[] key = keyGen.genKey(fname, cid, klen);
 			SecretKeySpec skey = keyGen.gen("jifjdifdfd.jpg", cid, klen);
 			skcache.put(fname, skey);
-//			kcache.put(fname, key);
+			// kcache.put(fname, key);
+		}
+	}
+
+	class RawWorker implements Runnable {
+		int num;
+
+		public RawWorker(int num) {
+			this.num = num;
+		}
+
+		public void run() {
+			for (int i = 0; i < num; i++) {
+				StreamFileUtils.readBytes(cout);
+			}
+		}
+	}
+
+	class KhtWorker implements Runnable {
+		int num;
+
+		public KhtWorker(int num) {
+			this.num = num;
+		}
+
+		public void run() {
+			for (int i = 0; i < num; i++) {
+				DataKeyGenerator keyGen = new DataKeyGenerator();
+				// byte[] key = keyGen.genKey("jifjdifdfd.jpg", cid, klen);
+				SecretKeySpec skey = keyGen.gen("jifjdifdfd.jpg", cid, klen);
+
+				handler = new CipherHandler(skey);
+				byte[] dcdata = handler.decipher(StreamFileUtils.readBytes(cout));
+			}
+		}
+	}
+
+	class KcacheWorker implements Runnable {
+		int num;
+
+		public KcacheWorker(int num) {
+			this.num = num;
+		}
+
+		public void run() {
+			for (int i = 0; i < num; i++) {
+				String fname = "jifjdifdfd-" + i;
+				// byte[] key = kcache.get(fname);
+				SecretKeySpec skey = skcache.get(fname);
+
+				handler = new CipherHandler(skey);
+				byte[] ddata = handler.decipher(StreamFileUtils.readBytes(cout));
+				// StreamFileUtils.writeBytes(dout, dcdata);
+			}
 		}
 	}
 }
