@@ -1,34 +1,31 @@
-package org.sstore.server.buffermanager;
+package org.sstore.server.kms.policy;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
-import org.sstore.server.storage.BufferedDataStatus;
+import org.sstore.server.kms.KeyStatus;
 import org.sstore.utils.Constants;
 
 /**
- * This provides sort algorithm for all data in the buffer based on last access
- * time.
+ * Least frequent used algorithm.
  * 
  * @author lbchen
  *
  */
-public class LeastAverageAccess {
-
-	public static String[] select(HashMap<String, BufferedDataStatus> dsbuffer) {
-
+public class LFU {
+	public static String[] select(HashMap<String, KeyStatus> kstatus) {
 		/*
 		 * Use dictionary sort, count least N data and return them as a list.*
 		 */
 		@SuppressWarnings("unchecked")
 		List<String>[] sortedList = new ArrayList[Constants.DATABUF_SIZE];
-		Iterator<String> iter = dsbuffer.keySet().iterator();
+		Iterator<String> iter = kstatus.keySet().iterator();
 		while (iter.hasNext()) {
 			String filename = iter.next();
-			BufferedDataStatus dstatus = dsbuffer.get(filename);
-			sortedList[dstatus.getAps()].add(filename);
+			KeyStatus status = kstatus.get(filename);
+			sortedList[status.getAps()].add(filename);
 		}
 		// calculate the size of LAA list.
 		int listsize = (int) (Constants.DATABUF_SIZE * Constants.RELEASE_PORTION * 2);
@@ -46,4 +43,5 @@ public class LeastAverageAccess {
 		}
 		return laalist;
 	}
+
 }

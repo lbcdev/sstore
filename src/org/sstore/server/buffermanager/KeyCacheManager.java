@@ -1,15 +1,22 @@
 package org.sstore.server.buffermanager;
 
+import java.util.HashMap;
+
 import org.sstore.server.buffer.KeyCache;
+import org.sstore.server.kms.KeyStatus;
+import org.sstore.server.kms.policy.LFU;
+import org.sstore.server.kms.policy.LRU;
 import org.sstore.server.storage.DataBuffer;
 import org.sstore.server.storage.DataStatusBuffer;
 import org.sstore.utils.Constants;
 
 public class KeyCacheManager implements Runnable {
 	private KeyCache kcache;
+	private HashMap<String, KeyStatus> KSBuffer;
 
 	public KeyCacheManager() {
 		kcache = new KeyCache();
+		KSBuffer = new HashMap<String, KeyStatus>();
 	}
 
 	public void run() {
@@ -39,8 +46,8 @@ public class KeyCacheManager implements Runnable {
 		/*
 		 * two rounds of greedy algorithms select a subset of buffer to release.
 		 */
-		String[] laaList = LeastAverageAccess.select(kcache.getCache());
-		String[] finalList = LastAccessPolicy.select(laaList, kcache.getCache());
+		String[] laaList = LFU.select(KSBuffer);
+		String[] finalList = LRU.select(laaList, KSBuffer);
 
 		/* sync two types of buffers. */
 		DataStatusBuffer.removeByCol(finalList);
