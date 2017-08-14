@@ -9,7 +9,10 @@ import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
+import javax.crypto.spec.SecretKeySpec;
+
 import org.apache.log4j.Logger;
+import org.sstore.server.kms.KMServerRpc;
 import org.sstore.server.metaserver.MetaRpc;
 import org.sstore.server.storage.DataServerRpc;
 import org.sstore.utils.Constants;
@@ -27,6 +30,7 @@ public class ClientRpcImpl implements ClientRpc {
 	private Registry registry; // metaserver rpc registry.
 	private Registry dsregistry; // dataserver rpc registry.
 	private static long clientId;
+	private boolean secureMode;
 
 	public ClientRpcImpl(String metahost) {
 		try {
@@ -77,6 +81,20 @@ public class ClientRpcImpl implements ClientRpc {
 		return data;
 	}
 
+	/** request secret key from KMServer */
+	public SecretKeySpec keyReq(String remotefile) {
+		SecretKeySpec skey = null;
+		try {
+			KMServerRpc stub = (KMServerRpc) registry.lookup(Constants.KMSRPC_NAME);
+			skey = stub.requestKey(remotefile);
+			log.info("Get secret key");
+
+		} catch (NotBoundException | RemoteException e) {
+			log.error(e.getMessage());
+		}
+		return skey;
+	}
+
 	void getFile(String remote, String local, String primary) {
 		int port = Integer.parseInt(primary.split(":")[1]);
 		String rpcname = Constants.DATARPC_NAME;
@@ -85,7 +103,7 @@ public class ClientRpcImpl implements ClientRpc {
 			DataServerRpc stub = (DataServerRpc) registry.lookup(rpcname);
 			byte[] data = stub.get(remote, clientId);
 			log.info("read data size: " + data.length);
-//			writeToLocal(local, data);
+			// writeToLocal(local, data);
 		} catch (RemoteException | NotBoundException e) {
 			log.error("Client exception: " + e.toString());
 
@@ -160,5 +178,13 @@ public class ClientRpcImpl implements ClientRpc {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+
+	public void setMode(boolean mode) {
+		secureMode = mode;
+	}
+
+	public boolean getMode() {
+		return secureMode;
 	}
 }

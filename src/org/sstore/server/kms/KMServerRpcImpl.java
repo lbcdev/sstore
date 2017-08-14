@@ -6,6 +6,8 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 
+import javax.crypto.spec.SecretKeySpec;
+
 import org.apache.log4j.Logger;
 import org.sstore.utils.Constants;
 
@@ -33,6 +35,11 @@ public class KMServerRpcImpl implements KMServerRpc {
 
 	public byte[] requestKey(long fid) throws RemoteException {
 		byte[] key = null;
+		return key;
+	}
+	
+	public SecretKeySpec requestKey(String fid) throws RemoteException {
+		SecretKeySpec key = null;
 		return key;
 	}
 }
