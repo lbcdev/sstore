@@ -6,6 +6,8 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 
+import javax.crypto.spec.SecretKeySpec;
+
 import org.apache.log4j.Logger;
 import org.sstore.security.encryption.CipherHandler;
 import org.sstore.security.encryption.DataKeyGenerator;
@@ -82,24 +84,11 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 	}
 
 	public byte[] get(String remote, long clientId) {
-		if (secureMode) {
-			return secureGet(remote, clientId);
-		} else
-			return dsfileio.get(remote);
+		return dsfileio.get(remote);
 	}
 
-	public byte[] secureGet(String remote, long clientId) {
-		DataKeyGenerator keyGen = new DataKeyGenerator();
-		byte[] key;
-		if (keybuf.lookup(remote) != null) {
-			key = keybuf.lookup(remote);
-		} else {
-			key = keyGen.genKey(remote, clientId, Constants.DEFAULT_KEY_LENGTH);
-		}
-		cipherHandler = new CipherHandler(key, Constants.DEFAULT_KEY_LENGTH);
-		byte[] cdata = dsfileio.get(remote);
-		log.info("generate dep key: " + key[0]);
-		return cipherHandler.decipher(cdata);
+	public byte[] secureGet(SecretKeySpec skey, String remote) {
+		return dsfileio.secureGet(skey, remote);
 	}
 
 	public void put(String filename, byte[] data, long clientId) {

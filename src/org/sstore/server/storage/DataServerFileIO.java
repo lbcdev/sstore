@@ -7,7 +7,11 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
+import javax.crypto.spec.SecretKeySpec;
+
 import org.apache.log4j.Logger;
+import org.sstore.security.encryption.CipherHandler;
+import org.sstore.security.encryption.DataKeyGenerator;
 import org.sstore.server.asyncio.AsyncWrite;
 import org.sstore.utils.Constants;
 
@@ -25,6 +29,7 @@ public class DataServerFileIO {
 	private static String rootdir = Constants.DATAROOTDIR;
 	private final static Logger log = Logger.getLogger(DataServerFileIO.class.getName());
 	private DataBuffer buffer;
+	private CipherHandler cipherHandler;
 
 	// default constructor.
 	public DataServerFileIO() {
@@ -51,6 +56,13 @@ public class DataServerFileIO {
 			}
 		}
 		return fileset;
+	}
+
+	/** return data bytes in secure mode. */
+	public byte[] secureGet(SecretKeySpec skey, String remote) {
+		cipherHandler = new CipherHandler(skey);
+		byte[] cdata = get(remote);
+		return cipherHandler.decipher(cdata);
 	}
 
 	/** return bytes of the requested file by name */
