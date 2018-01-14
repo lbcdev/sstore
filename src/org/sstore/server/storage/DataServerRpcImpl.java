@@ -5,14 +5,16 @@ import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
+import java.util.HashMap;
+import java.util.Hashtable;
 
 import javax.crypto.spec.SecretKeySpec;
 
 import org.apache.log4j.Logger;
 import org.sstore.security.encryption.CipherHandler;
-import org.sstore.security.encryption.DataKeyGenerator;
 import org.sstore.server.buffer.KeyCache;
 import org.sstore.server.metaserver.MetaRpc;
+import org.sstore.server.storage.monitor.SecureMonitor;
 import org.sstore.utils.Constants;
 
 /**
@@ -30,9 +32,11 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 	private static DataServerFileIO dsfileio;
 	private static KeyCache keybuf;
 	private static CipherHandler cipherHandler;
+	private SecureMonitor smon;
 	private String metahost;
 	private int localport;
 	private static boolean secureMode = false;
+	private HashMap<String, Integer> lazyTable;
 
 	public DataServerRpcImpl() {
 		super();
@@ -44,6 +48,8 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 		String rootpath = "localhost-" + localport + "/";
 		dsfileio = new DataServerFileIO(rootpath);
 		keybuf = new KeyCache();
+		lazyTable = new HashMap<String, Integer>();
+		smon = SecureMonitor.getInstance();
 	}
 
 	public void startRpcServer(int port) {
@@ -92,21 +98,22 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 	}
 
 	public void put(String filename, byte[] data, long clientId) {
-		if (secureMode) {
-			securePut(filename, data, clientId);
-		} else {
-			dsfileio.asyncPut(filename, data);
-		}
+		// if (secureMode) {
+		// securePut(filename, data, clientId);
+		// } else {
+		dsfileio.asyncPut(filename, data);
+		// }
 	}
 
-	public void securePut(String filename, byte[] data, long clientId) {
-		DataKeyGenerator keyGen = new DataKeyGenerator();
-		byte[] key = keyGen.genKey(filename, clientId, Constants.DEFAULT_KEY_LENGTH);
-		cipherHandler = new CipherHandler(key, Constants.DEFAULT_KEY_LENGTH);
+	public void securePut(SecretKeySpec skey, String filename, byte[] data) {
+		// DataKeyGenerator keyGen = new DataKeyGenerator();
+		// byte[] key = keyGen.genKey(filename, clientId,
+		// Constants.DEFAULT_KEY_LENGTH);
+		cipherHandler = new CipherHandler(skey);
 		byte[] cdata = cipherHandler.cipher(data);
-		log.info("generate ecp key " + key[0] + " for " + filename);
+		log.info("generate ecp key " + skey + " for " + filename);
 		/* cache encryption key for files */
-		keybuf.cache(filename, key);
+		// keybuf.cache(filename, key);
 		dsfileio.asyncPut(filename, cdata);
 	}
 
@@ -130,9 +137,12 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 		}
 	}
 
-	/** thread to send heart beat every N seconds. */
+	/**
+	 * thread to send heart beat every N seconds. print out lazy table for test.
+	 */
 	public void run() {
 		while (true) {
+			smon.printLazyTable();
 			sendHeartBeat(metahost, localport);
 			try {
 				Thread.sleep(Constants.HEARTBEAT_INTERVAL);
@@ -142,7 +152,38 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 		}
 	}
 
+	public Hashtable<String, Integer> monitorRs() {
+		return dsfileio.getMonitorRslts();
+	}
+
+	public void monitorOn() {
+
+		dsfileio.monitorOn();
+	}
+
+	public void monitorOff() {
+
+		dsfileio.monitorOff();
+	}
+
 	public String readTest() {
 		return "read from dataserver rpc";
+	}
+
+	class LazyCountDown implements Runnable {
+		public void run() {
+			while (true) {
+				lazyTable.forEach((k, v) -> {
+					if (v > 0) {
+						v--;
+					}
+				});
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		}
 	}
 }

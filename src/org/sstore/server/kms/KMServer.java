@@ -37,7 +37,7 @@ public class KMServer {
 	}
 
 	byte[] computeKey(String fid, long cid) {
-		return keyGen.genKey(fid, cid, Constants.DEFAULT_KEY_LENGTH);
+		return keyGen.genKey(fid, cid, Constants.DEF_KEY_LEN);
 	}
 
 }

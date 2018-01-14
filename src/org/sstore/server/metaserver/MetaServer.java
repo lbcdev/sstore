@@ -13,6 +13,7 @@ import java.util.Set;
 import org.apache.log4j.Logger;
 import org.sstore.client.ClientInfo;
 import org.sstore.security.auth.AuthManager;
+import org.sstore.server.kms.KMServerRpcImpl;
 import org.sstore.server.management.MetaDataManager;
 import org.sstore.server.storage.DataServerStatus;
 import org.sstore.utils.Constants;
@@ -87,6 +88,8 @@ public class MetaServer {
 	void startServer() {
 		MetaRpcImpl metarpc = new MetaRpcImpl();
 		metarpc.startRpcServer();
+		KMServerRpcImpl keyrpc = new KMServerRpcImpl();
+		keyrpc.startRpcServer();
 	}
 
 	/** client program registry. */

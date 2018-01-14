@@ -29,7 +29,11 @@ public class DataBuffer {
 	 *            file content in bytes
 	 */
 	public static void cache(String filename, byte[] data) {
-		if (dataBuffer.size() < Constants.DATABUF_SIZE) {
+		if (dataBuffer != null && dataBuffer.size() < Constants.DATABUF_SIZE) {
+			dataBuffer.put(filename, data);
+		}
+		else {
+			dataBuffer = new Hashtable<String, byte[]>();
 			dataBuffer.put(filename, data);
 		}
 	}

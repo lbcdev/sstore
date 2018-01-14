@@ -51,6 +51,7 @@ public class DataServer {
 
 	void initialize(String metahost, int localport) {
 		dsfileio = new DataServerFileIO();
+		dsfileio.startLazyCounter();
 		startServer(localport);
 		startRpcThread(metahost, localport);
 	}
@@ -58,6 +59,7 @@ public class DataServer {
 	void startServer(int localport) {
 		DataServerRpcImpl dsrpc = new DataServerRpcImpl();
 		dsrpc.startRpcServer(localport);
+		
 	}
 
 	/** start a thread to send critical heartbeat message periodically */
@@ -86,7 +88,7 @@ public class DataServer {
 		Set<String> files = dsfileio.getFiles("");
 		Iterator<String> iter = files.iterator();
 		while (iter.hasNext()) {
-			hbbuf.append(iter.next() + "-");
+			hbbuf.append(iter.next() + ":");
 		}
 		// remove the last '-'.
 		String msg = hbbuf.substring(0, hbbuf.length() - 1);

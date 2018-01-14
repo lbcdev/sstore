@@ -2,11 +2,16 @@ package org.sstore.utils;
 
 public class Constants {
 
-	public final static int LOCALPORT = 1100;
+	/** ports */
+	public static int LOCALPORT = 1100;
+	public static int KMSPORT = 2000;
+
+	/** root key */
+	public static String ROOT_KEY = "fdjifE8@9*idfie1488dfidk3483483dfdjk";
 
 	/** message type */
 	public final static int BLOCKMSG = 1;
-	public final static int STATUSMSG = 2;
+	public static int STATUSMSG = 2;
 
 	/** default dir */
 	public final static String METAROOTDIR = "/Users/lbchen/meta/";
@@ -18,7 +23,7 @@ public class Constants {
 	public final static int REPLIC_FACTOR = 3;
 
 	// Heartbeat interval in milliseconds.
-	public final static int HEARTBEAT_INTERVAL = 10000;
+	public final static int HEARTBEAT_INTERVAL = 5000;
 	// default TTL value = 3 times of heartbeat interval.
 	public final static int HEARTBEAT_TTL = 1;
 
@@ -29,9 +34,10 @@ public class Constants {
 	/** message contents */
 	public final static String NODATASERVER_MSG = "No dataserver active";
 	public final static String INSUFFICIENT_DS = "No enough dataserver";
-
+	public final static String FILENOTFOUND = "file not found";
+	
 	/** key length */
-	public final static int DEFAULT_KEY_LENGTH = 16;
+	public final static int DEF_KEY_LEN = 16;
 
 	/** buffer */
 	// last access time distribution unit, 1000 for seconds, 60000 for mins,
@@ -44,4 +50,7 @@ public class Constants {
 	public final static int DATABUF_SIZE = 500;
 	public final static float RELEASE_PORTION = 1 / 4;
 	public final static int RELEASE_THRESHOLD = (int) (DATABUF_SIZE * (1 - RELEASE_PORTION));
+
+	/** lazy config */
+	public final static int lazyTTL = 3000;
 }

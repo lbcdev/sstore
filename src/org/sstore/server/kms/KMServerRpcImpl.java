@@ -9,6 +9,7 @@ import java.rmi.server.UnicastRemoteObject;
 import javax.crypto.spec.SecretKeySpec;
 
 import org.apache.log4j.Logger;
+import org.sstore.security.encryption.DataKeyGenerator;
 import org.sstore.utils.Constants;
 
 /**
@@ -21,10 +22,11 @@ public class KMServerRpcImpl implements KMServerRpc {
 
 	private final static Logger log = Logger.getLogger(KMServerRpcImpl.class.getName());
 
-	public void startRpcServer(int port) {
+	public void startRpcServer() {
 		try {
-			KMServerRpc kmstub = (KMServerRpc) UnicastRemoteObject.exportObject(this, 0);
-			Registry registry = LocateRegistry.getRegistry(port);
+			KMServerRpcImpl obj = new KMServerRpcImpl();
+			KMServerRpc kmstub = (KMServerRpc) UnicastRemoteObject.exportObject(obj, 0);
+			Registry registry = LocateRegistry.createRegistry(Constants.KMSPORT);
 			registry.bind(Constants.KMSRPC_NAME, kmstub);
 			log.info("KMServer RPC ready!");
 
@@ -38,8 +40,9 @@ public class KMServerRpcImpl implements KMServerRpc {
 		return key;
 	}
 	
-	public SecretKeySpec requestKey(String fid) throws RemoteException {
-		SecretKeySpec key = null;
+	public SecretKeySpec requestKey(String remotepath) throws RemoteException {
+		DataKeyGenerator keyGen = new DataKeyGenerator();
+		SecretKeySpec key = keyGen.gen(remotepath);
 		return key;
 	}
 }
