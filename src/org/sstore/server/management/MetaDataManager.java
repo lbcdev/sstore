@@ -24,7 +24,7 @@ public class MetaDataManager implements Runnable {
 	private static MetaServer metaserver;
 
 	public MetaDataManager() {
-		metaserver = new MetaServer();
+		metaserver = MetaServer.getInstance();
 	}
 
 	public void run() {

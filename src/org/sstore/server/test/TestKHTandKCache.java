@@ -60,7 +60,7 @@ public class TestKHTandKCache {
 		for (int i = 0; i < num; i++) {
 			DataKeyGenerator keyGen = new DataKeyGenerator();
 			// byte[] key = keyGen.genKey("jifjdifdfd.jpg", cid, klen);
-			SecretKeySpec skey = keyGen.gen("jifjdifdfd.jpg", cid, klen);
+			SecretKeySpec skey = keyGen.gen("jifjdifdfd.jpg");
 
 			handler = new CipherHandler(skey);
 			byte[] cdata = handler.cipher(StreamFileUtils.readBytes(in));
@@ -136,7 +136,7 @@ public class TestKHTandKCache {
 			DataKeyGenerator keyGen = new DataKeyGenerator();
 			String fname = "jifjdifdfd-" + i;
 			// byte[] key = keyGen.genKey(fname, cid, klen);
-			SecretKeySpec skey = keyGen.gen("jifjdifdfd.jpg", cid, klen);
+			SecretKeySpec skey = keyGen.gen("jifjdifdfd.jpg");
 			skcache.put(fname, skey);
 			// kcache.put(fname, key);
 		}
@@ -167,7 +167,7 @@ public class TestKHTandKCache {
 			for (int i = 0; i < num; i++) {
 				DataKeyGenerator keyGen = new DataKeyGenerator();
 				// byte[] key = keyGen.genKey("jifjdifdfd.jpg", cid, klen);
-				SecretKeySpec skey = keyGen.gen("jifjdifdfd.jpg", cid, klen);
+				SecretKeySpec skey = keyGen.gen("jifjdifdfd.jpg");
 
 				handler = new CipherHandler(skey);
 				byte[] dcdata = handler.decipher(StreamFileUtils.readBytes(cout));

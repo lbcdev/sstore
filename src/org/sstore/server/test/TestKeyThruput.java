@@ -56,7 +56,7 @@ public class TestKeyThruput {
 		for (int i = 0; i < num; i++) {
 			DataKeyGenerator keyGen = new DataKeyGenerator();
 			String fname = "jifjdifdfd-" + i;
-			SecretKeySpec skey = keyGen.gen(fname, cid, klen);
+			SecretKeySpec skey = keyGen.gen(fname);
 			kcache.put(fname, skey);
 		}
 	}

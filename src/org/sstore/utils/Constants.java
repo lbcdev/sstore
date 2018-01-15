@@ -3,8 +3,8 @@ package org.sstore.utils;
 public class Constants {
 
 	/** ports */
-	public static int LOCALPORT = 1100;
-	public static int KMSPORT = 2000;
+	public static int LOCALPORT = 9000;
+	public static int KMSPORT = 9001;
 
 	/** root key */
 	public static String ROOT_KEY = "fdjifE8@9*idfie1488dfidk3483483dfdjk";
@@ -14,7 +14,7 @@ public class Constants {
 	public static int STATUSMSG = 2;
 
 	/** default dir */
-	public final static String METAROOTDIR = "/Users/lbchen/meta/";
+	public final static String METAROOTDIR = "/Users/lbchen/data/meta/";
 	public final static String DATAROOTDIR = "/Users/lbchen/data/";
 
 	/** replication policy */

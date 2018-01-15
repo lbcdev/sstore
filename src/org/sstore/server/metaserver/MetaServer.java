@@ -1,7 +1,5 @@
 package org.sstore.server.metaserver;
 
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -15,6 +13,9 @@ import org.sstore.client.ClientInfo;
 import org.sstore.security.auth.AuthManager;
 import org.sstore.server.kms.KMServerRpcImpl;
 import org.sstore.server.management.MetaDataManager;
+import org.sstore.server.metaserver.monitor.OjbectLiveMonitor;
+import org.sstore.server.metaserver.persistence.F2DSTableReader;
+import org.sstore.server.metaserver.persistence.MetaDataWriter;
 import org.sstore.server.storage.DataServerStatus;
 import org.sstore.utils.Constants;
 
@@ -34,6 +35,8 @@ import org.sstore.utils.Constants;
 public class MetaServer {
 
 	public static final Logger log = Logger.getLogger(MetaServer.class.getName());
+
+	private static MetaServer instance = null;
 
 	// block to dataserver table, unused now
 	private static Map<Long, Set<String>> b2dsTable;
@@ -59,11 +62,11 @@ public class MetaServer {
 	private static boolean secureMode = false;
 
 	public static void main(String[] args) {
-		MetaServer metaserver = new MetaServer();
-		metaserver.initialize();
+		MetaServer meta = MetaServer.getInstance();
+		meta.start();
 	}
 
-	void initialize() {
+	private MetaServer() {
 		b2dsTable = new HashMap<Long, Set<String>>();
 		f2bTable = new HashMap<String, String>();
 		f2dsTable = new HashMap<String, String>();
@@ -73,15 +76,28 @@ public class MetaServer {
 		ds2fTable = new HashMap<String, String[]>();
 
 		clientTable = new HashMap<Long, ClientInfo>();
+	}
 
+	public static MetaServer getInstance() {
+		if (instance == null) {
+			instance = new MetaServer();
+		}
+		return instance;
+	}
+
+	void start() {
 		startServer();
 		startMetaManager();
+		startObjMonitor();
 	}
 
 	/** start a new thread for metadata manager. */
 	void startMetaManager() {
-		Thread thread = new Thread(new MetaDataManager());
-		thread.start();
+		new Thread(new MetaDataManager()).start();
+	}
+
+	void startObjMonitor() {
+		new Thread(new OjbectLiveMonitor()).start();
 	}
 
 	/** start metaserver rpc service */
@@ -90,6 +106,12 @@ public class MetaServer {
 		metarpc.startRpcServer();
 		KMServerRpcImpl keyrpc = new KMServerRpcImpl();
 		keyrpc.startRpcServer();
+
+		if (f2dsTable.size() <= 0) {
+			f2dsTable = F2DSTableReader.loadFromDisk();
+			// printTable(f2dsTable);
+			log.info("f2ds size: " + f2dsTable.size());
+		}
 	}
 
 	/** client program registry. */
@@ -108,11 +130,15 @@ public class MetaServer {
 	 * return files stored on the dataserver.
 	 * 
 	 * @param sid
-	 *            dataserver id
+	 * 
 	 * @return a list of files
 	 */
 	public String[] getFilesOnDataServer(String sid) {
 		return ds2fTable.get(sid);
+	}
+
+	public Map<String, String[]> getDs2f() {
+		return ds2fTable;
 	}
 
 	/**
@@ -144,7 +170,6 @@ public class MetaServer {
 	 * be added
 	 * 
 	 * @param sid
-	 *            dataserver id.
 	 */
 	public void updateDSStatus(String sid) {
 		DataServerStatus status = new DataServerStatus();
@@ -182,6 +207,16 @@ public class MetaServer {
 		return f2dsTable.get(filename);
 	}
 
+	public synchronized void removeFromF2ds(String obj) {
+		f2dsTable.remove(obj);
+		/* persist f2dstable to disk. */
+		MetaDataWriter.flushF2DSTable(f2dsTable);
+	}
+
+	public Map<String, String> getF2ds() {
+		return f2dsTable;
+	}
+
 	/** thread-safe, update file-dataserver table */
 	public synchronized void updateF2DSTable(String filename, String sid) {
 		// if file and its replicas exist, add new dataserver to the existing
@@ -195,17 +230,17 @@ public class MetaServer {
 		} else {
 			f2dsTable.put(filename, sid);
 		}
-//		flushF2DSTable();
-//		printTable(f2dsTable);
+
+		/* persist f2dstable to disk. */
+		MetaDataWriter.flushF2DSTable(f2dsTable);
+
 	}
 
 	/**
 	 * remove dataserver dsid from the replica list of a file.
 	 * 
 	 * @param filename
-	 *            file
 	 * @param dsid
-	 *            dataserver id
 	 */
 	public synchronized void removeReplicaOfFile(String filename, String dsid) {
 		// remove dataserver from dsTable, dsList.
@@ -231,25 +266,7 @@ public class MetaServer {
 		}
 		f2dsTable.put(filename, newReplicas);
 		log.info("removeReplicaOfFile new replicas" + newReplicas);
-//		printTable(f2dsTable);
-	}
-
-	/** flush file-dataserver table to disk */
-	void flushF2DSTable() {
-		Iterator<String> iter = f2dsTable.keySet().iterator();
-		try {
-			FileWriter out = new FileWriter(Constants.METAROOTDIR + "f2dsTable");
-			while (iter.hasNext()) {
-				String key = iter.next();
-				String value = f2dsTable.get(key);
-				String rows = key + "-" + value;
-				out.write(rows + "\n");
-			}
-			out.flush();
-			out.close();
-		} catch (IOException e) {
-			log.error(e.getMessage());
-		}
+		// printTable(f2dsTable);
 	}
 
 	/** synchronized update on the block-server table. */
@@ -259,12 +276,14 @@ public class MetaServer {
 	}
 
 	static void printTable(Map<String, String> table) {
-		log.info("------ print table ------");
+		log.info("------ begin of f2dsTable ------");
 		Iterator<String> iter = table.keySet().iterator();
 		while (iter.hasNext()) {
 			String key = iter.next();
 			log.info(key + ":" + table.get(key));
 		}
+		log.info("------ end of f2dsTable ------");
+
 	}
 
 	void printDSList() {

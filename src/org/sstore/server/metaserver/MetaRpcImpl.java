@@ -23,11 +23,14 @@ public class MetaRpcImpl implements MetaRpc {
 
 	private final static Logger log = Logger.getLogger(MetaRpcImpl.class.getName());
 
-	private static MetaServer metaserver;
+	public MetaServer metaserver;
 
+	public MetaRpcImpl() {
+		metaserver = MetaServer.getInstance();
+	}
+	
 	public void startRpcServer() {
 		try {
-			metaserver = new MetaServer();
 			MetaRpcImpl obj = new MetaRpcImpl();
 			MetaRpc stub = (MetaRpc) UnicastRemoteObject.exportObject(obj, 0);
 			Registry registry = LocateRegistry.createRegistry(Registry.REGISTRY_PORT);
@@ -80,13 +83,17 @@ public class MetaRpcImpl implements MetaRpc {
 		log.info("heartbeat: " + msg);
 		String[] msgarr = msg.split(",");
 		String sid = msgarr[1];
-		if(msgarr.length > 2){
-		String[] filestr = msgarr[2].split(":");
-		
-		metaserver.updateDS2FTable(sid, filestr);
-		for (String fname : filestr) {
-			metaserver.updateF2DSTable(fname, sid);
-		}
+		if (msgarr.length > 2) {
+			String[] filestr = msgarr[2].split(":");
+
+			metaserver.updateDS2FTable(sid, filestr);
+			log.info("dsf2 size: " + metaserver.getDs2f().size());
+			
+			for (String fname : filestr) {
+				metaserver.updateF2DSTable(fname, sid);
+			}
+			log.info("f2ds size: " + metaserver.getF2ds().size());
+
 		}
 		metaserver.updateDSStatus(sid);
 		log.info("receive heartbeat from " + sid);
