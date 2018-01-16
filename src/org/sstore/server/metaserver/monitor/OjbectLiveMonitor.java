@@ -19,23 +19,13 @@ public class OjbectLiveMonitor implements Runnable {
 
 	private final Logger log = Logger.getLogger(OjbectLiveMonitor.class);
 	private MetaServer meta = null;
-	private static boolean isChecking = false;
 
 	public OjbectLiveMonitor() {
 		meta = MetaServer.getInstance();
 	}
 
 	public void run() {
-
-		while (true) {
-			removeStaleObj();
-
-			try {
-				TimeUnit.MILLISECONDS.sleep(Constants.HEARTBEAT_INTERVAL);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
+		removeStaleObj();
 	}
 
 	private void removeStaleObj() {

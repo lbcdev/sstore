@@ -94,6 +94,7 @@ public class DataServerFileIO {
 						objTable.put(remote, dataObj);
 						keyTable.put(remote, skey);
 					}
+					
 					/* collect lazy time. */
 					if (monitorOn) {
 						if (secureMonitor.getLazyTable(remote) != null) {
@@ -109,18 +110,25 @@ public class DataServerFileIO {
 		}
 		/* if not cached. */
 		cipherHandler = new CipherHandler(skey);
-		byte[] data = cipherHandler.decipher(get(remote));
-
+		byte[] cdata = get(remote);
+		byte[] data = cipherHandler.decipher(cdata);
+		
+		dataObj = new DataObject();
+		dataObj.setId(remote);
 		if (lazyOn) {
-			dataObj = new DataObject();
 			// synchronized (this) {
-			dataObj.setId(remote);
 			dataObj.setData(data);
 			dataObj.setTtl(Constants.lazyTTL);
 			dataObj.setEncrypted(false);
-			objTable.put(remote, dataObj);
 			keyTable.put(remote, skey);
+			objTable.put(remote, dataObj);
 		}
+//		else {
+//			dataObj.setData(cdata);
+//			dataObj.setTtl(0);
+//			dataObj.setEncrypted(true);
+//		}
+		
 
 		if (monitorOn) {
 			if (secureMonitor.getLazyTable(remote) != null) {

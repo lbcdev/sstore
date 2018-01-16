@@ -10,6 +10,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.sstore.protocol.Block;
 import org.sstore.protocol.Message;
+import org.sstore.server.metaserver.monitor.OjbectLiveMonitor;
 import org.sstore.utils.Constants;
 
 /**
@@ -56,7 +57,6 @@ public class MetaRpcImpl implements MetaRpc {
 		// get all replicas.
 		String replicas = metaserver.lookupF2DSTable(remote);
 		// return primary only.
-		log.info(replicas);
 		if (replicas != null)
 			return replicas;
 		return "file not found";
@@ -83,6 +83,8 @@ public class MetaRpcImpl implements MetaRpc {
 		log.info("heartbeat: " + msg);
 		String[] msgarr = msg.split(",");
 		String sid = msgarr[1];
+		log.info("receive heartbeat from " + sid);
+
 		if (msgarr.length > 2) {
 			String[] filestr = msgarr[2].split(":");
 
@@ -96,7 +98,9 @@ public class MetaRpcImpl implements MetaRpc {
 
 		}
 		metaserver.updateDSStatus(sid);
-		log.info("receive heartbeat from " + sid);
+		
+		/* perform a check on stale objects. */
+//		new Thread(new OjbectLiveMonitor()).start();
 		return "ack";
 	}
 

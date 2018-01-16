@@ -4,7 +4,7 @@ public class Constants {
 
 	/** ports */
 	public static int LOCALPORT = 9000;
-	public static int KMSPORT = 9001;
+	public static int KMSPORT = 4001;
 
 	/** root key */
 	public static String ROOT_KEY = "fdjifE8@9*idfie1488dfidk3483483dfdjk";

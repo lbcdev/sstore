@@ -88,7 +88,7 @@ public class MetaServer {
 	void start() {
 		startServer();
 		startMetaManager();
-		startObjMonitor();
+//		startObjMonitor();
 	}
 
 	/** start a new thread for metadata manager. */
@@ -104,7 +104,7 @@ public class MetaServer {
 	void startServer() {
 		MetaRpcImpl metarpc = new MetaRpcImpl();
 		metarpc.startRpcServer();
-		KMServerRpcImpl keyrpc = new KMServerRpcImpl();
+		KMServerRpcImpl keyrpc = KMServerRpcImpl.getInstance();
 		keyrpc.startRpcServer();
 
 		if (f2dsTable.size() <= 0) {

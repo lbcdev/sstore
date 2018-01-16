@@ -18,15 +18,27 @@ import org.sstore.utils.Constants;
  * @author lbchen
  *
  */
-public class KMServerRpcImpl implements KMServerRpc {
+public final class KMServerRpcImpl implements KMServerRpc {
 
 	private final static Logger log = Logger.getLogger(KMServerRpcImpl.class.getName());
-
+	private static KMServerRpcImpl instance = null;
+	private static KMServerRpc kmstub;
+	private static Registry registry;
+	
+	private KMServerRpcImpl() {
+		
+	}
+	public static KMServerRpcImpl getInstance() {
+		if (instance == null) {
+			instance = new KMServerRpcImpl();
+		}
+		return instance;
+	}
+	
 	public void startRpcServer() {
 		try {
-			KMServerRpcImpl obj = new KMServerRpcImpl();
-			KMServerRpc kmstub = (KMServerRpc) UnicastRemoteObject.exportObject(obj, 0);
-			Registry registry = LocateRegistry.createRegistry(Constants.KMSPORT);
+			kmstub = (KMServerRpc) UnicastRemoteObject.exportObject(instance, 0);
+			registry = LocateRegistry.createRegistry(Constants.KMSPORT);
 			registry.bind(Constants.KMSRPC_NAME, kmstub);
 			log.info("KMServer RPC ready!");
 
@@ -34,13 +46,9 @@ public class KMServerRpcImpl implements KMServerRpc {
 			log.error(e.getMessage());
 		}
 	}
-
-	public byte[] requestKey(long fid) throws RemoteException {
-		byte[] key = null;
-		return key;
-	}
 	
 	public SecretKeySpec requestKey(String remotepath) throws RemoteException {
+		log.info("generate key for: " + remotepath);
 		DataKeyGenerator keyGen = new DataKeyGenerator();
 		SecretKeySpec key = keyGen.gen(remotepath);
 		return key;

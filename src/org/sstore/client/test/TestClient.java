@@ -11,9 +11,9 @@ public class TestClient {
 		String metahost = "localhost";
 		clientrpc = new ClientRpcImpl(metahost);
 //		nornalPut(200);
-//		securePut(500);
+		securePut(200);
 //		normalGet(1000);
-		secureGet(500);	
+//		secureGet(200);	
 	}
 
 	public static void nornalPut(int num) {
