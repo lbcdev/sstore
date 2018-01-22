@@ -118,7 +118,7 @@ public class ClientRpcImpl implements ClientRpc {
 	public byte[] getReqSecured(String remotepath) {
 		byte[] data = null;
 		try {
-			MetaRpc stub = (MetaRpc) registry.lookup("metarpc");
+			MetaRpc stub = (MetaRpc) registry.lookup(Constants.METARPC_NAME);
 			String replicas = stub.findDataServer(remotepath);
 			if (replicas.equals(Constants.FILENOTFOUND)) {
 				log.error("Remote file not found");

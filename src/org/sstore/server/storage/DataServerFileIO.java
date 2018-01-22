@@ -6,6 +6,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Hashtable;
+import java.util.List;
 import java.util.Set;
 
 import javax.crypto.spec.SecretKeySpec;
@@ -13,9 +14,11 @@ import javax.crypto.spec.SecretKeySpec;
 import org.apache.log4j.Logger;
 import org.sstore.security.encryption.CipherHandler;
 import org.sstore.server.asyncio.AsyncWrite;
+import org.sstore.server.storage.eviction.RandomLRU;
 import org.sstore.server.storage.monitor.SecureMonitor;
 import org.sstore.server.storage.object.DataObject;
 import org.sstore.utils.Constants;
+import org.sstore.utils.SstoreConfig;
 
 /**
  * DataServerFileIO handles all input/output operations like put, get, and
@@ -35,6 +38,7 @@ public class DataServerFileIO {
 	protected static Hashtable<String, SecretKeySpec> keyTable;
 	private static SecureMonitor secureMonitor;
 	private CipherHandler cipherHandler;
+	private SstoreConfig sconfig;
 	protected static boolean monitorOn;
 	private static boolean lazyOn;
 
@@ -52,8 +56,12 @@ public class DataServerFileIO {
 		objTable = new Hashtable<String, DataObject>();
 		keyTable = new Hashtable<String, SecretKeySpec>();
 		secureMonitor = SecureMonitor.getInstance();
-		monitorOn = false;
-		lazyOn = true;
+
+		sconfig = new SstoreConfig(Constants.CONFIG_PATH);
+		lazyOn = sconfig.getBoolean(Constants.SSTORE_LAZY);
+		monitorOn = sconfig.getBoolean(Constants.SSTORE_MONITOR);
+
+		startLazyCounter();
 	}
 
 	/** get all files under dir */
@@ -70,18 +78,21 @@ public class DataServerFileIO {
 		}
 		return fileset;
 	}
-
+	
+	
 	/** return data bytes in secure mode. */
 	public byte[] secureGet(SecretKeySpec skey, String remote) {
 		DataObject dataObj = objTable.get(remote);
+		log.info("lazy state: " + lazyOn);
 		log.info("objtable size: " + objTable.size());
 		/* check if it is cached and unencrypted. */
 		if (dataObj != null) {
+			byte[] data = null;
 			if (!dataObj.isEncrypted()) {
-				return dataObj.getData();
+				data = dataObj.getData();
 			} else {
 				cipherHandler = new CipherHandler(skey);
-				byte[] data = cipherHandler.decipher(dataObj.getData());
+				data = cipherHandler.decipher(dataObj.getData());
 				/*
 				 * Atomic operation: cache back unencrypted data and update
 				 * metadata
@@ -91,28 +102,29 @@ public class DataServerFileIO {
 						dataObj.setData(data);
 						dataObj.setTtl(Constants.lazyTTL);
 						dataObj.setEncrypted(false);
-						objTable.put(remote, dataObj);
 						keyTable.put(remote, skey);
-					}
-					
-					/* collect lazy time. */
-					if (monitorOn) {
-						if (secureMonitor.getLazyTable(remote) != null) {
-							int lazyTime = secureMonitor.getLazyTable(remote);
-							secureMonitor.putLazyTable(remote, lazyTime + Constants.lazyTTL);
-						} else {
-							secureMonitor.putLazyTable(remote, Constants.lazyTTL);
+
+						/* collect lazy time. */
+						if (monitorOn) {
+							if (secureMonitor.getLazyTable(remote) != null) {
+								int lazyTime = secureMonitor.getLazyTable(remote);
+								secureMonitor.putLazyTable(remote, lazyTime + Constants.lazyTTL);
+							} else {
+								secureMonitor.putLazyTable(remote, Constants.lazyTTL);
+							}
 						}
 					}
 				}
-				return data;
 			}
+			// record object's last operation time.
+			dataObj.setLastOper(System.currentTimeMillis());
+			objTable.put(remote, dataObj);
+			return data;
 		}
 		/* if not cached. */
 		cipherHandler = new CipherHandler(skey);
 		byte[] cdata = get(remote);
 		byte[] data = cipherHandler.decipher(cdata);
-		
 		dataObj = new DataObject();
 		dataObj.setId(remote);
 		if (lazyOn) {
@@ -121,24 +133,25 @@ public class DataServerFileIO {
 			dataObj.setTtl(Constants.lazyTTL);
 			dataObj.setEncrypted(false);
 			keyTable.put(remote, skey);
-			objTable.put(remote, dataObj);
-		}
-//		else {
-//			dataObj.setData(cdata);
-//			dataObj.setTtl(0);
-//			dataObj.setEncrypted(true);
-//		}
-		
-
-		if (monitorOn) {
-			if (secureMonitor.getLazyTable(remote) != null) {
-				int lazyTime = secureMonitor.getLazyTable(remote);
-				secureMonitor.putLazyTable(remote, lazyTime + Constants.lazyTTL);
-			} else {
-				secureMonitor.putLazyTable(remote, Constants.lazyTTL);
+			if (monitorOn) {
+				if (secureMonitor.getLazyTable(remote) != null) {
+					int lazyTime = secureMonitor.getLazyTable(remote);
+					secureMonitor.putLazyTable(remote, lazyTime + Constants.lazyTTL);
+				} else {
+					secureMonitor.putLazyTable(remote, Constants.lazyTTL);
+				}
 			}
+		} else {
+			dataObj.setData(cdata);
+			dataObj.setTtl(0);
+			dataObj.setEncrypted(true);
 		}
-		// }
+		dataObj.setLastOper(System.currentTimeMillis());
+		// if the cache is full, eviction some then proceed.
+		if (objTable.size() >= Constants.OBJTABLE_SIZE) {
+			objTableEviction();
+		}
+		objTable.put(remote, dataObj);
 		return data;
 	}
 
@@ -176,6 +189,15 @@ public class DataServerFileIO {
 			out.close();
 		} catch (IOException e) {
 			e.printStackTrace();
+		}
+	}
+
+	public synchronized void objTableEviction() {
+		List<String> evictList = RandomLRU.select(objTable);
+		System.out.println("Eviction size: " + evictList.size());
+		for (String id : evictList) {
+			System.out.println("Evict " + id);
+			objTable.remove(id);
 		}
 	}
 
@@ -239,18 +261,19 @@ public class DataServerFileIO {
 					/* calculate encryption rate */
 					int lazyTime = secureMonitor.getLazyTable(k);
 					long cTime = v.getCTime();
-					float eRate = 1 - (float) lazyTime / (System.currentTimeMillis() - cTime);
+					long eclipse = System.currentTimeMillis() - cTime;
+					float eRate = 1 - (float) lazyTime / eclipse;
 					v.seteRate(eRate);
 					objTable.put(k, v);
+					System.out.println("eclipse: " + eclipse);
 					System.out.println(k + ": " + v.toString());
 				});
 				try {
-					Thread.sleep(Constants.HEARTBEAT_INTERVAL / 10);
+					Thread.sleep(Constants.HEARTBEAT_INTERVAL / 2);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
 			}
-
 			// }
 		}
 	}

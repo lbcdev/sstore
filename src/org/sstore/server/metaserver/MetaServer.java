@@ -223,6 +223,7 @@ public class MetaServer {
 		// pair; if not, create a new pair.
 		if (f2dsTable.get(filename) != null) {
 			String replicas = f2dsTable.get(filename);
+			log.info("updateF2DSTable: " + replicas);
 			if (!replicas.contains(sid)) {
 				replicas = replicas + "," + sid;
 			}
@@ -230,7 +231,7 @@ public class MetaServer {
 		} else {
 			f2dsTable.put(filename, sid);
 		}
-
+		// printTable(f2dsTable);
 		/* persist f2dstable to disk. */
 		MetaDataWriter.flushF2DSTable(f2dsTable);
 

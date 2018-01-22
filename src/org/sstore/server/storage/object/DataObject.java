@@ -15,12 +15,32 @@ public class DataObject {
 	float eRate;
 	// encrypted or not flag.
 	boolean isEncrypted;
-	
+
 	byte[] data;
 	// TTL for lazy encryption.
 	int ttl;
 	// created time in ms.
 	long liveSince;
+	// operation frequency
+	float freq;
+	// last operation time
+	long lastOper;
+
+	public float getFreq() {
+		return freq;
+	}
+
+	public void setFreq(float freq) {
+		this.freq = freq;
+	}
+
+	public long getLastOper() {
+		return lastOper;
+	}
+
+	public void setLastOper(long lastOper) {
+		this.lastOper = lastOper;
+	}
 
 	// initiate creation time.
 	public DataObject() {
@@ -80,6 +100,7 @@ public class DataObject {
 	}
 
 	public String toString() {
-		return "ttl: " + ttl + ", isEncrypted: " + isEncrypted + ", eRate: " + eRate;
+		return "ttl: " + ttl + ", isEncrypted: " + isEncrypted 
+				+ ", eRate: " + eRate + ", lastOperation: " + lastOper;
 	}
 }

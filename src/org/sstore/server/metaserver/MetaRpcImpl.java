@@ -29,7 +29,7 @@ public class MetaRpcImpl implements MetaRpc {
 	public MetaRpcImpl() {
 		metaserver = MetaServer.getInstance();
 	}
-	
+
 	public void startRpcServer() {
 		try {
 			MetaRpcImpl obj = new MetaRpcImpl();
@@ -82,26 +82,27 @@ public class MetaRpcImpl implements MetaRpc {
 	public String heartBeat(String msg) {
 		log.info("heartbeat: " + msg);
 		String[] msgarr = msg.split(",");
-		String sid = msgarr[1];
-		log.info("receive heartbeat from " + sid);
+		if (msgarr.length == 3) {
+			String sid = msgarr[1];
+			log.info("receive heartbeat from: " + sid);
 
-		if (msgarr.length > 2) {
 			String[] filestr = msgarr[2].split(":");
 
 			metaserver.updateDS2FTable(sid, filestr);
 			log.info("dsf2 size: " + metaserver.getDs2f().size());
-			
+
 			for (String fname : filestr) {
 				metaserver.updateF2DSTable(fname, sid);
 			}
 			log.info("f2ds size: " + metaserver.getF2ds().size());
 
-		}
-		metaserver.updateDSStatus(sid);
-		
-		/* perform a check on stale objects. */
-//		new Thread(new OjbectLiveMonitor()).start();
-		return "ack";
+			metaserver.updateDSStatus(sid);
+
+			/* perform a check on stale objects. */
+			// new Thread(new OjbectLiveMonitor()).start();
+			return "ack";
+		} else
+			return null;
 	}
 
 	/** more general heartbeat message, in-progress. */

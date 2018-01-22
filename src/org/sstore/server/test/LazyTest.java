@@ -1,34 +1,81 @@
-package org.sstore.benchmarks;
+package org.sstore.server.test;
 
+import java.util.HashMap;
 import java.util.Random;
 
+import javax.crypto.spec.SecretKeySpec;
+
 import org.sstore.client.ClientRpcImpl;
-import org.sstore.utils.Constants;
+import org.sstore.security.encryption.CipherHandler;
+import org.sstore.security.encryption.DataKeyGenerator;
+import org.sstore.server.storage.DataServerFileIO;
 import org.sstore.utils.SstoreConfig;
 
-/**
- * Generate concurrent workload with multi-threading.
- * 
- * @author lbchen
- *
- */
-public class ConcurrentWorkload {
+public class LazyTest {
 
 	static ClientRpcImpl clientrpc;
 	String local, remote;
 	static int objectCount, operCount, clientCount, readProp, insertProp, deleteProp;
 	static String distributionType;
+	private static DataServerFileIO fileIO;
+	CipherHandler chandle;
 
 	public static void main(String[] args) {
-		ConcurrentWorkload cworkload = new ConcurrentWorkload();
-		// cworkload.simplePut(10, 100, 10);
-		String configFile = "resources/workloads/readOnlyWorkloads";
-		cworkload.prepare(configFile);
-		cworkload.run();
+		String rootpath = "localhost-1100/";
+		fileIO = new DataServerFileIO(rootpath);
+		LazyTest test = new LazyTest();
+		test.secureGet();
 	}
 
-	public ConcurrentWorkload() {
+	public SecretKeySpec requestKey(String remotepath) {
+		DataKeyGenerator keyGen = new DataKeyGenerator();
+		SecretKeySpec key = keyGen.gen(remotepath);
+		return key;
+	}
 
+	public void secureGet() {
+		HashMap<String, byte[]> objTable = new HashMap<String, byte[]>();
+		String remote = "";
+		int oper = 20000;
+		int objCount = 400;
+		for (int i = 0; i < objCount; i++) {
+			remote = "secure-20-" + i + ".jpg";
+			objTable.put(remote, fileIO.get(remote));
+		}
+		long start = System.currentTimeMillis();
+
+		for (int i = 0; i < oper; i++) {
+			remote = "secure-20-" + i % objCount + ".jpg";
+			SecretKeySpec skey = requestKey(remote);
+			byte[] data = objTable.get(remote);
+		}
+		
+		long eclipse = System.currentTimeMillis() - start;
+		System.out.println(eclipse);
+		if (eclipse > 0) {
+			float avgresp = (float) eclipse / oper;
+			float thruput = (float) (oper * 1000 / eclipse);
+			System.out.println("Avg. latency: " + avgresp);
+			System.out.println("thruput: " + thruput);
+		}
+		
+		start = System.currentTimeMillis();
+		for (int i = 0; i < oper; i++) {
+			remote = "secure-20-" + i % objCount + ".jpg";
+			byte[] cdata = objTable.get(remote);
+			SecretKeySpec skey = requestKey(remote);
+			chandle = new CipherHandler(skey);
+			byte[] data = chandle.cipher(cdata);
+		}
+
+		eclipse = System.currentTimeMillis() - start;
+		System.out.println(eclipse);
+		if (eclipse > 0) {
+			float avgresp = (float) eclipse / oper;
+			float thruput = (float) (oper * 1000 / eclipse);
+			System.out.println("Avg. latency: " + avgresp);
+			System.out.println("thruput: " + thruput);
+		}
 	}
 
 	public void prepare(String configFile) {
@@ -68,70 +115,6 @@ public class ConcurrentWorkload {
 		float filepers = (float) ((operCount * clientCount) * 1000 / (end - start));
 		System.out.println("Total Avg. latency: " + avgresp);
 		System.out.println("Total thruput: " + filepers);
-	}
-
-	/**
-	 * Generate simple put workload with fix sized files.
-	 * 
-	 * @param numOfClient
-	 * @param putPerClient
-	 * @param fileSize
-	 */
-	public void simplePut(int numOfClient, int putPerClient, int fileSize) {
-		long start = System.currentTimeMillis();
-		for (int i = 0; i < numOfClient; i++) {
-			Thread client = new Thread(new PutWorker(putPerClient));
-			client.start();
-			try {
-				client.join();
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
-		long end = System.currentTimeMillis();
-		System.out.println(end - start);
-		float avgresp = (float) ((end - start) / putPerClient / numOfClient);
-		float filepers = (float) ((putPerClient * numOfClient) * 1000 / (end - start));
-		System.out.println("Avg. latency: " + avgresp);
-		System.out.println("Avg. file per second: " + filepers);
-	}
-
-	public void simpleGet(int numOfClient, int putPerClient, int fileSize) {
-
-	}
-
-	public void simpleMix(int readPercent, int numOfClient, int putPerClient, int fileSize) {
-		long start = System.currentTimeMillis();
-		for (int i = 0; i < numOfClient; i++) {
-			Thread client = new Thread(new Worker(readPercent, putPerClient));
-			client.start();
-			try {
-				client.join();
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
-		long end = System.currentTimeMillis();
-		System.out.println(end - start);
-		float avgresp = (float) ((end - start) / (float) putPerClient / (float) numOfClient);
-		float filepers = (float) ((putPerClient * numOfClient) * 1000 / (end - start));
-		System.out.println("Avg. latency: " + avgresp);
-		System.out.println("Avg. file per second: " + filepers);
-	}
-
-	class PutWorker implements Runnable {
-		int readnum;
-
-		public PutWorker(int readPerClient) {
-			readnum = readPerClient;
-		}
-
-		public void run() {
-			while (readnum-- > 0) {
-				remote = readnum + "";
-				clientrpc.putReq(local, remote);
-			}
-		}
 	}
 
 	class Worker implements Runnable {
@@ -180,7 +163,7 @@ public class ConcurrentWorkload {
 			while (count-- > 0) {
 
 				String remote = "secure-20-" + randId.nextInt(objectCount) + ".jpg";
-//				System.out.println(remote);
+				// System.out.println(remote);
 
 				long start = System.currentTimeMillis();
 				if (rand1.nextInt(100) > readProp) {
@@ -217,7 +200,7 @@ public class ConcurrentWorkload {
 					int id = objectCount / 10 + randRange.nextInt(objectCount * 9 / 10);
 					remote = "secure-20-" + id + ".jpg";
 				}
-//				System.out.println(remote);
+				// System.out.println(remote);
 				if (randPop.nextInt(100) > readProp) {
 					clientrpc.putReqSecured(local, remote);
 				} else {

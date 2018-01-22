@@ -1,0 +1,12 @@
+# read-only workloads
+
+object_count=80
+operation_count=1600
+client_count=1
+
+read_prop=100
+delete_prop=0
+insert_prop=0
+
+# uniform, part_popular, latest
+distribution_type=uniform

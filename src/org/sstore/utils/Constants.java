@@ -3,7 +3,7 @@ package org.sstore.utils;
 public class Constants {
 
 	/** ports */
-	public static int LOCALPORT = 9000;
+	public static int LOCALPORT = 1100;
 	public static int KMSPORT = 4001;
 
 	/** root key */
@@ -39,7 +39,7 @@ public class Constants {
 	/** key length */
 	public final static int DEF_KEY_LEN = 16;
 
-	/** buffer */
+	/** object table */
 	// last access time distribution unit, 1000 for seconds, 60000 for mins,
 	// etc.
 	public final static int LAT_DISTUNIT = 1000;
@@ -48,9 +48,18 @@ public class Constants {
 	// Intervals to auto-release part of the buffer.
 	public final static int RLS_INTERVAL = 2000;
 	public final static int DATABUF_SIZE = 500;
-	public final static float RELEASE_PORTION = 1 / 4;
+	public final static float RELEASE_PORTION = 0.1f;
 	public final static int RELEASE_THRESHOLD = (int) (DATABUF_SIZE * (1 - RELEASE_PORTION));
-
+	// random LRU pick range.
+	public final static int RANDOMLRU_RANGE = 5;
+	public final static int OBJTABLE_SIZE = 40;
+	
+	
 	/** lazy config */
 	public final static int lazyTTL = 3000;
+	
+	/* Configuration */
+	public final static String CONFIG_PATH = "sstore.properties";
+	public final static String SSTORE_LAZY = "sstore.lazy";
+	public final static String SSTORE_MONITOR = "sstore.monitor";
 }
