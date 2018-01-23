@@ -78,17 +78,37 @@ public class DataServerFileIO {
 		}
 		return fileset;
 	}
-	
-	
+
+	/**
+	 * Quick check if the data is lazy and return it if true.
+	 * 
+	 * @return
+	 */
+	public byte[] lazyGet(String remote) {
+		DataObject dataObj = objTable.get(remote);
+		if (dataObj != null) {
+			System.out.println(remote + "lazyGet hits ");
+			// record object's last operation time.
+			dataObj.setLastOper(System.currentTimeMillis());
+			objTable.put(remote, dataObj);
+			return dataObj.getData();
+		}
+		return null;
+	}
+
 	/** return data bytes in secure mode. */
 	public byte[] secureGet(SecretKeySpec skey, String remote) {
 		DataObject dataObj = objTable.get(remote);
 		log.info("lazy state: " + lazyOn);
 		log.info("objtable size: " + objTable.size());
+		
+//		printObjTable();
+		
 		/* check if it is cached and unencrypted. */
 		if (dataObj != null) {
 			byte[] data = null;
 			if (!dataObj.isEncrypted()) {
+				System.out.println(remote + " hits");
 				data = dataObj.getData();
 			} else {
 				cipherHandler = new CipherHandler(skey);
@@ -103,6 +123,7 @@ public class DataServerFileIO {
 						dataObj.setTtl(Constants.lazyTTL);
 						dataObj.setEncrypted(false);
 						keyTable.put(remote, skey);
+						System.out.println(remote + " is lazy now.");
 
 						/* collect lazy time. */
 						if (monitorOn) {
@@ -132,6 +153,8 @@ public class DataServerFileIO {
 			dataObj.setData(data);
 			dataObj.setTtl(Constants.lazyTTL);
 			dataObj.setEncrypted(false);
+			System.out.println(remote + " is lazy now.");
+
 			keyTable.put(remote, skey);
 			if (monitorOn) {
 				if (secureMonitor.getLazyTable(remote) != null) {
@@ -192,6 +215,11 @@ public class DataServerFileIO {
 		}
 	}
 
+	public void printObjTable (){
+		objTable.forEach((k, v) -> {
+			System.out.println(k);
+		});
+	}
 	public synchronized void objTableEviction() {
 		List<String> evictList = RandomLRU.select(objTable);
 		System.out.println("Eviction size: " + evictList.size());
@@ -243,7 +271,7 @@ public class DataServerFileIO {
 				 */
 				// synchronized (this) {
 
-				System.out.println("objTable size: " + objTable.size());
+				// System.out.println("objTable size: " + objTable.size());
 
 				objTable.forEach((k, v) -> {
 					/* if expires */
@@ -259,14 +287,17 @@ public class DataServerFileIO {
 						keyTable.remove(k);
 					}
 					/* calculate encryption rate */
-					int lazyTime = secureMonitor.getLazyTable(k);
-					long cTime = v.getCTime();
-					long eclipse = System.currentTimeMillis() - cTime;
-					float eRate = 1 - (float) lazyTime / eclipse;
-					v.seteRate(eRate);
+					if (monitorOn) {
+						int lazyTime = secureMonitor.getLazyTable(k);
+						long cTime = v.getCTime();
+						long eclipse = System.currentTimeMillis() - cTime;
+						float eRate = 1 - (float) lazyTime / eclipse;
+						v.seteRate(eRate);
+						System.out.println("eclipse: " + eclipse);
+						System.out.println(k + ": " + v.toString());
+					}
 					objTable.put(k, v);
-					System.out.println("eclipse: " + eclipse);
-					System.out.println(k + ": " + v.toString());
+
 				});
 				try {
 					Thread.sleep(Constants.HEARTBEAT_INTERVAL / 2);

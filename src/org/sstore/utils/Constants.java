@@ -37,7 +37,7 @@ public class Constants {
 	public final static String FILENOTFOUND = "file not found";
 	
 	/** key length */
-	public final static int DEF_KEY_LEN = 16;
+	public final static int DEF_KEY_LEN = 32;
 
 	/** object table */
 	// last access time distribution unit, 1000 for seconds, 60000 for mins,
@@ -52,7 +52,7 @@ public class Constants {
 	public final static int RELEASE_THRESHOLD = (int) (DATABUF_SIZE * (1 - RELEASE_PORTION));
 	// random LRU pick range.
 	public final static int RANDOMLRU_RANGE = 5;
-	public final static int OBJTABLE_SIZE = 40;
+	public final static int OBJTABLE_SIZE = 80;
 	
 	
 	/** lazy config */

@@ -16,7 +16,7 @@ public interface DataServerRpc extends Remote {
 
 	public byte[] get(String remote, long clientId) throws RemoteException;
 
-	public byte[] secureGet(SecretKeySpec skey, String remote) throws RemoteException;
+	public byte[] secureGet(String remote) throws RemoteException;
 	
 	public void securePut(SecretKeySpec skey, String fname, byte[] data) throws RemoteException;
 		

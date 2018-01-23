@@ -9,7 +9,7 @@ import org.sstore.security.encryption.DataKeyGenerator;
 public class TestKeyThruput {
 	private static HashMap<String, SecretKeySpec> kcache = new HashMap<String, SecretKeySpec>();
 	static long cid = 1838339;
-	static int klen = 16;
+	static int klen = 32;
 	static String filename = "lbchencn.jpg";
 
 	public static void main(String[] args) {

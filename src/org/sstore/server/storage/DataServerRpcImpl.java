@@ -13,9 +13,11 @@ import javax.crypto.spec.SecretKeySpec;
 import org.apache.log4j.Logger;
 import org.sstore.security.encryption.CipherHandler;
 import org.sstore.server.buffer.KeyCache;
+import org.sstore.server.kms.KMServerRpc;
 import org.sstore.server.metaserver.MetaRpc;
 import org.sstore.server.storage.monitor.SecureMonitor;
 import org.sstore.utils.Constants;
+import org.sstore.utils.SstoreConfig;
 
 /**
  * dataserver rpc handles all calls from clients and sends heartbeat message to
@@ -29,13 +31,15 @@ import org.sstore.utils.Constants;
 public class DataServerRpcImpl implements DataServerRpc, Runnable {
 
 	private final static Logger log = Logger.getLogger(DataServerRpc.class.getName());
+	private SstoreConfig sconfig;
+	private Registry kmsRegistry; // dataserver rpc registry.
 	private static DataServerFileIO dsfileio;
 	private static KeyCache keybuf;
 	private static CipherHandler cipherHandler;
 	private SecureMonitor smon;
 	private String metahost;
 	private int localport;
-	private static boolean secureMode = false;
+	private static boolean lazyOn = false;
 	private HashMap<String, Integer> lazyTable;
 
 	public DataServerRpcImpl() {
@@ -50,6 +54,10 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 		keybuf = new KeyCache();
 		lazyTable = new HashMap<String, Integer>();
 		smon = SecureMonitor.getInstance();
+
+		log.info("Register key server");
+		sconfig = new SstoreConfig(Constants.CONFIG_PATH);
+		lazyOn = sconfig.getBoolean(Constants.SSTORE_LAZY);
 	}
 
 	public void startRpcServer(int port) {
@@ -64,6 +72,21 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 			log.error("Dataserver RPC err: " + e.getMessage());
 			e.printStackTrace();
 		}
+	}
+
+	/** request secret key from KMServer */
+	public SecretKeySpec keyReq(String remotefile) {
+		SecretKeySpec skey = null;
+		try {
+			kmsRegistry = LocateRegistry.getRegistry(metahost, Constants.KMSPORT);
+			KMServerRpc stub = (KMServerRpc) kmsRegistry.lookup(Constants.KMSRPC_NAME);
+			skey = stub.requestKey(remotefile);
+			log.info("Get secret key" + skey);
+
+		} catch (NotBoundException | RemoteException e) {
+			log.error(e.getMessage());
+		}
+		return skey;
 	}
 
 	/** forward data to other replicas except the primary itself. */
@@ -93,7 +116,18 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 		return dsfileio.get(remote);
 	}
 
-	public byte[] secureGet(SecretKeySpec skey, String remote) {
+	public byte[] secureGet(String remote) {
+		System.out.println("lazy state: " + lazyOn);
+
+		// quick get if the data is lazy.
+		if (lazyOn) {
+			if (dsfileio.lazyGet(remote) != null) {
+				return dsfileio.lazyGet(remote);
+			}
+		}
+		System.out.println(remote + " lazyGet misses");
+		// otherwise get a key first, then proceed.
+		SecretKeySpec skey = keyReq(remote);
 		return dsfileio.secureGet(skey, remote);
 	}
 
@@ -129,7 +163,7 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 			DataServer dataserver = new DataServer();
 			String response = stub.heartBeat(dataserver.buildHBMessage());
 			boolean flag = stub.getSecureMode();
-			secureMode = flag;
+			// secureMode = flag;
 			log.info(response);
 
 		} catch (RemoteException | NotBoundException e) {

@@ -11,7 +11,7 @@ public class TestClient {
 		String metahost = "localhost";
 		clientrpc = new ClientRpcImpl(metahost);
 //		nornalPut(200);
-//		securePut(500);
+		securePut(500);
 //		normalGet(1000);
 //		secureGet(60);	
 	}
@@ -29,7 +29,7 @@ public class TestClient {
 
 	public static void securePut(int num) {
 		long st = System.currentTimeMillis();
-		String local = "resources/in.jpg";
+		String local = "resources/l200.png";
 		for (int i = 0; i < num; i++) {
 			String remote = "secure-20-" + i + ".jpg";
 			clientrpc.putReqSecured(local, remote);

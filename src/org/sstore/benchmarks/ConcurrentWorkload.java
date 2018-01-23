@@ -33,7 +33,7 @@ public class ConcurrentWorkload {
 
 	public void prepare(String configFile) {
 		clientrpc = new ClientRpcImpl("localhost");
-		local = "resources/in.png";
+		local = "resources/s40.jpg";
 
 		SstoreConfig configs = new SstoreConfig(configFile);
 		objectCount = configs.getInteger("object_count");
@@ -171,6 +171,8 @@ public class ConcurrentWorkload {
 		 * Uniform distribution, picking an object randomly.
 		 */
 		public void uniform() {
+			System.out.println("start uniform workloads");
+
 			int count = operCount;
 			long maxLate = 0, minLate = 0;
 			// random number for read/write
@@ -198,6 +200,8 @@ public class ConcurrentWorkload {
 		}
 
 		public void partPopular() {
+			System.out.println("start part_popular workloads");
+
 			String remote = null;
 			long maxLate = 0, minLate = 0;
 			// pick a start id randomly.
@@ -217,7 +221,7 @@ public class ConcurrentWorkload {
 					int id = objectCount / 10 + randRange.nextInt(objectCount * 9 / 10);
 					remote = "secure-20-" + id + ".jpg";
 				}
-//				System.out.println(remote);
+				System.out.println(remote);
 				if (randPop.nextInt(100) > readProp) {
 					clientrpc.putReqSecured(local, remote);
 				} else {

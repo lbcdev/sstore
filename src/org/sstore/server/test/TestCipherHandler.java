@@ -12,9 +12,9 @@ public class TestCipherHandler {
 	public static void main(String[] args) {
 		TestCipherHandler handler = new TestCipherHandler();
 		int times = 5000;
-		handler.rawlgfile(times / 100);
-		handler.testsmfile(times);
-		handler.testmdfile((times / 10));
+//		handler.rawlgfile(times / 100);
+//		handler.testsmfile(times);
+//		handler.testmdfile((times / 10));
 		handler.testlgfile((times / 100));
 	}
 
@@ -62,7 +62,7 @@ public class TestCipherHandler {
 		while (times-- > 0) {
 			String keystr = "a girl has no name";
 			byte[] key = keystr.getBytes();
-			handler = new CipherHandler(key, 16);
+			handler = new CipherHandler(key, 32);
 			byte[] cdata = handler.cipher(StreamFileUtils.readBytes(in));
 			StreamFileUtils.writeBytes(cout, cdata);
 			byte[] dcdata = handler.decipher(StreamFileUtils.readBytes(cout));

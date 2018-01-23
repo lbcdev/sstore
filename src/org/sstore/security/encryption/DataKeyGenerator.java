@@ -42,7 +42,11 @@ public class DataKeyGenerator {
 		MessageDigest sha;
 		SecretKeySpec skspec = null;
 		byte[] key = (Constants.ROOT_KEY + filename).getBytes();
+		if (key.length != Constants.DEF_KEY_LEN) {
+			key = Arrays.copyOf(key, Constants.DEF_KEY_LEN);
+		}
 		try {
+			
 			sha = MessageDigest.getInstance("SHA-1");
 			byte[] inputKey = sha.digest(key);
 			if (inputKey.length != Constants.DEF_KEY_LEN) {

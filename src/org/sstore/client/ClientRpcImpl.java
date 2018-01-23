@@ -126,13 +126,15 @@ public class ClientRpcImpl implements ClientRpc {
 			}
 			String primary = replicas.split(",")[0];
 			log.info(replicas);
-			SecretKeySpec skey = keyReq(remotepath);
-			if (skey != null) {
-				data = getFileSecured(remotepath, primary, skey);
-			} else {
-				log.error("No key returned.");
-				return null;
-			}
+			data = getFileSecured(remotepath, primary);
+
+//			SecretKeySpec skey = keyReq(remotepath);
+//			if (skey != null) {
+//				data = getFileSecured(remotepath, primary, skey);
+//			} else {
+//				log.error("No key returned.");
+//				return null;
+//			}
 
 		} catch (NotBoundException | RemoteException e) {
 			log.error(e.getMessage());
@@ -170,13 +172,13 @@ public class ClientRpcImpl implements ClientRpc {
 		return skey;
 	}
 
-	byte[] getFileSecured(String remote, String primary, SecretKeySpec skey) {
+	byte[] getFileSecured(String remote, String primary) {
 		int port = Integer.parseInt(primary.split(":")[1]);
 		String rpcname = Constants.DATARPC_NAME;
 		try {
 			final Registry registry = LocateRegistry.getRegistry("localhost", port);
 			DataServerRpc stub = (DataServerRpc) registry.lookup(rpcname);
-			byte[] data = stub.secureGet(skey, remote);
+			byte[] data = stub.secureGet(remote);
 			if (data == null) {
 				log.info("Not file found.");
 			}
