@@ -28,9 +28,9 @@ import org.sstore.utils.Constants;
 public class ClientRpcImpl implements ClientRpc {
 
 	private final static Logger log = Logger.getLogger(ClientRpcImpl.class.getName());
-	private Registry registry; // metaserver rpc registry.
-	private Registry dsregistry; // dataserver rpc registry.
-	private Registry kmsRegistry; // dataserver rpc registry.
+	private static Registry registry; // metaserver rpc registry.
+	private static Registry dsregistry; // dataserver rpc registry.
+	private static Registry kmsRegistry; // dataserver rpc registry.
 	private static long clientId;
 	private boolean secureMode;
 
@@ -68,53 +68,22 @@ public class ClientRpcImpl implements ClientRpc {
 		}
 	}
 
-	/** turn on monitor */
-	public void monitorOn(String primary) {
-		int port = Integer.parseInt(primary.split(":")[1]);
-		String rpcname = Constants.DATARPC_NAME;
-		try {
-			final Registry registry = LocateRegistry.getRegistry("localhost", port);
-			DataServerRpc stub = (DataServerRpc) registry.lookup(rpcname);
-			stub.monitorOn();
-			log.info("monitor on.");
-			// writeToLocal(local, data);
-		} catch (RemoteException | NotBoundException e) {
-			log.error("Client exception: " + e.toString());
-		}
-	}
+//	/** turn on monitor */
+//	public void monitorOn(String primary) {
+//		int port = Integer.parseInt(primary.split(":")[1]);
+//		String rpcname = Constants.DATARPC_NAME;
+//		try {
+//			final Registry registry = LocateRegistry.getRegistry("localhost", port);
+//			DataServerRpc stub = (DataServerRpc) registry.lookup(rpcname);
+//			stub.monitorOn();
+//			log.info("monitor on.");
+//			// writeToLocal(local, data);
+//		} catch (RemoteException | NotBoundException e) {
+//			log.error("Client exception: " + e.toString());
+//		}
+//	}
 
-	/** turn off monitor */
-	public void monitorOff(String primary) {
-		int port = Integer.parseInt(primary.split(":")[1]);
-		String rpcname = Constants.DATARPC_NAME;
-		try {
-			final Registry registry = LocateRegistry.getRegistry("localhost", port);
-			DataServerRpc stub = (DataServerRpc) registry.lookup(rpcname);
-			stub.monitorOff();
-			log.info("monitor off.");
-			// writeToLocal(local, data);
-		} catch (RemoteException | NotBoundException e) {
-			log.error("Client exception: " + e.toString());
-		}
-	}
-
-	/** turn off monitor */
-	public Hashtable<String, Integer> monitorRslt(String primary) {
-		int port = Integer.parseInt(primary.split(":")[1]);
-		String rpcname = Constants.DATARPC_NAME;
-		Hashtable<String, Integer> rslt = new Hashtable<String, Integer>();
-		try {
-			final Registry registry = LocateRegistry.getRegistry("localhost", port);
-			DataServerRpc stub = (DataServerRpc) registry.lookup(rpcname);
-			Hashtable<String, Integer> rs = stub.monitorRs();
-			log.info("monitor off.");
-			// writeToLocal(local, data);
-		} catch (RemoteException | NotBoundException e) {
-			log.error("Client exception: " + e.toString());
-		}
-		return rslt;
-	}
-
+	
 	public byte[] getReqSecured(String remotepath) {
 		byte[] data = null;
 		try {

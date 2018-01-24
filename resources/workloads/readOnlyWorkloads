@@ -1,7 +1,7 @@
 # read-only workloads
 
-object_count=80
-operation_count=800
+object_count=20
+operation_count=160
 client_count=1
 
 read_prop=100

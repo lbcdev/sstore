@@ -31,4 +31,5 @@ public interface DataServerRpc extends Remote {
 	public void monitorOff() throws RemoteException;
 
 	public String readTest() throws RemoteException;
+	
 }

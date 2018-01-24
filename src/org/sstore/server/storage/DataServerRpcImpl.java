@@ -73,7 +73,8 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 			e.printStackTrace();
 		}
 	}
-
+	
+	
 	/** request secret key from KMServer */
 	public SecretKeySpec keyReq(String remotefile) {
 		SecretKeySpec skey = null;
@@ -117,7 +118,6 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 	}
 
 	public byte[] secureGet(String remote) {
-//		System.out.println("lazy state: " + lazyOn);
 
 		// quick get if the data is lazy.
 		if (lazyOn) {
@@ -125,7 +125,6 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 				return dsfileio.lazyGet(remote);
 			}
 		}
-//		System.out.println(remote + " lazyGet misses");
 		// otherwise get a key first, then proceed.
 		SecretKeySpec skey = keyReq(remote);
 		return dsfileio.secureGet(skey, remote);

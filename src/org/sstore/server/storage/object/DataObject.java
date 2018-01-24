@@ -45,6 +45,7 @@ public class DataObject {
 	// initiate creation time.
 	public DataObject() {
 		liveSince = System.currentTimeMillis();
+		eRate = 1f;
 	}
 
 	public long getCTime() {
