@@ -221,7 +221,7 @@ public class ConcurrentWorkload {
 					int id = objectCount / 10 + randRange.nextInt(objectCount * 9 / 10);
 					remote = "secure-20-" + id + ".jpg";
 				}
-				System.out.println(remote);
+//				System.out.println(remote);
 				if (randPop.nextInt(100) > readProp) {
 					clientrpc.putReqSecured(local, remote);
 				} else {
@@ -230,9 +230,9 @@ public class ConcurrentWorkload {
 					maxLate = eclipse > maxLate ? eclipse : maxLate;
 					minLate = Math.min(eclipse, minLate);
 				}
-				System.out.println("Max latency: " + maxLate);
-				System.out.println("Minimum latency: " + minLate);
 			}
+			System.out.println("Max latency: " + maxLate);
+			System.out.println("Minimum latency: " + minLate);
 		}
 	}
 }

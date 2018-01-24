@@ -117,7 +117,7 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 	}
 
 	public byte[] secureGet(String remote) {
-		System.out.println("lazy state: " + lazyOn);
+//		System.out.println("lazy state: " + lazyOn);
 
 		// quick get if the data is lazy.
 		if (lazyOn) {
@@ -125,7 +125,7 @@ public class DataServerRpcImpl implements DataServerRpc, Runnable {
 				return dsfileio.lazyGet(remote);
 			}
 		}
-		System.out.println(remote + " lazyGet misses");
+//		System.out.println(remote + " lazyGet misses");
 		// otherwise get a key first, then proceed.
 		SecretKeySpec skey = keyReq(remote);
 		return dsfileio.secureGet(skey, remote);
