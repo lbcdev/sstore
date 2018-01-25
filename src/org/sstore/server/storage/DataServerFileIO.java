@@ -5,8 +5,10 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Hashtable;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -36,7 +38,7 @@ public class DataServerFileIO {
 	private static String rootdir = Constants.DATAROOTDIR;
 	private final static Logger log = Logger.getLogger(DataServerFileIO.class.getName());
 	private DataBuffer buffer;
-	private static Hashtable<String, DataObject> objTable;
+	private volatile static Hashtable<String, DataObject> objTable;
 	protected static Hashtable<String, SecretKeySpec> keyTable;
 	private static SecureMonitor secureMonitor;
 	private CipherHandler cipherHandler;
@@ -272,12 +274,14 @@ public class DataServerFileIO {
 		 * 
 		 * @return
 		 */
+		@SuppressWarnings("unchecked")
 		public float getAvgRate() {
 			float total = 0f;
-			Map<String, DataObject> objTable = DataServerFileIO.getObjTable();
+			Map<String, DataObject> objTable = new HashMap<String, DataObject>();
+			objTable = (Map<String, DataObject>) DataServerFileIO.getObjTable().clone();
 			float size = objTable.size();
-			Collection<DataObject> objects = objTable.values();
-			for (DataObject obj : objects) {
+			Collection<DataObject> coll = objTable.values();
+			for (DataObject obj: coll) {
 				float rate = obj.geteRate();
 				total = total + rate;
 			}
@@ -289,11 +293,13 @@ public class DataServerFileIO {
 		 * 
 		 * @return
 		 */
+		@SuppressWarnings("unchecked")
 		public float getMinRate() {
 			float minRate = 1f;
-			Map<String, DataObject> objTable = DataServerFileIO.getObjTable();
-			Collection<DataObject> objects = objTable.values();
-			for (DataObject obj : objects) {
+			Map<String, DataObject> objTable = new HashMap<String, DataObject>();
+			objTable = (Map<String, DataObject>) DataServerFileIO.getObjTable().clone();
+			Collection<DataObject> coll = objTable.values();
+			for (DataObject obj: coll) {
 				float rate = obj.geteRate();
 				minRate = Math.min(rate, minRate);
 			}
@@ -307,14 +313,14 @@ public class DataServerFileIO {
 				 * data.
 				 */
 				try {
-					Thread.sleep(Constants.lazyTTL);
+					Thread.sleep(Constants.lazyTTL / 2);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
 				objTable.forEach((k, v) -> {
 					/* if expires */
 					if (v.getTtl() > 0) {
-						v.setTtl(v.getTtl() - (Constants.lazyTTL / 3));
+						v.setTtl(v.getTtl() - (Constants.lazyTTL / 2));
 					} else if (!v.isEncrypted() && keyTable.get(k) != null) {
 						SecretKeySpec skey = keyTable.get(k);
 						CipherHandler chandle = new CipherHandler(skey);
@@ -333,12 +339,15 @@ public class DataServerFileIO {
 						if (lazyTime <= eclipse) {
 							eRate = 1 - (float) lazyTime / eclipse;
 						}
+//						System.out.println("eclispe: " + eclipse);
 						v.seteRate(eRate);
 					}
 					objTable.put(k, v);
 				});
 				if (objTable.size() > 0) {
-					printObjTable();
+
+//					 printObjTable();
+
 					float minRate = getMinRate();
 					float avgRate = getAvgRate();
 					System.out.println("Min. rate: " + minRate);

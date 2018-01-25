@@ -56,7 +56,7 @@ public class Constants {
 	
 	
 	/** lazy config */
-	public final static int lazyTTL = 3000;
+	public final static int lazyTTL = 325;
 	
 	/* Configuration */
 	public final static String CONFIG_PATH = "sstore.properties";
