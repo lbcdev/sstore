@@ -10,6 +10,6 @@ This experimental project is built for the following tasks:
 
 3. Support flexible consistency levels for data replicas.
 
-4. Support a fine-grained hybrid of replcation and erasure coding.
+4. Support a fine-grained hybrid of replication and erasure coding.
 
 5. Design in-memory structure to optimize services like encryptoin and consistency.
