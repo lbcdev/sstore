@@ -2,7 +2,7 @@
 
 object_count=100
 operation_count=2000
-client_count=8
+client_count=1
 
 read_prop=100
 delete_prop=0
