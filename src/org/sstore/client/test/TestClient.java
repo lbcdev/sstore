@@ -29,6 +29,7 @@ public class TestClient {
 
 	public static void securePut(int num) {
 		long st = System.currentTimeMillis();
+		System.out.println("Put files...");
 		String local = "resources/l200.png";
 		for (int i = 0; i < num; i++) {
 			String remote = "secure-20-" + i + ".jpg";
