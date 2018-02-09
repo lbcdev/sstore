@@ -2,10 +2,10 @@
 
 object_count=100
 operation_count=2000
-client_count=1
+client_count=8
 
 read_prop=100
 delete_prop=0
 insert_prop=0
-# uniform, part_popular, latest
-distribution_type=part_popular
+# uniform, part_popular, zipf
+distribution_type=uniform

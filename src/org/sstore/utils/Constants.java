@@ -52,7 +52,7 @@ public class Constants {
 	public final static int RELEASE_THRESHOLD = (int) (DATABUF_SIZE * (1 - RELEASE_PORTION));
 	// random LRU pick range.
 	public final static int RANDOMLRU_RANGE = 5;
-	public final static int OBJTABLE_SIZE = 80;
+	public final static int OBJTABLE_SIZE = 50;
 	
 	
 	/** lazy config */

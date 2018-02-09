@@ -24,10 +24,10 @@ import javax.crypto.spec.SecretKeySpec;
  */
 public class CipherHandler {
 
-	static Cipher aesCipher;
-	static KeyGenerator keyGen;
-	static SecretKeyFactory kf;
-	static SecretKeySpec skspec;
+	Cipher aesCipher;
+	KeyGenerator keyGen;
+	SecretKeyFactory kf;
+	SecretKeySpec skspec;
 
 	public CipherHandler(byte[] key, int length) {
 		try {

@@ -1,9 +1,10 @@
 package org.sstore.benchmarks;
 
+import java.util.ArrayList;
 import java.util.Random;
 
+import org.sstore.benchmarks.zipf.ZipfianGenerator;
 import org.sstore.client.ClientRpcImpl;
-import org.sstore.utils.Constants;
 import org.sstore.utils.SstoreConfig;
 
 /**
@@ -53,11 +54,17 @@ public class ConcurrentWorkload {
 
 	public void run() {
 		long start = System.currentTimeMillis();
+	    ArrayList<Thread> pool = new ArrayList<Thread>();
+
 		for (int i = 0; i < clientCount; i++) {
 			Thread client = new Thread(new Worker(readProp, operCount));
 			client.start();
+			pool.add(client);
+		}
+		
+		for(Thread th: pool) {
 			try {
-				client.join();
+				th.join();
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -82,18 +89,18 @@ public class ConcurrentWorkload {
 		for (int i = 0; i < numOfClient; i++) {
 			Thread client = new Thread(new PutWorker(putPerClient));
 			client.start();
-			try {
-				client.join();
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
+//			try {
+//				client.join();
+//			} catch (InterruptedException e) {
+//				e.printStackTrace();
+//			}
 		}
-		long end = System.currentTimeMillis();
-		System.out.println(end - start);
-		float avgresp = (float) ((end - start) / putPerClient / numOfClient);
-		float filepers = (float) ((putPerClient * numOfClient) * 1000 / (end - start));
-		System.out.println("Avg. latency: " + avgresp);
-		System.out.println("Avg. file per second: " + filepers);
+//		long end = System.currentTimeMillis();
+//		System.out.println(end - start);
+//		float avgresp = (float) ((end - start) / putPerClient / numOfClient);
+//		float filepers = (float) ((putPerClient * numOfClient) * 1000 / (end - start));
+//		System.out.println("Avg. latency: " + avgresp);
+//		System.out.println("Avg. file per second: " + filepers);
 	}
 
 	public void simpleGet(int numOfClient, int putPerClient, int fileSize) {
@@ -105,18 +112,18 @@ public class ConcurrentWorkload {
 		for (int i = 0; i < numOfClient; i++) {
 			Thread client = new Thread(new Worker(readPercent, putPerClient));
 			client.start();
-			try {
-				client.join();
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
+//			try {
+//				client.join();
+//			} catch (InterruptedException e) {
+//				e.printStackTrace();
+//			}
 		}
-		long end = System.currentTimeMillis();
-		System.out.println(end - start);
-		float avgresp = (float) ((end - start) / (float) putPerClient / (float) numOfClient);
-		float filepers = (float) ((putPerClient * numOfClient) * 1000 / (end - start));
-		System.out.println("Avg. latency: " + avgresp);
-		System.out.println("Avg. file per second: " + filepers);
+//		long end = System.currentTimeMillis();
+//		System.out.println(end - start);
+//		float avgresp = (float) ((end - start) / (float) putPerClient / (float) numOfClient);
+//		float filepers = (float) ((putPerClient * numOfClient) * 1000 / (end - start));
+//		System.out.println("Avg. latency: " + avgresp);
+//		System.out.println("Avg. file per second: " + filepers);
 	}
 
 	class PutWorker implements Runnable {
@@ -151,7 +158,8 @@ public class ConcurrentWorkload {
 			case "part_popular":
 				partPopular();
 				break;
-			case "latest":
+			case "zipf":
+				zipf();
 				break;
 			default:
 				break;
@@ -182,7 +190,7 @@ public class ConcurrentWorkload {
 			while (count-- > 0) {
 
 				String remote = "secure-20-" + randId.nextInt(objectCount) + ".jpg";
-//				System.out.println(remote);
+				// System.out.println(remote);
 
 				long start = System.currentTimeMillis();
 				if (rand1.nextInt(100) > readProp) {
@@ -221,8 +229,36 @@ public class ConcurrentWorkload {
 					int id = objectCount / 10 + randRange.nextInt(objectCount * 9 / 10);
 					remote = "secure-20-" + id + ".jpg";
 				}
-//				System.out.println(remote);
+				// System.out.println(remote);
 				if (randPop.nextInt(100) > readProp) {
+					clientrpc.putReqSecured(local, remote);
+				} else {
+					clientrpc.getReqSecured(remote);
+					long eclipse = System.currentTimeMillis() - start;
+					maxLate = eclipse > maxLate ? eclipse : maxLate;
+					minLate = Math.min(eclipse, minLate);
+				}
+			}
+			System.out.println("Max latency: " + maxLate);
+			System.out.println("Minimum latency: " + minLate);
+		}
+
+		/* use YCSB's zipfian distribution impl. */
+		public void zipf() {
+			System.out.println("start zipf workloads");
+
+			String remote = null;
+			long maxLate = 0, minLate = 0;
+			Random randRead = new Random(System.currentTimeMillis());
+			int count = operCount;
+			ZipfianGenerator zipf = new ZipfianGenerator(objectCount);
+			while (count-- > 0) {
+				long start = System.currentTimeMillis();
+
+				remote = "secure-20-" + zipf.nextValue() + ".jpg";
+
+				// System.out.println(remote);
+				if (randRead.nextInt(100) > readProp) {
 					clientrpc.putReqSecured(local, remote);
 				} else {
 					clientrpc.getReqSecured(remote);

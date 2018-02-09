@@ -149,9 +149,9 @@ public class DataServerFileIO {
 			return data;
 		}
 		/* if not cached. */
-		cipherHandler = new CipherHandler(skey);
+		CipherHandler chandle = new CipherHandler(skey);
 		byte[] cdata = get(remote);
-		byte[] data = cipherHandler.decipher(cdata);
+		byte[] data = chandle.decipher(cdata);
 		dataObj = new DataObject();
 		dataObj.setId(remote);
 		if (lazyOn) {
