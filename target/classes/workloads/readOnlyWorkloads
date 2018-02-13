@@ -8,4 +8,4 @@ read_prop=100
 delete_prop=0
 insert_prop=0
 # uniform, part_popular, zipf
-distribution_type=uniform
+distribution_type=zipf

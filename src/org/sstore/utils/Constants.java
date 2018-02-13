@@ -37,7 +37,7 @@ public class Constants {
 	public final static String FILENOTFOUND = "file not found";
 	
 	/** key length */
-	public final static int DEF_KEY_LEN = 32;
+	public final static int DEF_KEY_LEN = 16;
 
 	/** object table */
 	// last access time distribution unit, 1000 for seconds, 60000 for mins,
